@@ -1,3 +1,24 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+  font-family: 'Fira Sans', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  overflow-x: hidden; /* Previne o scroll horizontal */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Estilos específicos do App */
 .App {
   text-align: center;
 }
@@ -9,7 +30,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+      animation: App-logo-spin infinite 20s linear;
   }
 }
 
@@ -30,9 +51,9 @@
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+      transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+      transform: rotate(360deg);
   }
 }
