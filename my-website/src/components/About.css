@@ -1,19 +1,17 @@
 .about-section {
     margin-top: 0;
-    padding: 60px 20px;
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(135deg, #3b0a45, #7a1f7a, #164785, #1c75bc); /* Gradiente CSS */
+    padding: 0;
+    background-color: #282c34;
     color: white;
-    height: 100vh;
+    position: relative;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 100vh; /* Faz a seção ocupar 100% da altura da viewport */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .about-container {
-    position: relative;
-    z-index: 1; /* Garante que o conteúdo fique sobre o efeito */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -27,7 +25,7 @@
     max-width: 800px;
     padding-right: 20px;
     text-align: justify;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra para melhorar a legibilidade */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .about-content h2 {
@@ -52,4 +50,76 @@
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para tablets */
+@media (max-width: 768px) {
+  .about-content {
+    flex: 1 1 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .about-image {
+    flex: 1 1 100%;
+    margin-top: 20px;
+  }
+
+  .about-section {
+    padding: 40px 10px;
+    height: 100vh; /* Garante que ocupa 100% da altura da viewport */
+  }
+}
+
+/* Estilos para celulares */
+@media (max-width: 480px) {
+  .about-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-content p {
+    font-size: 0.9rem;
+  }
+
+  .about-image img {
+    max-width: 80%;
+  }
+
+  .about-section {
+    padding: 30px 5px;
+    height: 100vh; /* Garante que ocupa 100% da altura da viewport */
+  }
+  .scroll-down-indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 2rem;
+    color: white;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
 }

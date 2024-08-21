@@ -1,39 +1,28 @@
-import React, { useEffect, useRef } from 'react';
-import * as THREE from 'three';
-import NET from 'vanta/dist/vanta.net.min';
+import React, { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 import './About.css';
 
 function About() {
-  const vantaRef = useRef(null);
-  const vantaEffect = useRef(null);
-
   useEffect(() => {
-    // Ensure THREE is available on window
-    window.THREE = THREE;
+    ScrollReveal().reveal('.about-content', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      reset: false,
+    });
 
-    // Initialize Vanta effect
-    if (!vantaEffect.current && vantaRef.current) {
-      vantaEffect.current = NET({
-        el: vantaRef.current,
-        color: 0x79009e,
-        backgroundColor: 0x000000,
-        points: 24.0,
-        maxDistance: 20.0,
-        spacing: 18.0,
-        showDots: true,
-      });
-    }
-
-    return () => {
-      if (vantaEffect.current) {
-        vantaEffect.current.destroy();
-        vantaEffect.current = null;
-      }
-    };
+    ScrollReveal().reveal('.about-image', {
+      origin: 'right',
+      distance: '50px',
+      duration: 1000,
+      delay: 400,
+      reset: false,
+    });
   }, []);
 
   return (
-    <section id="about" className="about-section" ref={vantaRef}>
+    <section id="about" className="about-section">
       <div className="about-container">
         <div className="about-content">
           <h2>About Me</h2>

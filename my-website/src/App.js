@@ -2,7 +2,9 @@ import React from 'react';
 import Main from './components/Main';
 import BackgroundVideo from './components/BackgroundVideo';
 import About from './components/About';
+import Projects from './components/Projects';
 import './App.css';
+
 
 function App() {
   return (
@@ -10,8 +12,9 @@ function App() {
       <BackgroundVideo />
       <Main />
       <About />
+      <Projects />
     </div>
   );
 }
 
-export default App;  // Adicione esta linha para exportar o componente
+export default App;
