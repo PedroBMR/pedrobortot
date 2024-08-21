@@ -84,7 +84,7 @@
     font-size: 2rem;
     color: #f1f1f1;
     margin-bottom: 20px;
-    text-align: justify;
+    text-align: center;
 }
   
   .project-content p {
@@ -164,7 +164,7 @@
     }
   
     .project-content p {
-      text-align: center;
+      text-align: justify;
     }
   
     .project-tech {

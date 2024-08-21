@@ -1,0 +1,88 @@
+/* Experience Section Styling */
+.experience-section {
+    padding: 80px 20px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+  }
+  
+  .experience-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  
+  .experience-section h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #3498db;
+    display: block;
+    margin: 20px auto 0;
+    border-radius: 2px;
+  }
+  
+  .experience-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .experience-item {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  }
+  
+  .experience-item h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .experience-item h4 {
+    font-size: 1.2rem;
+    color: #a5a5a5;
+    margin-bottom: 10px;
+  }
+  
+  .duration {
+    display: block;
+    font-size: 1rem;
+    color: #cccccc;
+    margin-bottom: 15px;
+  }
+  
+  .experience-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #dddddd;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .experience-section h2 {
+      font-size: 2rem;
+    }
+  
+    .experience-item h3 {
+      font-size: 1.6rem;
+    }
+  
+    .experience-item h4 {
+      font-size: 1rem;
+    }
+  
+    .experience-item p {
+      font-size: 1rem;
+    }
+  }
+  

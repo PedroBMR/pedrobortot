@@ -1,0 +1,85 @@
+/* Skills.css */
+
+/* Root Variables for Consistent Styling */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --text-color: #ecf0f1;
+    --skill-icon-size: 60px;
+    --transition-speed: 0.3s;
+  }
+  
+  /* Skills Section Styling */
+  .skills-section {
+    padding: 100px 20px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+  }
+  
+  /* Section Title Styling */
+  .skills-section h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  .skills-section h2::after {
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+  }
+  
+  /* Skills Container Grid Layout */
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Individual Skill Item Styling */
+  .skill-item {
+    background-color: #34495e;
+    border-radius: 10px;
+    padding: 30px 20px;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Skill Icon Styling */
+  .skill-item img {
+    width: var(--skill-icon-size);
+    height: var(--skill-icon-size);
+    margin-bottom: 20px;
+    filter: brightness(0) invert(1);
+    transition: filter var(--transition-speed);
+  }
+  
+  .skill-item:hover img {
+    filter: brightness(0) invert(0.8);
+  }
+  
+  /* Skill Name Styling */
+  .skill-item span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  

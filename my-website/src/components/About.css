@@ -31,6 +31,7 @@
 .about-content h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .about-content p {
@@ -57,11 +58,12 @@
   .about-content {
     flex: 1 1 100%;
     padding-right: 0;
-    text-align: center;
+    text-align: justify;
   }
 
   .about-content h2 {
     font-size: 1.8rem;
+    text-align: center;
   }
 
   .about-content p {
@@ -75,14 +77,16 @@
   }
 
   .about-section {
-    padding: 40px 10px;
-    height: 100vh; /* Garante que ocupa 100% da altura da viewport */
+    padding: 10px 15px; /* Reduce padding to increase available space */
+    height: auto; /* Set the height to auto to let the content determine the size */
+    min-height: 100vh; /* Ensure it covers at least the full viewport height */
   }
 }
 
 /* Estilos para celulares */
 @media (max-width: 480px) {
   .about-content h2 {
+    text-align: center;
     font-size: 1.5rem;
   }
 
@@ -95,15 +99,16 @@
   }
 
   .about-section {
-    padding: 30px 5px;
-    height: 100vh; /* Garante que ocupa 100% da altura da viewport */
+    padding: 10px 15px; /* Reduce padding to increase available space */
+    height: auto; /* Set the height to auto to let the content determine the size */
+    min-height: 110vh; /* Ensure it covers at least the full viewport height */
   }
   .scroll-down-indicator {
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    text-align: center;
+    text-align: justify;
     cursor: pointer;
 }
 
