@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.db5300a6.css",
-    "main.js": "/static/js/main.1d239db8.js",
+    "main.css": "/static/css/main.00011289.css",
+    "main.js": "/static/js/main.21e96ad2.js",
     "static/js/453.195b869a.chunk.js": "/static/js/453.195b869a.chunk.js",
     "static/media/BG.mp4": "/static/media/BG.6e4297d563d4b865a445.mp4",
-    "static/media/faces_de_charlie.png": "/static/media/faces_de_charlie.14ab2eeea45e3084846a.png",
     "static/media/virtualizacao_parque_tecnologico.jpg": "/static/media/virtualizacao_parque_tecnologico.42b9a74166a64d40df06.jpg",
     "static/media/where_dragons_dwell.jpg": "/static/media/where_dragons_dwell.b97de7f5408645276a03.jpg",
     "static/media/xtaon.jpg": "/static/media/xtaon.26634fd56646860f11b8.jpg",
@@ -20,12 +19,12 @@
     "static/media/unreal-engine.svg": "/static/media/unreal-engine.149d8558e2150c1750e86060d7862e6a.svg",
     "static/media/unity.svg": "/static/media/unity.03cafb12af52b9268e531aca13d1dfd5.svg",
     "index.html": "/index.html",
-    "main.db5300a6.css.map": "/static/css/main.db5300a6.css.map",
-    "main.1d239db8.js.map": "/static/js/main.1d239db8.js.map",
+    "main.00011289.css.map": "/static/css/main.00011289.css.map",
+    "main.21e96ad2.js.map": "/static/js/main.21e96ad2.js.map",
     "453.195b869a.chunk.js.map": "/static/js/453.195b869a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db5300a6.css",
-    "static/js/main.1d239db8.js"
+    "static/css/main.00011289.css",
+    "static/js/main.21e96ad2.js"
   ]
 }
