@@ -4,22 +4,19 @@ import './Courses.css';
 function Courses() {
   const courses = [
     {
-      title: 'Game Development Fundamentals',
-      provider: 'Coursera',
-      date: 'Completed July 2023',
-      description: 'A comprehensive course covering the basics of game development, including game mechanics, design principles, and development tools.',
+      title: "Bachelor's Degree in Game Design and Digital Entertainment",
+      provider: 'University of Vale do Itajaí | Univali',
+      date: '2016 - 2020',
     },
     {
-      title: 'C# Programming for Unity Game Development',
-      provider: 'Udemy',
-      date: 'Completed March 2023',
-      description: 'An in-depth course on C# programming focused on Unity game development, covering scripting, debugging, and game logic implementation.',
+      title: 'Blender Training',
+      provider: 'Alura',
+      date: 'Completed February 2023',
     },
     {
-      title: 'Advanced 3D Modeling with Blender',
-      provider: 'LinkedIn Learning',
-      date: 'Completed November 2022',
-      description: 'A course on advanced 3D modeling techniques using Blender, including sculpting, texturing, and rendering.',
+      title: 'Props for Games Training',
+      provider: 'Alura',
+      date: 'Completed February 2023',
     },
   ];
 
