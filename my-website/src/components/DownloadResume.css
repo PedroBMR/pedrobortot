@@ -1,6 +1,6 @@
 .download-resume-section {
     padding: 60px 20px;
-    background-color: #282c34;
+    background-color: #2c2c2c;
     color: white;
     text-align: center;
   }
@@ -20,7 +20,7 @@
     padding: 15px 30px;
     font-size: 1.2rem;
     color: white;
-    background-color: #3498db;
+    background-color: #696969;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;

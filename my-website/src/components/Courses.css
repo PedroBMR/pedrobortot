@@ -1,7 +1,7 @@
 /* Courses Section Styling */
 .courses-section {
     padding: 80px 20px;
-    background-color: #1a1a1a;
+    background-color: #696969;
     color: #ffffff;
   }
   
@@ -17,7 +17,7 @@
     content: "";
     width: 60px;
     height: 4px;
-    background-color: #3498db;
+    background-color: #ffffff;
     display: block;
     margin: 20px auto 0;
     border-radius: 2px;
@@ -31,7 +31,7 @@
   .course-item {
     margin-bottom: 40px;
     padding: 20px;
-    background-color: #2d2d2d;
+    background-color: #2c2c2c;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
