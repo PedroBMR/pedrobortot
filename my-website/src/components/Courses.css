@@ -1,7 +1,7 @@
 /* Courses Section Styling */
 .courses-section {
   padding: 80px 20px;
-  background-color: #696969;
+  background-color: #1C1C1C;
   color: #ffffff;
 }
 
@@ -17,7 +17,7 @@
   content: "";
   width: 60px;
   height: 4px;
-  background-color: #ffffff;
+  background-color: #3498DB;
   display: block;
   margin: 20px auto 0;
   border-radius: 2px;
@@ -33,7 +33,7 @@
 
 .course-item {
   padding: 20px;
-  background-color: #2c2c2c;
+  background-color: #000000;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -52,7 +52,7 @@
 
 .course-item h4 {
   font-size: 1.2rem;
-  color: #a5a5a5;
+  color: #3498DB;
   margin-bottom: 10px;
 }
 

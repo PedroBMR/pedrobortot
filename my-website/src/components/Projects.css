@@ -1,8 +1,7 @@
 /* Geral */
 .projects-section {
     padding: 80px 20px;
-    background-color: #2c2c2c; /* Darker background color */
-    color: #ffffff; /* Light text for contrast */
+    background-color: #000000; /* Darker background color */
 }
   
   .projects-section h2 {
@@ -17,13 +16,12 @@
     content: "";
     width: 60px;
     height: 4px;
-    background-color: #ffffff;
+    background-color: #3498DB;
     display: block;
     margin: 20px auto 0;
     border-radius: 2px;
   }
-  
-  /* Container de cada projeto */
+
   .project-container {
     max-width: 1200px; /* Ajusta a largura máxima para uma medida menor */
     margin: 0 auto; /* Centraliza o contêiner de projetos */
@@ -78,14 +76,13 @@
   
   .project-content h3 {
     font-size: 2rem;
-    color: #ffffff;
+    color: #3498DB;
     margin-bottom: 20px;
     text-align: center;
 }
   
   .project-content p {
     font-size: 1.1rem;
-    color: #ffffff;
     line-height: 1.6;
     margin-bottom: 30px;
     text-align: justify;
@@ -118,7 +115,7 @@
 }
   
   .tech-item:hover {
-    background-color: #696969;
+    background-color: #BDC3C7;
   }
   
   .tech-icon {

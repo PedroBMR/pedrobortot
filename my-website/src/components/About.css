@@ -1,11 +1,11 @@
 .about-section {
     margin-top: 0;
     padding: 0;
-    background-color: #696969;
-    color: white;
+    background-color: #1C1C1C;
+    color: #ffffff;
     position: relative;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-    height: 100vh; /* Faz a seção ocupar 100% da altura da viewport */
+    height: 90vh; /* Faz a seção ocupar 100% da altura da viewport */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,7 +59,7 @@
 }
 .contact-section {
   padding: 40px 20px; /* Diminui o padding para integrar melhor com o conteúdo do About */
-  background-color: #696969; /* Mantenha a cor consistente com a seção About */
+  background-color: #1C1C1C; /* Mantenha a cor consistente com a seção About */
   color: #ffffff;
   text-align: center;
   margin-top: 40px; /* Adiciona margem superior para separar do conteúdo do About */
@@ -73,7 +73,7 @@
 }
 
 .contact-icons a {
-  color: #ffffff; /* Altera a cor para branco para harmonizar com o tema geral */
+  color: #3498DB; /* Altera a cor para branco para harmonizar com o tema geral */
 }
 
 .contact-icons a:hover {

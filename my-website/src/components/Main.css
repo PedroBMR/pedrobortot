@@ -17,8 +17,6 @@
     overflow-x: hidden;
 }
 
-
-/* Contêiner para o conteúdo */
 .content {
     display: flex;
     flex-direction: column;
@@ -27,43 +25,39 @@
     overflow-x: hidden;
 }
 
-/* Estilo para a saudação "Hi there!" */
 .greeting {
-    font-size: 1.5rem; /* Ajusta o tamanho da fonte */
-    margin-bottom: 1rem; /* Adiciona espaço abaixo do "Hi there!" */
+    font-size: 2rem; 
+    margin-bottom: 1rem; 
     color: #fff;
-    font-weight: 400; /* Mantém o peso padrão */
+    font-weight: 400; 
     overflow-x: hidden;
 }
 
-/* Estilo para o conteúdo do h2 */
 h2 {
-    font-size: 3.5rem; /* Ajusta o tamanho da fonte */
-    font-weight: 700; /* Define o peso da fonte */
-    line-height: 1.2; /* Mantém a altura da linha */
+    font-size: 3.5rem; 
+    font-weight: 700; 
+    line-height: 1.2; 
     color: #fff;
-    margin: 0; /* Remove margens padrão */
-    font-family: 'Blinker', sans-serif; /* Fonte definida */
+    margin: 0; 
+    font-family: 'Blinker', sans-serif; 
     overflow-x: hidden;
 }
 
-/* Estilo para as linhas dentro do h2 */
 .p1, .p2 {
-    display: block; /* Garante que cada linha seja um bloco separado */
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove o preenchimento padrão */
+    display: block; 
+    margin: 0; 
+    padding: 0; 
     overflow-x: hidden;
 }
 
-/* Estilo da seta */
 .scroll-down-indicator {
     position: absolute;
-    bottom: 20px; /* Posiciona a seta próximo ao final da viewport */
+    bottom: 20px; 
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    cursor: pointer; /* Adiciona o cursor de "mão" para indicar que é clicável */
-    animation: pulse 2s infinite; /* Animação de pulsar */
+    cursor: pointer; 
+    animation: pulse 2s infinite; 
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 
@@ -87,15 +81,6 @@ h2 {
     50% {
         transform: translateY(10px); /* Aumenta a distância do movimento */
         opacity: 0.7;
-    }
-}
-
-@keyframes pulse-border {
-    0%, 100% {
-        box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
-    }
-    50% {
-        box-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700;
     }
 }
 

@@ -16,10 +16,7 @@ import gamemaker from '../components/assets/tech-icons/game_maker.svg';
 import AdobeI from '../components/assets/tech-icons/AI.svg';
 import AdobeP from '../components/assets/tech-icons/AP.svg';
 import AfterE from '../components/assets/tech-icons/AE.svg';
-import printer from '../components/assets/tech-icons/3d_printer.svg';
-import css from '../components/assets/tech-icons/css.svg';
 import git from '../components/assets/tech-icons/github.svg';
-import html from '../components/assets/tech-icons/html.svg';
 import react from '../components/assets/tech-icons/react.svg';
 import godot from '../components/assets/tech-icons/Godot_icon.png';
 
@@ -32,15 +29,15 @@ function Skills() {
       <h2>My Skills</h2>
       <div className="skills-container">
         <div className="skill-item">
-          <img src={unityIcon} alt="Unity" />
+          <img src={unityIcon} alt="Unity" style={{ filter: 'brightness(0) invert(1)' }} />
           <span>Unity</span>
         </div>
         <div className="skill-item">
-          <img src={unrealEngineIcon} alt="Unreal Engine" />
+          <img src={unrealEngineIcon} alt="Unreal Engine" style={{ filter: 'brightness(0) invert(1)' }} />
           <span>Unreal Engine</span>
         </div>
         <div className="skill-item">
-          <img src={gamemaker} alt="Game Maker" />
+          <img src={gamemaker} alt="Game Maker" style={{ filter: 'brightness(0) invert(1)' }} />
           <span>Game Maker</span>
         </div>
         <div className="skill-item">
@@ -80,6 +77,10 @@ function Skills() {
           <span>Adobe Premiere</span>
         </div>
         <div className="skill-item">
+          <img src={photoshopIcon} alt="Adobe Photoshop" />
+          <span>Adobe Photoshop</span>
+        </div>
+        <div className="skill-item">
           <img src={csharpIcon} alt="C#" />
           <span>C#</span>
         </div>
@@ -92,7 +93,7 @@ function Skills() {
           <span>React</span>
         </div>
         <div className="skill-item">
-          <img src={git} alt="Github" />
+          <img src={git} alt="Github" style={{ filter: 'brightness(0) invert(1)' }} />
           <span>GitHub</span>
         </div>
       </div>

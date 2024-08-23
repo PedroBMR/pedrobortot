@@ -2,9 +2,9 @@
 
 /* Root Variables for Consistent Styling */
 :root {
-  --primary-color: #2c2c2c;
-  --secondary-color: #2c2c2c;
-  --text-color: #ecf0f1;
+  --primary-color: #1C1C1C;
+  --secondary-color: #000000;
+  --text-color: #FFFFFF;
   --skill-icon-size: 60px;
   --transition-speed: 0.3s;
 }
@@ -30,7 +30,7 @@
   content: '';
   width: 50%;
   height: 3px;
-  background-color: var(--primary-color);
+  background-color: #3498DB;
   position: absolute;
   bottom: 0;
   left: 25%;
@@ -39,7 +39,6 @@
 /* Skills Container Grid Layout */
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
@@ -49,7 +48,7 @@
 
 /* Individual Skill Item Styling */
 .skill-item {
-  background-color: #696969;
+  background-color: var(--primary-color);
   border-radius: 10px;
   padding: 30px 20px;
   transition: transform var(--transition-speed), box-shadow var(--transition-speed);
@@ -91,7 +90,7 @@
 /* Para telas grandes (desktops) */
 @media (min-width: 1024px) {
 .skills-container {
-  grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+  grid-template-columns: repeat(5, 1fr); /* 4 colunas */
 }
 }
 
