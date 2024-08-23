@@ -58,8 +58,7 @@
     height: auto;
     object-fit: cover; /* Ajuste como a imagem deve preencher o contêiner */
     border-radius: 8px; /* Opcional, para arredondar as bordas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional, para adicionar sombra */
-    overflow: hidden; /* Garantir que o conteúdo extra não gere rolagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional, para adicionar sombra */ /* Garantir que o conteúdo extra não gere rolagem */
 }
   
   .project-image img {
@@ -68,12 +67,6 @@
     border-radius: 5px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    overflow: hidden;
-  }
-  
-  .project-image img:hover {
-    transform: scale(1.03);
-    overflow: hidden;
   }
   
   /* Conteúdo do projeto */
