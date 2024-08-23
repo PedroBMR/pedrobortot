@@ -2,8 +2,11 @@ import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 import './About.css';
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 function About() {
+  const { t } = useTranslation();
+
   useEffect(() => {
     ScrollReveal().reveal('.about-content', {
       origin: 'bottom',
@@ -26,33 +29,21 @@ function About() {
     <section id="about" className="about-section">
       <div className="about-container">
         <div className="about-content">
-          <h2>About Me</h2>
-          <p>
-            I am an aspiring game designer passionate about creating immersive worlds and storytelling experiences. 
-            With a career that bridges game design, narrative development, and educational technology, I specialize 
-            in mechanics, 3D modeling, and programming, particularly in C# and C++.
-          </p>
-          <p>
-            As the founder of Arcadia Realms, I am currently developing an MMORPG designed to unite players through 
-            shared adventures and rich narratives. Throughout my career, I have been involved in a variety of innovative 
-            projects, including 'Faces de Charlie,' 'Where Dragons Dwell VR,' and 'Virtualização Parque Tecnológico.'
-          </p>
-          <p>
-            Beyond my professional life, I am deeply invested in hobbies like 3D printing, playing Dungeons & Dragons, 
-            and exploring a wide variety of digital games. I am always eager to learn and grow, currently expanding my skills 
-            in QA, React, and more, with the goal of creating games that entertain and bring people together through shared experiences.
-          </p>
+          <h2>{t('about.title')}</h2> {/* Título traduzido */}
+          <p>{t('about.paragraphs.0')}</p> {/* Primeiro parágrafo */}
+          <p>{t('about.paragraphs.1')}</p> {/* Segundo parágrafo */}
+          <p>{t('about.paragraphs.2')}</p> {/* Terceiro parágrafo */}
           <div className="contact-icons">
-        <a href="mailto:pedroluizbmr@gmail.com" aria-label="Email" target="_blank" rel="noopener noreferrer">
-          <FaEnvelope size={40} />
-        </a>
-        <a href="https://www.linkedin.com/in/pedroluizbmr/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin size={40} />
-        </a>
-        <a href="https://github.com/PedroBMR" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-          <FaGithub size={40} />
-        </a>
-      </div>
+            <a href="mailto:pedroluizbmr@gmail.com" aria-label="Email" target="_blank" rel="noopener noreferrer">
+              <FaEnvelope size={40} />
+            </a>
+            <a href="https://www.linkedin.com/in/pedroluizbmr/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin size={40} />
+            </a>
+            <a href="https://github.com/PedroBMR" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+              <FaGithub size={40} />
+            </a>
+          </div>
         </div>
         <div className="about-image">
           <img src={require('./assets/pedroluiz.jpeg')} alt="Pedro Luiz" />

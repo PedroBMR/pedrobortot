@@ -1,0 +1,141 @@
+{
+    "main": {
+      "greeting": "Olá!",
+      "intro1": "Eu sou Pedro Luiz,",
+      "titles": ["um Aspirante a Designer de Jogos", "um Entusiasta de 3D", "um Aspirante a Designer de Níveis", "um Educador", "um Contador de Histórias", "um Jogador", "um Streamer"]
+    },
+    "about": {
+      "title": "Sobre Mim",
+      "paragraphs": [
+        "Sou um aspirante a designer de jogos apaixonado por criar mundos imersivos e experiências de narrativa.",
+        "Como fundador da Arcadia Realms, estou desenvolvendo um MMORPG projetado para unir jogadores através de aventuras compartilhadas e narrativas ricas.",
+        "Além da minha vida profissional, estou profundamente envolvido em hobbies como impressão 3D, jogar Dungeons & Dragons e explorar uma variedade de jogos digitais. Estou sempre disposto a aprender e crescer, atualmente expandindo minhas habilidades em QA, React, e mais, com o objetivo de criar jogos que entretenham e reúnam pessoas através de experiências compartilhadas."
+      ]
+    },
+"skills": {
+    "title": "Minhas Habilidades",
+    "list": [
+      "Unity",
+      "Unreal Engine",
+      "Game Maker",
+      "Godot",
+      "Blender",
+      "3DS Max",
+      "Maya",
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Substance Painter",
+      "After Effects",
+      "Adobe Premiere",
+      "Adobe Photoshop",
+      "C#",
+      "C++",
+      "React",
+      "GitHub"
+    ]
+  },
+    "experience": {
+    "title": "Experiência",
+    "experiences": [
+      {
+        "title": "Gerente de Projetos",
+        "company": "Universidade do Vale do Itajaí",
+        "duration": "Agosto 2017 - Dezembro 2017",
+        "description": "Gerenciei um projeto universitário durante um estágio na universidade."
+      },
+      {
+        "title": "Estagiário de UI/UX",
+        "company": "Tentáculo",
+        "duration": "Fevereiro 2020 - Abril 2020",
+        "description": "Envolvido no design e desenvolvimento de interfaces e experiências de usuário, focando na otimização da interação e apelo visual para aplicativos de jogos."
+      },
+      {
+        "title": "Designer de Layout",
+        "company": "HUNER",
+        "duration": "Maio 2020 - Dezembro 2020",
+        "description": "Responsável pelo layout e aspectos visuais de conteúdo digital, aplicando princípios de design para garantir legibilidade e engajamento do usuário. Utilizei diversas ferramentas de software para criar designs esteticamente agradáveis e funcionais, melhorando a entrega de conteúdo e a satisfação do usuário."
+      },
+      {
+        "title": "Chefe da Seção de Cenários e Props",
+        "company": "Departamento de Educação",
+        "duration": "Abril 2021 - Julho 2022",
+        "description": "Liderei a criação de vídeos educativos e ferramentas impressas em 3D para melhorar o aprendizado. Desenvolvi um jogo baseado em tablet para salas de aula, integrando gamificação na educação."
+      },
+      {
+        "title": "Chefe da Seção de Projetos",
+        "company": "Departamento de Ciência, Tecnologia e Inovação",
+        "duration": "Julho 2022 - Julho 2023",
+        "description": "Supervisionei projetos inovadores, incluindo aplicações em VR, e gerenciei o Laboratório de Impressão 3D, reduzindo custos e melhorando a entrega de serviços."
+      },
+      {
+        "title": "Professor",
+        "company": "Mk Academy",
+        "duration": "Abril 2023 - Novembro 2023",
+        "description": "Como professor na Mk Academy, ensinei disciplinas como Pro Player em Valorant e COD: Modern Warfare, além de aulas de Game Art, onde os alunos aprenderam a usar ferramentas para desenvolver artes de jogos em 2D e 3D."
+      },
+      {
+        "title": "Assessor de Setor de Infraestrutura",
+        "company": "Departamento de Ciência, Tecnologia e Inovação",
+        "duration": "Julho 2023 - Presente",
+        "description": "Lidero projetos importantes e gerencio a infraestrutura tecnológica da cidade, garantindo a implementação e manutenção eficazes dos sistemas."
+      },
+      {
+        "title": "Professor de Inglês",
+        "company": "Fisk",
+        "duration": "Agosto 2024 - Presente",
+        "description": "Atualmente, ensino aulas de inglês para alunos de diferentes níveis de proficiência em um ambiente presencial."
+      }
+    ]
+  },
+    "projects": {
+      "title": "Meus Projetos",
+      "list": [
+        {
+          "title": "Faces de Charlie",
+          "description": "Um projeto inovador que explora as várias facetas de um personagem em um ambiente narrativo dinâmico. Desenvolvi este jogo com o objetivo de criar uma experiência imersiva que oferece múltiplas narrativas e decisões, influenciando diretamente os destinos dos personagens."
+        },
+        {
+          "title": "Where Dragons Dwell VR",
+          "description": "Uma experiência imersiva de realidade virtual onde os jogadores exploram um mundo dominado por dragões. Neste projeto, os jogadores são lançados em um ambiente de VR ricamente detalhado, cheio de criaturas míticas e paisagens antigas. O jogo foi projetado para envolver totalmente o jogador com interações dinâmicas e uma narrativa profunda, onde cada decisão impacta a história que se desenrola. Explore vastos terrenos, descubra segredos ocultos e enfrente dragões em um mundo onde suas escolhas importam."
+        },
+        {
+          "title": "Virtualização Parque Tecnológico",
+          "description": "Um projeto focado na criação de um ambiente virtual interativo para a visualização e gestão de um parque tecnológico. Desenvolvi este projeto com o objetivo de criar um espaço virtual altamente interativo que permite aos usuários explorar e gerenciar um parque tecnológico. O ambiente é projetado para fornecer uma visão abrangente da infraestrutura do parque, facilitando o planejamento, a tomada de decisões e a gestão operacional. Os usuários podem navegar pelo espaço virtual, interagir com diferentes elementos e obter insights sobre as funcionalidades do parque, tornando-o uma ferramenta inestimável para gestão e apresentação."
+        },
+        {
+          "title": "X-TAON",
+          "description": "Este projeto apresenta meus renders finais para o concurso Allegorithmic X-TAON. A peça está agora completa, e estou empolgado para apresentar o trabalho finalizado. Confira as texturas detalhadas e os designs intrincados que dão vida a este render."
+        },
+        {
+          "title": "Litterman",
+          "description": "Litterman é um jogo peculiar e desafiador que desenvolvi para o Mini Jam 153: Fishing! Neste jogo, você joga como um pequeno personagem magnético em uma missão para pescar lixo e ganhar dinheiro para pagar suas contas. O jogo apresenta uma reviravolta única no gênero de pesca, focando na limpeza ambiental em vez da captura de peixes. Infelizmente, devido a restrições de tempo, o jogo não foi totalmente concluído antes do prazo do jam. Como resultado, o jogo atualmente não possui som, e há um bug no Dia 2 que torna a subida mais difícil, embora ainda possível. Apesar desses desafios, Litterman oferece uma experiência divertida e envolvente, e agradeço sinceramente a todos que tiram um tempo para jogá-lo."
+        }
+      ]
+    },
+    "courses": {
+      "title": "Cursos e Certificações",
+      "list": [
+        {
+          "title": "Bacharelado em Design de Jogos",
+          "provider": "Univali",
+          "date": "2016 - 2020"
+        },
+        {
+          "title": "Treinamento Blender",
+          "provider": "Alura",
+          "date": "Concluído em Fevereiro de 2023"
+        },
+        {
+          "title": "Treinamento de Props para Games",
+          "provider": "Alura",
+          "date": "Concluído em Fevereiro de 2023"
+        }
+      ]
+    },
+    "downloadResume": {
+      "title": "Baixe Meu Currículo",
+      "description": "Clique no botão abaixo para baixar uma versão em PDF do meu currículo.",
+      "buttonText": "Baixar Currículo"
+    }
+  }
+  

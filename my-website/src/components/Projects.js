@@ -14,14 +14,17 @@ import substancepainter from '../components/assets/tech-icons/substance-painter.
 import virtualizacaoParqueTecnologicoImage from '../components/assets/virtualizacao_parque_tecnologico.jpg';
 import xtaon from '../components/assets/xtaon.jpg';
 import litterman from '../components/assets/Litterman.jpg';
+import { useTranslation } from 'react-i18next'; // Importa o hook de tradução
 
 function Projects() {
+  const { t } = useTranslation(); // Acessa a função t para usar traduções
+
   const projects = [
     {
-      title: "Faces de Charlie",
+      title: t('projects.list.0.title'),
       description: (
         <div>
-          <p>An innovative project that explores the various facets of a character in a dynamic narrative environment. Developed with the goal of creating an immersive game that offers multiple narratives and decisions, directly influencing the characters' fates.</p>
+          <p>{t('projects.list.0.description')}</p>
         </div>
       ),
       video: "https://www.youtube.com/embed/s9nfFplwr60?si=jYkn5q9rJ1f4iIMe",
@@ -35,11 +38,11 @@ function Projects() {
       reverse: false,
     },
     {
-      title: "Where Dragons Dwell VR",
-      description:(
-      <div>
-        <p>An immersive virtual reality experience where players explore a world dominated by dragons. In this project, players are thrust into a richly detailed VR environment filled with mythical creatures and ancient landscapes. The game is designed to fully engage the player with dynamic interactions and a deep narrative, where every decision impacts the unfolding story. Explore vast terrains, uncover hidden secrets, and battle dragons in a world where your choices matter.</p>
-      </div>
+      title: t('projects.list.1.title'),
+      description: (
+        <div>
+          <p>{t('projects.list.1.description')}</p>
+        </div>
       ),
       video: "https://www.youtube.com/embed/zLuvuI2-xpw?si=RhfhEuDnlgWUT5bH",
       tech: [
@@ -54,10 +57,10 @@ function Projects() {
       reverse: true,
     },
     {
-      title: "Virtualização Parque Tecnológico",
-      description:(
+      title: t('projects.list.2.title'),
+      description: (
         <div>
-        <p>A project focused on creating an interactive virtual environment for the visualization and management of a technological park. This project aims to develop a highly interactive virtual space that allows users to explore and manage a technological park. The environment is designed to provide a comprehensive view of the park's infrastructure, facilitating planning, decision-making, and operational management. Users can navigate through the virtual space, interact with different elements, and gain insights into the park's functionalities, making it an invaluable tool for both management and presentation purposes.</p>
+          <p>{t('projects.list.2.description')}</p>
         </div>
       ),
       image: virtualizacaoParqueTecnologicoImage,
@@ -70,10 +73,10 @@ function Projects() {
       reverse: false,
     },
     {
-      title: "X-TAON",
+      title: t('projects.list.3.title'),
       description: (
         <div>
-          <p>This project features my final renders for the Allegorithmic X-TAON contest. The piece is now complete, and I'm thrilled to present the finished work. Check out the detailed textures and intricate designs that bring this render to life.</p>
+          <p>{t('projects.list.3.description')}</p>
         </div>
       ),
       image: xtaon,
@@ -83,25 +86,25 @@ function Projects() {
       reverse: true,
     },
     {
-        title: "Litterman",
-        description: (
-          <div>
-            <p>Litterman is a quirky and challenging game developed for Mini Jam 153: Fishing! In this game, you play as a tiny magnetic character on a mission to fish for trash and earn money to pay his bills. The game presents a unique twist on the fishing genre, focusing on environmental cleanup rather than the usual fish-catching gameplay. Unfortunately, due to time constraints, the game wasn't fully completed before the jam's deadline. As a result, the game currently lacks sound, and there is a bug on Day 2 that makes ascending more difficult, though still possible. Despite these challenges, Litterman offers a fun and engaging experience, and we sincerely appreciate everyone who takes the time to play it.</p>
-          </div>
-        ),
-        image: litterman,
-        tech: [
-            { name: "Unity", icon: unityIcon },
-            { name: "Substance Painter", icon: substancepainter },
-            { name: "Blender", icon: blenderIcon },
-        ],
-        reverse: false,
-      },
+      title: t('projects.list.4.title'),
+      description: (
+        <div>
+          <p>{t('projects.list.4.description')}</p>
+        </div>
+      ),
+      image: litterman,
+      tech: [
+        { name: "Unity", icon: unityIcon },
+        { name: "Substance Painter", icon: substancepainter },
+        { name: "Blender", icon: blenderIcon },
+      ],
+      reverse: false,
+    },
   ];
 
   return (
     <section id="projects" className="projects-section">
-      <h2>My Projects</h2>
+      <h2>{t('projects.title')}</h2> {/* Título traduzido */}
       {projects.map((project, index) => (
         <div
           key={index}

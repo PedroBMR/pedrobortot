@@ -16,11 +16,13 @@ import AfterE from '../components/assets/tech-icons/AE.svg';
 import git from '../components/assets/tech-icons/github.svg';
 import react from '../components/assets/tech-icons/react.svg';
 import godot from '../components/assets/tech-icons/Godot_icon.png';
+import { useTranslation } from 'react-i18next'; // Importa o hook de tradução
 
 function Skills() {
+  const { t } = useTranslation(); // Acessa a função t para usar traduções
   return (
     <section id="skills" className="skills-section">
-      <h2>My Skills</h2>
+      <h2>{t('skills.title')}</h2> {/* Título traduzido */}
       <div className="skills-container">
         <div className="skill-item">
           <img src={unityIcon} alt="Unity" style={{ filter: 'brightness(0) invert(1)' }} />

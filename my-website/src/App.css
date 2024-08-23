@@ -16,6 +16,28 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.language-selector {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.flag-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.flag-icon {
+  width: 30px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.flag-button:hover .flag-icon {
+  transform: scale(1.1);
+}
 
 .App {
   text-align: center;

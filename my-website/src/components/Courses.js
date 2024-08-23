@@ -1,28 +1,15 @@
 import React from 'react';
 import './Courses.css';
+import { useTranslation } from 'react-i18next'; // Importa o hook de tradução
 
 function Courses() {
-  const courses = [
-    {
-      title: "Bachelor's Degree in Game Design",
-      provider: 'Univali',
-      date: '2016 - 2020',
-    },
-    {
-      title: 'Blender Training',
-      provider: 'Alura',
-      date: 'Completed February 2023',
-    },
-    {
-      title: 'Props for Games Training',
-      provider: 'Alura',
-      date: 'Completed February 2023',
-    },
-  ];
+  const { t } = useTranslation(); // Acessa a função t para usar traduções
+
+  const courses = t('courses.list', { returnObjects: true }); // Carrega a lista de cursos traduzidos
 
   return (
     <section id="courses" className="courses-section">
-      <h2>Courses & Certifications</h2>
+      <h2>{t('courses.title')}</h2> {/* Título traduzido */}
       <div className="courses-container">
         {courses.map((course, index) => (
           <div key={index} className="course-item">
