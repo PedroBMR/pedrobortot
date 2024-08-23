@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.ec743513.css",
-    "main.js": "/static/js/main.ae6b833b.js",
+    "main.css": "/static/css/main.2ea7f5e6.css",
+    "main.js": "/static/js/main.0297a0f9.js",
     "static/js/453.195b869a.chunk.js": "/static/js/453.195b869a.chunk.js",
     "static/media/BG.mp4": "/static/media/BG.6e4297d563d4b865a445.mp4",
-    "static/media/resume.pdf": "/static/media/resume.851708b0786bce0d485b.pdf",
+    "static/media/resume_pt.pdf": "/static/media/resume_pt.312fd0a316e99aeb1af7.pdf",
+    "static/media/resume_en.pdf": "/static/media/resume_en.851708b0786bce0d485b.pdf",
     "static/media/virtualizacao_parque_tecnologico.jpg": "/static/media/virtualizacao_parque_tecnologico.42b9a74166a64d40df06.jpg",
     "static/media/xtaon.jpg": "/static/media/xtaon.26634fd56646860f11b8.jpg",
     "static/media/pedroluiz.jpeg": "/static/media/pedroluiz.adfa328bd1b1ad24cf87.jpeg",
     "static/media/Litterman.jpg": "/static/media/Litterman.234f744358d6d3fd7437.jpg",
+    "static/media/flag_en.png": "/static/media/flag_en.e056a4ada86258bbc9d6.png",
     "static/media/Godot_icon.png": "/static/media/Godot_icon.1c575643888f8a26d132.png",
     "static/media/3dsmax.svg": "/static/media/3dsmax.5b3fa4f4bfe6e7f5bdfcba65de1c5fc5.svg",
     "static/media/maya.svg": "/static/media/maya.71155f07bcae561ab5eaf0d2c75b9892.svg",
@@ -29,12 +31,12 @@
     "static/media/game_maker.svg": "/static/media/game_maker.d09d1afd788b75ba2b4e74ebfcbf33a8.svg",
     "static/media/AI.svg": "/static/media/AI.8aa316ba754d1d2f479207885c6fca59.svg",
     "static/media/arrow.svg": "/static/media/arrow.b5db887e2825786077c5cc69cce36076.svg",
-    "main.ec743513.css.map": "/static/css/main.ec743513.css.map",
-    "main.ae6b833b.js.map": "/static/js/main.ae6b833b.js.map",
+    "main.2ea7f5e6.css.map": "/static/css/main.2ea7f5e6.css.map",
+    "main.0297a0f9.js.map": "/static/js/main.0297a0f9.js.map",
     "453.195b869a.chunk.js.map": "/static/js/453.195b869a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec743513.css",
-    "static/js/main.ae6b833b.js"
+    "static/css/main.2ea7f5e6.css",
+    "static/js/main.0297a0f9.js"
   ]
 }
