@@ -4,8 +4,8 @@ import './Courses.css';
 function Courses() {
   const courses = [
     {
-      title: "Bachelor's Degree in Game Design and Digital Entertainment",
-      provider: 'University of Vale do Itajaí | Univali',
+      title: "Bachelor's Degree in Game Design",
+      provider: 'Univali',
       date: '2016 - 2020',
     },
     {
@@ -29,7 +29,6 @@ function Courses() {
             <h3>{course.title}</h3>
             <h4>{course.provider}</h4>
             <span className="date">{course.date}</span>
-            <p>{course.description}</p>
           </div>
         ))}
       </div>

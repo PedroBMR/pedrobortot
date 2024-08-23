@@ -25,12 +25,13 @@
   
   /* Container de cada projeto */
   .project-container {
-    max-width: 1500px; /* Defina uma largura máxima para os projetos */
+    max-width: 1200px; /* Ajusta a largura máxima para uma medida menor */
     margin: 0 auto; /* Centraliza o contêiner de projetos */
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Adiciona espaço entre os elementos */
     margin-bottom: 80px;
-    gap: 60px;
+    gap: 40px; /* Ajusta o espaço entre os elementos */
 }
   
   .project-container.reverse {
@@ -62,15 +63,17 @@
 }
   
   .project-image img {
-    width: 80%;
+    width: 100%;
     height: auto;
     border-radius: 5px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    overflow: hidden;
   }
   
   .project-image img:hover {
     transform: scale(1.03);
+    overflow: hidden;
   }
   
   /* Conteúdo do projeto */

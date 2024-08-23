@@ -44,7 +44,7 @@ function Main() {
           </h2>
         </div>
         <div className="scroll-down-indicator" onClick={handleScroll}>
-          <span className="arrow">↓</span>
+        <img src={require('../components/assets/tech-icons/arrow.svg').default} alt="Scroll Down" className="arrow" />
         </div>
       </div>
     </div>

@@ -1,11 +1,10 @@
-// Experience.js
 import React from 'react';
 import './Experience.css';
 
 function Experience() {
   const experiences = [
     {
-      title: 'Project Manage',
+      title: 'Project Manager',
       company: 'Universidade do Vale do Itajaí',
       duration: 'August 2017 - December 2017',
       description: 'Managed a college project during an internship for the university.',
@@ -26,13 +25,13 @@ function Experience() {
       title: 'Head of Scenery and Props Section',
       company: 'Department of Education',
       duration: 'April 2021 - July 2022',
-      description: 'Developed and implemented a series of educational videos featuring custom-designed mascots to communicate important dates and events to children, enhancing educational outreach and engagement. Utilized 3D printing technology to create tangible educational objects and tools for school environments, fostering interactive learning experiences. Designed and developed a tablet-based game focused on improving educational outcomes, which was integrated into classroom activities to assist in learning through gamification. Managed the entire project lifecycle, from initial conceptual design to execution, ensuring that projects aligned with educational goals and achieved significant impact among students.',
+      description: 'Led the creation of educational videos and 3D-printed tools to enhance learning. Developed a tablet-based game for classrooms, integrating gamification into education.',
     },
     {
       title: 'Head of Projects Section',
       company: 'Department of Science, Technology, and Innovation',
       duration: 'July 2022 - July 2023',
-      description: 'Supervised the development and implementation of innovative projects, including virtual reality applications, to enhance public interaction with technology and improve service delivery.Managed the 3D Printing Lab, utilizing additive manufacturing technologies to produce cost-effective solutions for various municipal departments, significantly reducing operational expenses. Directed multidisciplinary teams, ensuring projects were delivered on time, within budget, and maintained high standards of quality and efficiency.',
+      description: 'Oversaw innovative projects, including VR applications, and managed the 3D Printing Lab, reducing costs and improving service delivery.',
     },
     {
       title: 'Professor',
@@ -44,7 +43,7 @@ function Experience() {
       title: 'Infrastructure Sector Advisor',
       company: 'Department of Science, Technology, and Innovation',
       duration: 'July 2023 - Present',
-      description: "Led and managed key projects related to the city's technological infrastructure, ensuring the effective implementation and maintenance of critical systems. Oversaw contracts associated with technological projects, ensuring they met all legal standards and operational requirements. Collaborated with technical teams to ensure that the infrastructure supported the city's ongoing needs, focusing on system functionality and efficiency. Directed the management of the building's technological infrastructure, maintaining high standards of operational excellence to support various municipal activities.",
+      description: "Led key projects and managed the city's technological infrastructure, ensuring effective system implementation and maintenance.",
     },
     {
       title: 'English Language Teacher',

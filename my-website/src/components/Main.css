@@ -1,3 +1,4 @@
+
 .content-box {
     position: relative;
     height: 100vh;
@@ -13,6 +14,7 @@
     height: 100%;
     padding-left: 5%;
     text-align: left;
+    overflow-x: hidden;
 }
 
 
@@ -22,6 +24,7 @@
     flex-direction: column;
     justify-content: flex-start; /* Alinha o conteúdo ao topo do contêiner */
     align-items: flex-start; /* Garante que todo o conteúdo seja alinhado à esquerda */
+    overflow-x: hidden;
 }
 
 /* Estilo para a saudação "Hi there!" */
@@ -30,6 +33,7 @@
     margin-bottom: 1rem; /* Adiciona espaço abaixo do "Hi there!" */
     color: #fff;
     font-weight: 400; /* Mantém o peso padrão */
+    overflow-x: hidden;
 }
 
 /* Estilo para o conteúdo do h2 */
@@ -40,6 +44,7 @@ h2 {
     color: #fff;
     margin: 0; /* Remove margens padrão */
     font-family: 'Blinker', sans-serif; /* Fonte definida */
+    overflow-x: hidden;
 }
 
 /* Estilo para as linhas dentro do h2 */
@@ -47,6 +52,7 @@ h2 {
     display: block; /* Garante que cada linha seja um bloco separado */
     margin: 0; /* Remove margens padrão */
     padding: 0; /* Remove o preenchimento padrão */
+    overflow-x: hidden;
 }
 
 /* Estilo da seta */
@@ -58,12 +64,18 @@ h2 {
     text-align: center;
     cursor: pointer; /* Adiciona o cursor de "mão" para indicar que é clicável */
     animation: pulse 2s infinite; /* Animação de pulsar */
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 
-/* Estilo da seta */
+/* Ajusta o tamanho e estilo da seta SVG */
 .scroll-down-indicator .arrow {
-    font-size: 2rem;
-    color: #fff;
+    width: 48px; /* Define o tamanho do SVG */
+    height: 48px;
+    fill: none; /* Certifica-se de que o SVG não tenha preenchimento */
+    stroke: white; /* Mantém a cor branca */
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 /* Animação de pulsar */
@@ -73,8 +85,17 @@ h2 {
         opacity: 1;
     }
     50% {
-        transform: translateY(10px);
+        transform: translateY(10px); /* Aumenta a distância do movimento */
         opacity: 0.7;
+    }
+}
+
+@keyframes pulse-border {
+    0%, 100% {
+        box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+    }
+    50% {
+        box-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700;
     }
 }
 
