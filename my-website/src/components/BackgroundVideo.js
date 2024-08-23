@@ -7,7 +7,7 @@ function BackgroundVideo() {
       <video autoPlay muted loop playsInline>
       <source src={require('./assets/BG.mp4')} type="video/mp4" />
       </video>
-      <div className="overlay"></div> {/* O overlay precisa estar aqui */}
+      <div className="overlay"></div>
     </div>
   );
 }

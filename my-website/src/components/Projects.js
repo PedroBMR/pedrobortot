@@ -1,7 +1,5 @@
 import React from 'react';
 import './Projects.css';
-
-// Importando as imagens SVG
 import unityIcon from '../components/assets/tech-icons/unity.svg';
 import csharpIcon from '../components/assets/tech-icons/csharp.svg';
 import blenderIcon from '../components/assets/tech-icons/blender.svg';

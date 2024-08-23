@@ -61,12 +61,12 @@ h2 {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 
-/* Ajusta o tamanho e estilo da seta SVG */
+
 .scroll-down-indicator .arrow {
-    width: 48px; /* Define o tamanho do SVG */
+    width: 48px; 
     height: 48px;
-    fill: none; /* Certifica-se de que o SVG não tenha preenchimento */
-    stroke: white; /* Mantém a cor branca */
+    fill: none; 
+    stroke: white; 
     stroke-width: 2px;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -79,50 +79,50 @@ h2 {
         opacity: 1;
     }
     50% {
-        transform: translateY(10px); /* Aumenta a distância do movimento */
+        transform: translateY(10px);
         opacity: 0.7;
     }
 }
 
-/* Ajustes responsivos para telas menores */
+
 @media (max-width: 1024px) {
     h2 {
-        font-size: 3rem; /* Ajuste para telas menores */
+        font-size: 3rem; 
     }
 
     .greeting {
-        font-size: 1.2rem; /* Ajuste para telas menores */
+        font-size: 1.2rem; 
     }
 
     .main-section {
-        padding-left: 8%; /* Mantém o alinhamento à esquerda */
+        padding-left: 8%; 
     }
 }
 
 @media (max-width: 768px) {
     h2 {
-        font-size: 2.5rem; /* Ajuste para telas menores */
+        font-size: 2.5rem;
     }
 
     .greeting {
-        font-size: 1rem; /* Ajuste para telas menores */
+        font-size: 1rem; 
     }
 
     .main-section {
-        padding-left: 10%; /* Mantém o alinhamento à esquerda */
+        padding-left: 10%; 
     }
 }
 
 @media (max-width: 480px) {
     h2 {
-        font-size: 2rem; /* Ajuste para telas menores */
+        font-size: 2rem; 
     }
 
     .greeting {
-        font-size: 0.9rem; /* Ajuste para telas muito pequenas */
+        font-size: 0.9rem; 
     }
 
     .main-section {
-        padding-left: 5vw; /* Usa a largura da viewport para manter o alinhamento */
+        padding-left: 5vw; 
     }
 }

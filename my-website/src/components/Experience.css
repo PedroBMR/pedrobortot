@@ -72,7 +72,7 @@
   /* Responsive Design */
   @media (max-width: 768px) {
   .experience-container {
-    grid-template-columns: 1fr; /* Ajusta para uma coluna em telas menores */
+    grid-template-columns: 1fr;
   }
 
   .experience-item h3 {

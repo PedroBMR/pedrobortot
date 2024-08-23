@@ -1,4 +1,3 @@
-// Skills.js
 import React from 'react';
 import './Skills.css';
 import unityIcon from '../components/assets/tech-icons/unity.svg';
@@ -7,10 +6,8 @@ import blenderIcon from '../components/assets/tech-icons/blender.svg';
 import photoshopIcon from '../components/assets/tech-icons/photoshop.svg';
 import unrealEngineIcon from '../components/assets/tech-icons/unreal-engine.svg';
 import cppIcon from '../components/assets/tech-icons/cpp.svg';
-import vrIcon from '../components/assets/tech-icons/vr.svg';
 import mayaIcon from '../components/assets/tech-icons/maya.svg';
 import max3dsIcon from '../components/assets/tech-icons/3dsmax.svg';
-import androidIcon from '../components/assets/tech-icons/android.svg';
 import substancepainter from '../components/assets/tech-icons/substance-painter.svg';
 import gamemaker from '../components/assets/tech-icons/game_maker.svg';
 import AdobeI from '../components/assets/tech-icons/AI.svg';
@@ -19,9 +16,6 @@ import AfterE from '../components/assets/tech-icons/AE.svg';
 import git from '../components/assets/tech-icons/github.svg';
 import react from '../components/assets/tech-icons/react.svg';
 import godot from '../components/assets/tech-icons/Godot_icon.png';
-
-
-// Import other skill icons as needed
 
 function Skills() {
   return (
