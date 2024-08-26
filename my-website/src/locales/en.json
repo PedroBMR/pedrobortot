@@ -8,7 +8,7 @@
     "title": "About Me",
     "paragraphs": [
       "I am an aspiring game designer passionate about creating immersive worlds and storytelling experiences. With a career that bridges game design, narrative development, and educational technology, I specialize in mechanics, 3D modeling, and programming, particularly in C# and C++.",
-      "As the founder of Arcadia Realms, I am currently developing an MMORPG designed to unite players through shared adventures and rich narratives. Throughout my career, I have been involved in a variety of innovative projects, including 'Faces de Charlie,' 'Where Dragons Dwell VR,' and 'Virtualização Parque Tecnológico.",
+      "Throughout my career, I have been involved in a variety of innovative projects, including 'Faces de Charlie,' and 'Where Dragons Dwell VR'.",
       "Beyond my professional life, I am deeply invested in hobbies like 3D printing, playing Dungeons & Dragons, and exploring a wide variety of digital games. I am always eager to learn and grow, currently expanding my skills in QA, React, and more, with the goal of creating games that entertain and bring people together through shared experiences."
     ]
   },
@@ -97,10 +97,6 @@
       {
         "title": "Where Dragons Dwell VR",
         "description": "An immersive virtual reality experience where players explore a world dominated by dragons. In this project, players are thrust into a richly detailed VR environment filled with mythical creatures and ancient landscapes. The game is designed to fully engage the player with dynamic interactions and a deep narrative, where every decision impacts the unfolding story. Explore vast terrains, uncover hidden secrets, and battle dragons in a world where your choices matter."
-      },
-      {
-        "title": "Virtualização Parque Tecnológico",
-        "description": "A project focused on creating an interactive virtual environment for the visualization and management of a technological park. This project aims to develop a highly interactive virtual space that allows users to explore and manage a technological park. The environment is designed to provide a comprehensive view of the park's infrastructure, facilitating planning, decision-making, and operational management. Users can navigate through the virtual space, interact with different elements, and gain insights into the park's functionalities, making it an invaluable tool for both management and presentation purposes."
       },
       {
         "title": "X-TAON",

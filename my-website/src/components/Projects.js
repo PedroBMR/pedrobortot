@@ -4,14 +4,11 @@ import unityIcon from '../components/assets/tech-icons/unity.svg';
 import csharpIcon from '../components/assets/tech-icons/csharp.svg';
 import blenderIcon from '../components/assets/tech-icons/blender.svg';
 import photoshopIcon from '../components/assets/tech-icons/photoshop.svg';
-import unrealEngineIcon from '../components/assets/tech-icons/unreal-engine.svg';
-import cppIcon from '../components/assets/tech-icons/cpp.svg';
 import vrIcon from '../components/assets/tech-icons/vr.svg';
 import mayaIcon from '../components/assets/tech-icons/maya.svg';
 import max3dsIcon from '../components/assets/tech-icons/3dsmax.svg';
 import androidIcon from '../components/assets/tech-icons/android.svg';
 import substancepainter from '../components/assets/tech-icons/substance-painter.svg';
-import virtualizacaoParqueTecnologicoImage from '../components/assets/virtualizacao_parque_tecnologico.jpg';
 import xtaon from '../components/assets/xtaon.jpg';
 import litterman from '../components/assets/Litterman.jpg';
 import { useTranslation } from 'react-i18next'; // Importa o hook de tradução
@@ -63,22 +60,6 @@ function Projects() {
           <p>{t('projects.list.2.description')}</p>
         </div>
       ),
-      image: virtualizacaoParqueTecnologicoImage,
-      tech: [
-        { name: "Unreal Engine", icon: unrealEngineIcon },
-        { name: "C++", icon: cppIcon },
-        { name: "Blender", icon: blenderIcon },
-        { name: "Substance Painter", icon: substancepainter },
-      ],
-      reverse: false,
-    },
-    {
-      title: t('projects.list.3.title'),
-      description: (
-        <div>
-          <p>{t('projects.list.3.description')}</p>
-        </div>
-      ),
       image: xtaon,
       tech: [
         { name: "Substance Painter", icon: substancepainter },
@@ -86,10 +67,10 @@ function Projects() {
       reverse: true,
     },
     {
-      title: t('projects.list.4.title'),
+      title: t('projects.list.3.title'),
       description: (
         <div>
-          <p>{t('projects.list.4.description')}</p>
+          <p>{t('projects.list.3.description')}</p>
         </div>
       ),
       image: litterman,

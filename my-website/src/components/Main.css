@@ -6,12 +6,12 @@
 }
 .language-selector {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     padding: 10px;
     position: absolute;
     top: 10px;
-    right: 10px;
-    z-index: 10; /* Garante que as bandeiras fiquem no topo */
+    left: 10px;
+    z-index: 10;
     overflow: hidden;
 }
 
@@ -25,14 +25,15 @@
 }
 
 .flag-icon {
-    width: 30px;
-    height: 20px;
+    width: 60px;
+    height: 40px;
     display: block;
     transition: transform 0.3s ease;
     overflow: hidden;
+    border-radius: 5px;
 }
 
-.flag-button:hover .flag-icon {
+.flag-button:hover  {
     transform: scale(1.1);
     overflow: hidden;
 }

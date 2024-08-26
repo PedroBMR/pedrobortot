@@ -2,17 +2,17 @@ import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import './Main.css';
 import BackgroundVideo from './BackgroundVideo';
-import { useTranslation } from 'react-i18next'; // Importa o hook de tradução
+import { useTranslation } from 'react-i18next'; 
 import flagEn from '../components/assets/flags/flag_en.png';
 import flagPt from '../components/assets/flags/flag_pt.png';
 
 function Main() {
-  const { t, i18n } = useTranslation(); // Acessa a função t para usar traduções
+  const { t, i18n } = useTranslation(); 
   const typedElement = useRef(null);
 
   useEffect(() => {
     const typed = new Typed(typedElement.current, {
-      strings: t('main.titles', { returnObjects: true }), // Usando as traduções das strings
+      strings: t('main.titles', { returnObjects: true }), 
       startDelay: 300,
       typeSpeed: 100,
       backSpeed: 50,
@@ -25,7 +25,7 @@ function Main() {
     return () => {
       typed.destroy();
     };
-  }, [t]); // Dependência de t para atualizar as strings quando o idioma mudar
+  }, [t]); 
 
   const handleScroll = () => {
     const aboutSection = document.getElementById('about');
@@ -51,11 +51,11 @@ function Main() {
           </button>
         </div>
         <div className="content">
-          <p className="greeting">{t('main.greeting')}</p> {/* Saudação traduzida */}
+          <p className="greeting">{t('main.greeting')}</p> 
           <h2>
-            <div className="p1">{t('main.intro1')}</div> {/* Introdução traduzida */}
+            <div className="p1">{t('main.intro1')}</div> 
             <div className="p2">
-              <span ref={typedElement}></span> {/* Texto animado */}
+              <span ref={typedElement}></span> 
             </div>
           </h2>
         </div>

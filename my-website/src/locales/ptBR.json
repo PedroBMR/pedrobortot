@@ -8,7 +8,7 @@
       "title": "Sobre Mim",
       "paragraphs": [
         "Sou um aspirante a designer de jogos apaixonado por criar mundos imersivos e experiências de narrativa.",
-        "Como fundador da Arcadia Realms, estou desenvolvendo um MMORPG projetado para unir jogadores através de aventuras compartilhadas e narrativas ricas.",
+        "Ao longo da minha carreira, estive envolvido em uma variedade de projetos inovadores, incluindo 'Faces de Charlie' e 'Where Dragons Dwell VR'.",
         "Além da minha vida profissional, estou profundamente envolvido em hobbies como impressão 3D, jogar Dungeons & Dragons e explorar uma variedade de jogos digitais. Estou sempre disposto a aprender e crescer, atualmente expandindo minhas habilidades em QA, React, e mais, com o objetivo de criar jogos que entretenham e reúnam pessoas através de experiências compartilhadas."
       ]
     },
@@ -97,10 +97,6 @@
         {
           "title": "Where Dragons Dwell VR",
           "description": "Uma experiência imersiva de realidade virtual onde os jogadores exploram um mundo dominado por dragões. Neste projeto, os jogadores são lançados em um ambiente de VR ricamente detalhado, cheio de criaturas míticas e paisagens antigas. O jogo foi projetado para envolver totalmente o jogador com interações dinâmicas e uma narrativa profunda, onde cada decisão impacta a história que se desenrola. Explore vastos terrenos, descubra segredos ocultos e enfrente dragões em um mundo onde suas escolhas importam."
-        },
-        {
-          "title": "Virtualização Parque Tecnológico",
-          "description": "Um projeto focado na criação de um ambiente virtual interativo para a visualização e gestão de um parque tecnológico. Desenvolvi este projeto com o objetivo de criar um espaço virtual altamente interativo que permite aos usuários explorar e gerenciar um parque tecnológico. O ambiente é projetado para fornecer uma visão abrangente da infraestrutura do parque, facilitando o planejamento, a tomada de decisões e a gestão operacional. Os usuários podem navegar pelo espaço virtual, interagir com diferentes elementos e obter insights sobre as funcionalidades do parque, tornando-o uma ferramenta inestimável para gestão e apresentação."
         },
         {
           "title": "X-TAON",
