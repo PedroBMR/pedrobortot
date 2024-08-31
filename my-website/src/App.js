@@ -19,7 +19,7 @@ function App() {
       <Experience />      
       <Projects />        
       <Courses />   
-      <DownloadResume />              
+                   
     </div>
   );
 }
