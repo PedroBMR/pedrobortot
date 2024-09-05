@@ -126,7 +126,11 @@
           "provider": "Alura",
           "date": "Concluído em Fevereiro de 2023"
         }
-      ]
+      ],
+      "certificatesAlura": {
+        "text": "Certificados Alura",
+        "link": "https://cursos.alura.com.br/user/pedroluizbmr0/fullCertificate/0bf058a3f2d525b48e2bbe521140755d"
+      }
     },
     "downloadResume": {
       "title": "Baixe Meu Currículo",

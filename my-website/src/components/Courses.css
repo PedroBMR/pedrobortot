@@ -29,6 +29,27 @@
   max-width: 1000px;
   margin: 0 auto;
 }
+.certificates-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.certificate-link {
+  padding: 15px 30px;
+  background-color: #3498DB;
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.certificate-link:hover {
+  background-color: #2980B9;
+}
+
 
 .course-item {
   padding: 20px;

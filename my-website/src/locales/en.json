@@ -12,28 +12,28 @@
       "Beyond my professional life, I am deeply invested in hobbies like 3D printing, playing Dungeons & Dragons, and exploring a wide variety of digital games. I am always eager to learn and grow, currently expanding my skills in QA, React, and more, with the goal of creating games that entertain and bring people together through shared experiences."
     ]
   },
-    "skills": {
-      "title": "My Skills",
-      "list": [
-        "Unity",
-        "Unreal Engine",
-        "Game Maker",
-        "Godot",
-        "Blender",
-        "3DS Max",
-        "Maya",
-        "Adobe Photoshop",
-        "Adobe Illustrator",
-        "Substance Painter",
-        "After Effects",
-        "Adobe Premiere",
-        "Adobe Photoshop",
-        "C#",
-        "C++",
-        "React",
-        "GitHub"
-      ]
-    },
+  "skills": {
+    "title": "My Skills",
+    "list": [
+      "Unity",
+      "Unreal Engine",
+      "Game Maker",
+      "Godot",
+      "Blender",
+      "3DS Max",
+      "Maya",
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Substance Painter",
+      "After Effects",
+      "Adobe Premiere",
+      "Adobe Photoshop",
+      "C#",
+      "C++",
+      "React",
+      "GitHub"
+    ]
+  },
   "experience": {
     "title": "Experience",
     "experiences": [
@@ -126,7 +126,11 @@
         "provider": "Alura",
         "date": "Completed February 2023"
       }
-    ]
+    ],
+    "certificatesAlura": {
+      "text": "Alura Certificates",
+      "link": "https://cursos.alura.com.br/user/pedroluizbmr0/fullCertificate/0bf058a3f2d525b48e2bbe521140755d"
+    }
   },
   "downloadResume": {
     "title": "Download My Resume",
