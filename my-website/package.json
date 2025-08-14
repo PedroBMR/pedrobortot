@@ -32,7 +32,8 @@
     "format": "prettier --write .",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -56,6 +57,14 @@
     "gh-pages": "^6.1.1",
     "eslint": "^8.57.0",
     "prettier": "^3.3.3",
-    "serve": "^14.2.0"
+    "serve": "^14.2.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.0.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,md}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   }
 }
