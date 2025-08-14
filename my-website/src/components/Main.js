@@ -43,11 +43,25 @@ function Main() {
       <BackgroundVideo />
       <div className="main-section">
         <div className="language-selector">
-          <button onClick={() => changeLanguage('en')} className="flag-button">
-            <img src={flagEn} alt="English" className="flag-icon" />
+          <button
+            type="button"
+            onClick={() => changeLanguage('en')}
+            className="flag-button"
+            aria-pressed={i18n.language === 'en'}
+            aria-label={t('language.english')}
+          >
+            <img src={flagEn} alt="" aria-hidden="true" className="flag-icon" />
+            EN
           </button>
-          <button onClick={() => changeLanguage('ptBR')} className="flag-button">
-            <img src={flagPt} alt="Português" className="flag-icon" />
+          <button
+            type="button"
+            onClick={() => changeLanguage('ptBR')}
+            className="flag-button"
+            aria-pressed={i18n.language === 'ptBR'}
+            aria-label={t('language.portuguese')}
+          >
+            <img src={flagPt} alt="" aria-hidden="true" className="flag-icon" />
+            PT
           </button>
         </div>
         <div className="content">
