@@ -34,6 +34,20 @@
 
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/pedroluiz.jpeg" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bg: 'var(--bg)',
+              fg: 'var(--fg)',
+              accent: 'var(--accent)',
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Pedro Bortot</title>
   </head>
   <body>
