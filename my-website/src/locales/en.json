@@ -4,6 +4,10 @@
     "intro1": "I'm Pedro Luiz,",
     "titles": ["an Aspiring Game Designer", "a 3D Enthusiast", "an Aspiring Level Designer", "an Educator", "a Storyteller", "a Gamer", "a Streamer"]
   },
+  "language": {
+    "english": "English",
+    "portuguese": "Portuguese"
+  },
   "about": {
     "title": "About Me",
     "paragraphs": [

@@ -20,13 +20,15 @@
     border: none;
     cursor: pointer;
     margin-left: 10px;
-    padding: 0;
-    overflow: hidden;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
 .flag-icon {
-    width: 60px;
-    height: 40px;
+    width: 24px;
+    height: 16px;
     display: block;
     transition: transform 0.3s ease;
     overflow: hidden;
@@ -36,6 +38,11 @@
 .flag-button:hover  {
     transform: scale(1.1);
     overflow: hidden;
+}
+
+.flag-button:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
 }
 
 

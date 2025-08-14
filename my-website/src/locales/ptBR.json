@@ -4,6 +4,10 @@
       "intro1": "Eu sou Pedro Luiz,",
       "titles": ["um Aspirante a Designer de Jogos", "um Entusiasta de 3D", "um Aspirante a Designer de Níveis", "um Educador", "um Contador de Histórias", "um Jogador", "um Streamer"]
     },
+    "language": {
+      "english": "Inglês",
+      "portuguese": "Português"
+    },
     "about": {
       "title": "Sobre Mim",
       "paragraphs": [
