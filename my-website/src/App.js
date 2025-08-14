@@ -7,11 +7,13 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Courses from './components/Courses';
 import DownloadResume from './components/DownloadResume';
+import Playground from './components/Playground';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      {false && <Playground />}
       <BackgroundVideo />
       <Main />
       <About />
