@@ -80,9 +80,9 @@ h2 {
     line-height: 1.2; 
     color: #fff;
     margin: 0; 
-    font-family: 'Blinker', sans-serif; 
+    font-family: 'Inter', sans-serif;
     overflow-x: hidden;
-}
+  }
 
 .p1, .p2 {
     display: block; 
