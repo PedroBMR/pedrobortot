@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Fira Sans', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: var(--bg);
+  color: var(--fg);
   overflow-x: hidden;
 }
 
