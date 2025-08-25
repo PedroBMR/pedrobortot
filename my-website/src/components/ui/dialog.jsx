@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { cn } from '../../lib/utils';
 
@@ -21,11 +21,25 @@ export function DialogTrigger({ children }) {
 
 export function DialogContent({ className = '', children }) {
   const { open, setOpen } = useContext(DialogContext);
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    if (open) {
+      contentRef.current?.focus();
+    }
+  }, [open]);
+
   if (!open) return null;
   return createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center">
       <div className="absolute inset-0 bg-bg/80" onClick={() => setOpen(false)} />
-      <div className={cn('relative z-10 w-full max-w-lg rounded-md bg-bg p-6 shadow-lg', className)}>
+      <div
+        ref={contentRef}
+        role="dialog"
+        aria-modal="true"
+        tabIndex="-1"
+        className={cn('relative z-10 w-full max-w-lg rounded-md bg-bg p-6 shadow-lg', className)}
+      >
         {children}
       </div>
     </div>,
