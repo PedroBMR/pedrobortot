@@ -12,7 +12,10 @@ export function Dialog({ children }) {
 export function DialogTrigger({ children }) {
   const { setOpen } = useContext(DialogContext);
   return React.cloneElement(children, {
-    onClick: () => setOpen(true),
+    onClick: (e) => {
+      children.props.onClick?.(e);
+      setOpen(true);
+    },
   });
 }
 
@@ -33,7 +36,10 @@ export function DialogContent({ className = '', children }) {
 export function DialogClose({ children }) {
   const { setOpen } = useContext(DialogContext);
   return React.cloneElement(children, {
-    onClick: () => setOpen(false),
+    onClick: (e) => {
+      children.props.onClick?.(e);
+      setOpen(false);
+    },
   });
 }
 
