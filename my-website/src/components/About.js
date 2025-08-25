@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, forwardRef } from 'react';
 import ScrollReveal from 'scrollreveal';
 import './About.css';
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 
-function About() {
+const About = forwardRef((props, ref) => {
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -26,7 +26,7 @@ function About() {
   }, []);
 
   return (
-    <section id="about" className="about-section">
+    <section id="about" ref={ref} className="about-section">
       <div className="about-container">
         <div className="about-content">
           <h2>{t('about.title')}</h2> {/* Título traduzido */}
@@ -51,6 +51,6 @@ function About() {
       </div>
     </section>
   );
-}
+});
 
 export default About;

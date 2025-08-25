@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import Main from './components/Main';
 import About from './components/About';
@@ -12,6 +12,7 @@ import './App.css';
 
 function App() {
   const { t } = useTranslation();
+  const aboutRef = useRef(null);
 
   return (
     <div className="App">
@@ -28,8 +29,8 @@ function App() {
       </header>
       <main id="conteudo">
         {false && <Playground />}
-        <Main />
-        <About />
+        <Main aboutRef={aboutRef} />
+        <About ref={aboutRef} />
         <Skills />
         <Experience />
         <Projects />

@@ -6,8 +6,8 @@ import { useTranslation } from 'react-i18next';
 import flagEn from '../components/assets/flags/flag_en.png';
 import flagPt from '../components/assets/flags/flag_pt.png';
 
-function Main() {
-  const { t, i18n } = useTranslation(); 
+function Main({ aboutRef }) {
+  const { t, i18n } = useTranslation();
   const typedElement = useRef(null);
 
   useEffect(() => {
@@ -28,9 +28,8 @@ function Main() {
   }, [t]); 
 
   const handleScroll = () => {
-    const aboutSection = document.getElementById('about');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    if (aboutRef?.current) {
+      aboutRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
