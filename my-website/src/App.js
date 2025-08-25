@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Main from './components/Main';
-import BackgroundVideo from './components/BackgroundVideo';
 import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
@@ -29,7 +28,6 @@ function App() {
       </header>
       <main id="conteudo">
         {false && <Playground />}
-        <BackgroundVideo />
         <Main />
         <About />
         <Skills />
