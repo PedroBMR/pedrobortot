@@ -2,9 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import './Main.css';
 import BackgroundVideo from './BackgroundVideo';
-import { useTranslation } from 'react-i18next'; 
+import { useTranslation } from 'react-i18next';
 import flagEn from '../components/assets/flags/flag_en.png';
 import flagPt from '../components/assets/flags/flag_pt.png';
+import arrow from '../components/assets/tech-icons/arrow.svg';
 
 function Main({ aboutRef }) {
   const { t, i18n } = useTranslation();
@@ -73,7 +74,7 @@ function Main({ aboutRef }) {
           </h2>
         </div>
         <div className="scroll-down-indicator" onClick={handleScroll}>
-          <img src={require('../components/assets/tech-icons/arrow.svg').default} alt="Scroll Down" className="arrow" />
+          <img src={arrow} alt="Scroll Down" className="arrow" />
         </div>
       </div>
     </div>

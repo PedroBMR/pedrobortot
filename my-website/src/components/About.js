@@ -3,6 +3,7 @@ import ScrollReveal from 'scrollreveal';
 import './About.css';
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
+import pedroluiz from './assets/pedroluiz.jpeg';
 
 const About = forwardRef((props, ref) => {
   const { t } = useTranslation();
@@ -46,7 +47,7 @@ const About = forwardRef((props, ref) => {
           </div>
         </div>
         <div className="about-image">
-          <img src={require('./assets/pedroluiz.jpeg')} alt="Pedro Luiz" />
+          <img src={pedroluiz} alt="Pedro Luiz" />
         </div>
       </div>
     </section>
