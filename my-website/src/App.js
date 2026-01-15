@@ -1,40 +1,40 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Main from './components/Main';
 import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
-import Courses from './components/Courses';
+import Contact from './components/Contact';
 import DownloadResume from './components/DownloadResume';
 import Playground from './components/Playground';
 import './App.css';
 
 function App() {
   const { t } = useTranslation();
-  const aboutRef = useRef(null);
 
   return (
     <div className="App">
       <header>
         <nav>
           <ul>
-            <li><a href="#about">{t('about.title')}</a></li>
-            <li><a href="#skills">{t('skills.title')}</a></li>
-            <li><a href="#experience">{t('experience.title')}</a></li>
-            <li><a href="#projects">{t('projects.title')}</a></li>
-            <li><a href="#courses">{t('courses.title')}</a></li>
+            <li><a href="#home">{t('nav.home')}</a></li>
+            <li><a href="#projects">{t('nav.projects')}</a></li>
+            <li><a href="#skills">{t('nav.skills')}</a></li>
+            <li><a href="#about">{t('nav.about')}</a></li>
+            <li><a href="#experience">{t('nav.experience')}</a></li>
+            <li><a href="#contact">{t('nav.contact')}</a></li>
           </ul>
         </nav>
       </header>
       <main id="conteudo">
         {false && <Playground />}
-        <Main aboutRef={aboutRef} />
-        <About ref={aboutRef} />
-        <Skills />
-        <Experience />
+        <Main />
         <Projects />
-        <Courses />
+        <Skills />
+        <About />
+        <Experience />
+        <Contact />
       </main>
       <footer>
         <DownloadResume />

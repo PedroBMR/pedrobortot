@@ -22,6 +22,33 @@ a {
   overflow-x: hidden;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(11, 15, 20, 0.9);
+  backdrop-filter: blur(8px);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 16px;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--fg);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
