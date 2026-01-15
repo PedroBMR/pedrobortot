@@ -24,17 +24,37 @@ npm run dev
 
 ## Deploy no GitHub Pages (custom domain)
 
-Este projeto publica automaticamente no GitHub Pages a cada push na branch `main` usando GitHub Actions.
+Este projeto publica manualmente no GitHub Pages usando a branch `gh-pages` com o conteúdo estático gerado pelo build.
 
-### Passos necessários
+### Configuração do GitHub Pages
 
-1. **Configurar o domínio customizado no repositório**
-   - Vá em **Settings → Pages** e informe o domínio `pedrobortot.com.br`.
-   - Garanta que o GitHub Pages esteja habilitado para o branch do workflow.
+1. Vá em **Settings → Pages**.
+2. Em **Build and deployment**, selecione:
+   - **Source**: *Deploy from a branch*
+   - **Branch**: `gh-pages`
+   - **Folder**: `/(root)`
+3. Em **Custom domain**, informe `pedrobortot.com.br`.
 
-2. **Configurar o DNS do domínio**
-   - Crie/atualize registros DNS apontando para o GitHub Pages.
-   - Consulte a documentação oficial para os registros A/AAAA e CNAME corretos.
+### Configurar o DNS do domínio
+
+- Crie/atualize registros DNS apontando para o GitHub Pages.
+- Consulte a documentação oficial para os registros A/AAAA e CNAME corretos.
+
+### Como publicar manualmente no `gh-pages`
+
+1. Gere o build localmente:
+
+```bash
+cd my-website
+npm install
+npm run build
+```
+
+2. Publique o conteúdo do build na branch `gh-pages`:
+
+```bash
+git subtree push --prefix my-website/build origin gh-pages
+```
 
 ### Observações
 
