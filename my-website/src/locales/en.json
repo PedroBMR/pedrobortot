@@ -1,143 +1,218 @@
 {
-  "main": {
-    "greeting": "Hi there!",
-    "intro1": "I'm Pedro Luiz,",
-    "titles": ["an Aspiring Game Designer", "a 3D Enthusiast", "an Aspiring Level Designer", "an Educator", "a Storyteller", "a Gamer", "a Streamer"]
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "skills": "QA Skills",
+    "about": "About",
+    "experience": "Experience",
+    "contact": "Contact"
   },
   "language": {
     "english": "English",
     "portuguese": "Portuguese"
   },
-  "about": {
-    "title": "About Me",
-    "paragraphs": [
-      "I am an aspiring game designer passionate about creating immersive worlds and storytelling experiences. With a career that bridges game design, narrative development, and educational technology, I specialize in mechanics, 3D modeling, and programming, particularly in C# and C++.",
-      "Throughout my career, I have been involved in a variety of innovative projects, including 'Faces de Charlie,' and 'Where Dragons Dwell VR'.",
-      "Beyond my professional life, I am deeply invested in hobbies like 3D printing, playing Dungeons & Dragons, and exploring a wide variety of digital games. I am always eager to learn and grow, currently expanding my skills in QA, React, and more, with the goal of creating games that entertain and bring people together through shared experiences."
+  "home": {
+    "hero": {
+      "title": "Junior QA | Manual Tester (Web) • API (basic) • SQL (basic)",
+      "subtitle": [
+        "Career transition into QA with hands-on practice in manual testing for web applications.",
+        "I document bugs with clear steps, focusing on results and business rule validation.",
+        "Currently learning API testing with Postman and basic SQL for data validation."
+      ],
+      "ctaPrimary": "View Projects",
+      "ctaSecondary": "Download CV"
+    },
+    "highlights": {
+      "title": "Main focus",
+      "items": [
+        {
+          "title": "Manual Testing (Web)",
+          "description": "I design test cases, run exploratory checks, and validate business rules."
+        },
+        {
+          "title": "API Testing (basic)",
+          "description": "I validate endpoints in Postman, checking status codes and payloads."
+        },
+        {
+          "title": "SQL (basic) / Data validation",
+          "description": "I run simple queries to check consistency and integrity."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Want to see practical examples?",
+      "description": "Review projects with documented evidence and clear learnings.",
+      "buttonText": "View Projects"
+    }
+  },
+  "projects": {
+    "title": "Projects (Case Studies)",
+    "labels": {
+      "scope": "Scope",
+      "tools": "Tools",
+      "evidence": "Evidence",
+      "learnings": "Learnings"
+    },
+    "items": [
+      {
+        "title": "Case Study: QA Portfolio (testing this website)",
+        "objective": "Validate usability, content consistency, and correct behavior across key sections.",
+        "scope": [
+          "Functional tests for navigation anchors",
+          "Responsiveness checks on desktop and mobile",
+          "Content review (PT/EN) and external links"
+        ],
+        "tools": ["Manual checklist", "Browser DevTools", "Bug spreadsheet"],
+        "evidence": [
+          "/qa/test-cases.md",
+          "/qa/bug-report.md",
+          "/qa/checklist-regression.md"
+        ],
+        "learnings": [
+          "Organized test cases by section for better traceability.",
+          "Prioritized bugs by impact and observed frequency.",
+          "Improved checks on navigation and critical content."
+        ]
+      },
+      {
+        "title": "Case Study: API Testing (Postman collection)",
+        "objective": "Test REST endpoints to validate contracts and expected responses.",
+        "scope": [
+          "Status code and payload validation",
+          "Required fields checks",
+          "Positive and negative scenarios"
+        ],
+        "tools": ["Postman (basic)", "JSON", "Collections and environments"],
+        "evidence": [
+          "/qa/postman-collection.json",
+          "/qa/api-test-cases.md"
+        ],
+        "learnings": [
+          "Structured collections and environments for repeatable tests.",
+          "Documented payload validations focusing on required fields.",
+          "Added negative scenarios for minimum coverage."
+        ]
+      },
+      {
+        "title": "Case Study: SQL Checks (data validation)",
+        "objective": "Validate a simple database to ensure consistency and basic rules.",
+        "scope": [
+          "Count and duplicate checks",
+          "Mandatory field verification",
+          "Basic relationship validation"
+        ],
+        "tools": ["SQL (basic)", "SELECT, WHERE, JOIN"],
+        "evidence": [
+          "/qa/sql-checks.sql",
+          "/qa/sql-validations.md"
+        ],
+        "learnings": [
+          "Gained practice with simple validation queries.",
+          "Logged data inconsistencies in a clear way.",
+          "Reinforced the value of basic integrity rules."
+        ]
+      }
     ]
   },
   "skills": {
-    "title": "My Skills",
-    "list": [
-      "Unity",
-      "Unreal Engine",
-      "Game Maker",
-      "Godot",
-      "Blender",
-      "3DS Max",
-      "Maya",
-      "Adobe Photoshop",
-      "Adobe Illustrator",
-      "Substance Painter",
-      "After Effects",
-      "Adobe Premiere",
-      "C#",
-      "C++",
-      "React",
-      "GitHub"
-    ]
-  },
-  "experience": {
-    "title": "Experience",
-    "experiences": [
+    "title": "QA Skills",
+    "categories": [
       {
-        "title": "Project Manager",
-        "company": "Universidade do Vale do Itajaí",
-        "duration": "August 2017 - December 2017",
-        "description": "Managed a college project during an internship for the university."
+        "title": "Manual Testing (Web)",
+        "items": [
+          "Test case design — practicing",
+          "Exploratory testing — practicing",
+          "Business rule validation — practicing",
+          "Bug reporting — practicing"
+        ]
       },
       {
-        "title": "UI/UX Intern",
-        "company": "Tentáculo",
-        "duration": "February 2020 - April 2020",
-        "description": "Involved in the design and development of user interfaces and user experiences, focusing on optimizing interaction and visual appeal for gaming applications."
+        "title": "API Testing",
+        "items": [
+          "Postman — basic",
+          "Status codes and payloads — basic",
+          "Positive/negative scenarios — basic"
+        ]
       },
       {
-        "title": "Layout Designer",
-        "company": "HUNER",
-        "duration": "May 2020 - December 2020",
-        "description": "Responsible for the layout and visual aspects of digital content, applying design principles to ensure readability and user engagement. Utilized various software tools to create aesthetically pleasing and functional designs, improving content delivery and user satisfaction."
+        "title": "SQL",
+        "items": [
+          "SELECT, WHERE — basic",
+          "Simple JOINs — basic",
+          "Data validation — basic"
+        ]
       },
       {
-        "title": "Head of Scenery and Props Section",
-        "company": "Department of Education",
-        "duration": "April 2021 - July 2022",
-        "description": "Led the creation of educational videos and 3D-printed tools to enhance learning. Developed a tablet-based game for classrooms, integrating gamification into education."
-      },
-      {
-        "title": "Head of Projects Section",
-        "company": "Department of Science, Technology, and Innovation",
-        "duration": "July 2022 - July 2023",
-        "description": "Oversaw innovative projects, including VR applications, and managed the 3D Printing Lab, reducing costs and improving service delivery."
-      },
-      {
-        "title": "Professor",
-        "company": "Mk Academy",
-        "duration": "April 2023 - November 2023",
-        "description": "As a professor at Mk Academy, I taught subjects such as Pro Player in Valorant and COD: Modern Warfare, as well as Game Art classes, where students learned to use tools for developing 2D and 3D game art."
-      },
-      {
-        "title": "Infrastructure Sector Advisor",
-        "company": "Department of Science, Technology, and Innovation",
-        "duration": "July 2023 - Present",
-        "description": "Led key projects and managed the city's technological infrastructure, ensuring effective system implementation and maintenance."
-      },
-      {
-        "title": "English Language Teacher",
-        "company": "Fisk",
-        "duration": "August 2024 - Present",
-        "description": "Currently teaching English language classes to students of varying proficiency levels in an in-person setting."
-      }
-    ]
-  },
-  "projects": {
-    "title": "My Projects",
-    "list": [
-      {
-        "title": "Faces de Charlie",
-        "description": "An innovative project that explores the various facets of a character in a dynamic narrative environment. Developed with the goal of creating an immersive game that offers multiple narratives and decisions, directly influencing the characters' fates."
-      },
-      {
-        "title": "Where Dragons Dwell VR",
-        "description": "An immersive virtual reality experience where players explore a world dominated by dragons. In this project, players are thrust into a richly detailed VR environment filled with mythical creatures and ancient landscapes. The game is designed to fully engage the player with dynamic interactions and a deep narrative, where every decision impacts the unfolding story. Explore vast terrains, uncover hidden secrets, and battle dragons in a world where your choices matter."
-      },
-      {
-        "title": "X-TAON",
-        "description": "This project features my final renders for the Allegorithmic X-TAON contest. The piece is now complete, and I'm thrilled to present the finished work. Check out the detailed textures and intricate designs that bring this render to life."
-      },
-      {
-        "title": "Litterman",
-        "description": "Litterman is a quirky and challenging game developed for Mini Jam 153: Fishing! In this game, you play as a tiny magnetic character on a mission to fish for trash and earn money to pay his bills. The game presents a unique twist on the fishing genre, focusing on environmental cleanup rather than the usual fish-catching gameplay. Unfortunately, due to time constraints, the game wasn't fully completed before the jam's deadline. As a result, the game currently lacks sound, and there is a bug on Day 2 that makes ascending more difficult, though still possible. Despite these challenges, Litterman offers a fun and engaging experience, and we sincerely appreciate everyone who takes the time to play it."
-      }
-    ]
-  },
-  "courses": {
-    "title": "Courses & Certifications",
-    "list": [
-      {
-        "title": "Bachelor's Degree in Game Design",
-        "provider": "Univali",
-        "date": "2016 - 2020"
-      },
-      {
-        "title": "Blender Training",
-        "provider": "Alura",
-        "date": "Completed February 2023"
-      },
-      {
-        "title": "Props for Games Training",
-        "provider": "Alura",
-        "date": "Completed February 2023"
+        "title": "Tools",
+        "items": [
+          "Git/GitHub — basic",
+          "Test spreadsheets — practicing",
+          "Bug documentation — practicing"
+        ]
       }
     ],
-    "certificatesAlura": {
-      "text": "Alura Certificates",
-      "link": "https://cursos.alura.com.br/user/pedroluizbmr0/fullCertificate/0bf058a3f2d525b48e2bbe521140755d"
+    "process": {
+      "title": "How I work",
+      "steps": [
+        "Understand requirements and main flows.",
+        "Break scope into simple test cases.",
+        "Execute functional and exploratory tests.",
+        "Report bugs with clear steps and evidence.",
+        "Review results and suggest improvements."
+      ]
+    }
+  },
+  "about": {
+    "title": "About",
+    "summary": "I’m transitioning into QA, focused on manual testing for web applications and business rule validation. Clear documentation, direct communication, and attention to detail are part of my daily work habits.",
+    "labels": {
+      "highlights": "Highlights"
+    },
+    "highlights": [
+      "Attention to detail and consistency",
+      "Clear test and bug documentation",
+      "Analytical approach to investigating issues"
+    ],
+    "studies": {
+      "title": "Current studies",
+      "items": [
+        "Manual testing for web applications",
+        "Postman for API testing (basic)",
+        "Basic SQL for data validation"
+      ]
+    }
+  },
+  "experience": {
+    "title": "Experience (transferable skills)",
+    "items": [
+      {
+        "role": "Projects and documentation",
+        "description": "I organized processes, documented steps, and maintained activity traceability."
+      },
+      {
+        "role": "Education and training",
+        "description": "I explained concepts, guided activities, and structured content clearly."
+      },
+      {
+        "role": "Coordination and management",
+        "description": "I tracked tasks, deadlines, and continuous improvement with teams."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "cta": "Available for Junior QA roles",
+    "description": "Let’s talk about QA opportunities and manual testing work.",
+    "buttons": {
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "cv": "CV"
     }
   },
   "downloadResume": {
     "title": "Download My Resume",
     "description": "Click the button below to download a PDF version of my resume.",
-    "buttonText": "Download Resume"
+    "buttonText": "Download CV"
   }
 }

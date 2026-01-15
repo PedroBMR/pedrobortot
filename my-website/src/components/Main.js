@@ -1,45 +1,24 @@
-import React, { useEffect, useRef } from 'react';
-import Typed from 'typed.js';
+import React from 'react';
 import './Main.css';
 import BackgroundVideo from './BackgroundVideo';
 import { useTranslation } from 'react-i18next';
 import flagEn from '../components/assets/flags/flag_en.png';
 import flagPt from '../components/assets/flags/flag_pt.png';
-import arrow from '../components/assets/tech-icons/arrow.svg';
+import resumeEn from '../components/assets/resume_en.pdf';
+import resumePt from '../components/assets/resume_pt.pdf';
 
-function Main({ aboutRef }) {
+function Main() {
   const { t, i18n } = useTranslation();
-  const typedElement = useRef(null);
-
-  useEffect(() => {
-    const typed = new Typed(typedElement.current, {
-      strings: t('main.titles', { returnObjects: true }), 
-      startDelay: 300,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 1500,
-      loop: true,
-      showCursor: true,
-      cursorChar: '|',
-    });
-
-    return () => {
-      typed.destroy();
-    };
-  }, [t]); 
-
-  const handleScroll = () => {
-    if (aboutRef?.current) {
-      aboutRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const subtitleLines = t('home.hero.subtitle', { returnObjects: true });
+  const highlights = t('home.highlights.items', { returnObjects: true });
+  const resumeFile = i18n.language === 'ptBR' ? resumePt : resumeEn;
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
 
   return (
-    <div className="content-box">
+    <section id="home" className="content-box">
       <BackgroundVideo />
       <div className="main-section">
         <div className="language-selector">
@@ -64,20 +43,45 @@ function Main({ aboutRef }) {
             PT
           </button>
         </div>
+
         <div className="content">
-          <p className="greeting">{t('main.greeting')}</p> 
-          <h2>
-            <div className="p1">{t('main.intro1')}</div> 
-            <div className="p2">
-              <span ref={typedElement}></span> 
-            </div>
-          </h2>
+          <h1 className="hero-title">{t('home.hero.title')}</h1>
+          <div className="hero-subtitle">
+            {subtitleLines.map((line, index) => (
+              <p key={index}>{line}</p>
+            ))}
+          </div>
+          <div className="hero-cta">
+            <a className="primary-button" href="#projects">
+              {t('home.hero.ctaPrimary')}
+            </a>
+            <a className="secondary-button" href={resumeFile} download>
+              {t('home.hero.ctaSecondary')}
+            </a>
+          </div>
         </div>
-        <div className="scroll-down-indicator" onClick={handleScroll}>
-          <img src={arrow} alt="Scroll Down" className="arrow" />
+
+        <div className="highlights-section">
+          <h2>{t('home.highlights.title')}</h2>
+          <div className="highlights-grid">
+            {highlights.map((item, index) => (
+              <div className="highlight-card" key={index}>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="home-cta">
+          <h2>{t('home.cta.title')}</h2>
+          <p>{t('home.cta.description')}</p>
+          <a className="primary-button" href="#projects">
+            {t('home.cta.buttonText')}
+          </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

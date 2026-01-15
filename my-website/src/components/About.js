@@ -1,12 +1,13 @@
-import React, { useEffect, forwardRef } from 'react';
+import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 import './About.css';
-import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import pedroluiz from './assets/pedroluiz.jpeg';
 
-const About = forwardRef((props, ref) => {
+function About() {
   const { t } = useTranslation();
+  const highlights = t('about.highlights', { returnObjects: true });
+  const studies = t('about.studies.items', { returnObjects: true });
 
   useEffect(() => {
     ScrollReveal().reveal('.about-content', {
@@ -27,23 +28,28 @@ const About = forwardRef((props, ref) => {
   }, []);
 
   return (
-    <section id="about" ref={ref} className="about-section">
+    <section id="about" className="about-section">
       <div className="about-container">
         <div className="about-content">
-          <h2>{t('about.title')}</h2> {/* Título traduzido */}
-          <p>{t('about.paragraphs.0')}</p> {/* Primeiro parágrafo */}
-          <p>{t('about.paragraphs.1')}</p> {/* Segundo parágrafo */}
-          <p>{t('about.paragraphs.2')}</p> {/* Terceiro parágrafo */}
-          <div className="contact-icons">
-            <a href="mailto:pedroluizbmr@gmail.com" aria-label="Email" target="_blank" rel="noopener noreferrer">
-              <FaEnvelope size={40} />
-            </a>
-            <a href="https://www.linkedin.com/in/pedroluizbmr/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin size={40} />
-            </a>
-            <a href="https://github.com/PedroBMR" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-              <FaGithub size={40} />
-            </a>
+          <h2>{t('about.title')}</h2>
+          <p>{t('about.summary')}</p>
+
+          <div className="about-block">
+            <h3>{t('about.labels.highlights', { defaultValue: 'Diferenciais' })}</h3>
+            <ul>
+              {highlights.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="about-block">
+            <h3>{t('about.studies.title')}</h3>
+            <ul>
+              {studies.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
           </div>
         </div>
         <div className="about-image">
@@ -52,6 +58,6 @@ const About = forwardRef((props, ref) => {
       </div>
     </section>
   );
-});
+}
 
 export default About;
