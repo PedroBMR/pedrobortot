@@ -28,11 +28,15 @@ jobs:
           cache: npm
           cache-dependency-path: my-website/package-lock.json
 
-      - name: Force npm registry
-        run: npm config set registry https://registry.npmjs.org/
+      - name: Reset npm config and force registry
+        run: |
+          rm -f ~/.npmrc
+          rm -f my-website/.npmrc
+          rm -f .npmrc
+          npm config set registry https://registry.npmjs.org/
 
       - name: Install dependencies
-        run: npm ci --no-audit --no-fund --ignore-scripts
+        run: npm install --no-audit --no-fund --ignore-scripts
         working-directory: my-website
         env:
           NPM_CONFIG_REGISTRY: https://registry.npmjs.org/
@@ -40,6 +44,8 @@ jobs:
       - name: Build
         run: npm run build
         working-directory: my-website
+        env:
+          NPM_CONFIG_REGISTRY: https://registry.npmjs.org/
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
