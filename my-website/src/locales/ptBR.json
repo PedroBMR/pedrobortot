@@ -18,7 +18,7 @@
       "subtitle": [
         "Meu foco é usar tecnologia e IA para aprimorar processos e aplicações — não só automatizar, mas melhorar de verdade.",
         "Gosto de pegar um projeto e levá-lo do problema à execução, buscando inovação em cada etapa.",
-        "Essa visão vem da minha vivência entre gestão institucional, QA e produção criativa (game design, 3D, front-end)."
+        "Essa visão vem da minha vivência entre gestão institucional, validação de sistemas e produção criativa (game design, 3D, front-end)."
       ],
       "ctaPrimary": "Ver Destaques",
       "ctaSecondary": "Baixar CV"
@@ -31,8 +31,8 @@
           "description": "Coordenação de compras, fornecedores, prazos contratuais e conformidade em ambientes públicos e privados."
         },
         {
-          "title": "QA & Validação de Sistemas",
-          "description": "Testes manuais de UI e regras de negócio, validação de dados com SQL e checkpoints de qualidade antes de entregas."
+          "title": "Validação & Qualidade",
+          "description": "Testes manuais de UI e regras de negócio, validação de dados com SQL e checkpoints de qualidade antes de entregas — uma prática que levo para qualquer projeto."
         },
         {
           "title": "Design, 3D & Tecnologia",
@@ -56,7 +56,7 @@
     },
     "items": [
       {
-        "title": "QA: Testes deste próprio portfólio",
+        "title": "Testes deste próprio portfólio",
         "objective": "Validar usabilidade, consistência de conteúdo e funcionamento das seções principais.",
         "scope": [
           "Testes funcionais das âncoras de navegação",
@@ -65,9 +65,9 @@
         ],
         "tools": ["Checklist manual", "Browser DevTools", "Planilha de bugs"],
         "evidence": [
-          "/qa/test-cases.md",
-          "/qa/bug-report.md",
-          "/qa/checklist-regression.md"
+          { "label": "Casos de teste", "path": "/qa/test-cases.md" },
+          { "label": "Relatório de bugs", "path": "/qa/bug-report.md" },
+          { "label": "Checklist de regressão", "path": "/qa/checklist-regression.md" }
         ],
         "learnings": [
           "Organizei casos de teste por seção para facilitar rastreio.",
@@ -76,7 +76,7 @@
         ]
       },
       {
-        "title": "QA: Testes de API (coleção Postman)",
+        "title": "Testes de API (coleção Postman)",
         "objective": "Testar endpoints REST para validar contratos e respostas esperadas.",
         "scope": [
           "Testes de status codes e payload",
@@ -85,8 +85,8 @@
         ],
         "tools": ["Postman", "JSON", "Coleções e environments"],
         "evidence": [
-          "/qa/postman-collection.json",
-          "/qa/api-test-cases.md"
+          { "label": "Coleção Postman", "path": "/qa/postman-collection.json" },
+          { "label": "Casos de teste de API", "path": "/qa/api-test-cases.md" }
         ],
         "learnings": [
           "Estruturei coleções e ambientes para testes repetíveis.",
@@ -95,7 +95,7 @@
         ]
       },
       {
-        "title": "QA: Validação de dados com SQL",
+        "title": "Validação de dados com SQL",
         "objective": "Validar uma base de dados simples para garantir consistência e regras básicas — mesma lógica aplicada em produção no CONIMS.",
         "scope": [
           "Contagem e verificação de duplicidade",
@@ -104,8 +104,8 @@
         ],
         "tools": ["SQL", "SELECT, WHERE, JOIN"],
         "evidence": [
-          "/qa/sql-checks.sql",
-          "/qa/sql-validations.md"
+          { "label": "Script de validação SQL", "path": "/qa/sql-checks.sql" },
+          { "label": "Relatório de validações SQL", "path": "/qa/sql-validations.md" }
         ],
         "learnings": [
           "Consultas de validação aplicadas a cenários reais de auditoria.",
@@ -123,8 +123,8 @@
         ],
         "tools": ["Blender", "Game Design", "Impressão 3D"],
         "evidence": [
-          "Formação Blender e Blender Character Modeling For Beginners HD",
-          "Projeto de mascotes 3D usados em apresentações escolares"
+          { "label": "Formação Blender e Blender Character Modeling For Beginners HD" },
+          { "label": "Projeto de mascotes 3D usados em apresentações escolares" }
         ],
         "learnings": [
           "Base sólida de modelagem e narrativa aplicada a produtos digitais.",
@@ -142,7 +142,7 @@
         ],
         "tools": ["Adobe InDesign", "Illustrator", "Photoshop"],
         "evidence": [
-          "Redução de 15% no tempo médio de produção"
+          { "label": "Redução de 15% no tempo médio de produção" }
         ],
         "learnings": [
           "Otimização de processo editorial sob prazo apertado.",
@@ -164,7 +164,7 @@
         ]
       },
       {
-        "title": "QA & Validação Técnica",
+        "title": "Validação & Qualidade Técnica",
         "items": [
           "Certified Software Quality Engineer",
           "Testes manuais (UI e regras de negócio)",
@@ -352,7 +352,7 @@
   "contact": {
     "title": "Contato",
     "cta": "Aberto a conversas sobre tecnologia, processos e inovação",
-    "description": "Se quiser trocar uma ideia sobre projetos institucionais, QA, automação ou produção criativa, será um prazer conversar.",
+    "description": "Se quiser trocar uma ideia sobre projetos institucionais, tecnologia, automação ou produção criativa, será um prazer conversar.",
     "buttons": {
       "email": "Email",
       "linkedin": "LinkedIn",

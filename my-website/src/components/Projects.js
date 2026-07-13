@@ -3,10 +3,6 @@ import './Projects.css';
 import { useTranslation } from 'react-i18next';
 import { REPO_URL } from '../lib/config';
 
-function isLinkable(entry) {
-  return entry.startsWith('http') || entry.startsWith('/');
-}
-
 function resolveEvidenceLink(path) {
   if (path.startsWith('http')) {
     return path;
@@ -66,16 +62,16 @@ function Projects() {
               <ul className="project-links">
                 {project.evidence.map((entry, linkIndex) => (
                   <li key={linkIndex}>
-                    {isLinkable(entry) ? (
+                    {entry.path ? (
                       <a
-                        href={resolveEvidenceLink(entry)}
+                        href={resolveEvidenceLink(entry.path)}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        {entry}
+                        {entry.label}
                       </a>
                     ) : (
-                      <span className="evidence-note">{entry}</span>
+                      <span className="evidence-note">{entry.label}</span>
                     )}
                   </li>
                 ))}
