@@ -62,6 +62,25 @@
     },
     "items": [
       {
+        "title": "NozzleNote by BMR",
+        "objective": "App desktop local-first para gerenciar impressoras 3D: manutenções, histórico, peças, estoque e backups. Atualmente em preparação para Open Beta.",
+        "scope": [
+          "Onboarding guiado (8 telas) e tutorial in-app para os fluxos principais",
+          "Armazenamento 100% local em SQLite — sem conta, nuvem ou telemetria",
+          "Backup e exportação em JSON, com suporte bilíngue (PT-BR/EN)"
+        ],
+        "tools": ["Tauri", "Rust", "SQLite", "GitHub Actions"],
+        "evidence": [
+          { "label": "nozzlenote.com", "path": "https://nozzlenote.com" },
+          { "label": "Repositório privado (bmr-printcare)" }
+        ],
+        "learnings": [
+          "Estruturei um processo de release para desktop com controle rigoroso de versão (tag semver vs. versão numérica do instalador Windows).",
+          "Criei um pipeline de QA com checklist e validação manual antes de cada build pública.",
+          "Mantive compatibilidade com dados legados (nome interno anterior do projeto) sem quebrar backups existentes."
+        ]
+      },
+      {
         "title": "Testes deste próprio portfólio",
         "objective": "Validar usabilidade, consistência de conteúdo e funcionamento das seções principais.",
         "scope": [
