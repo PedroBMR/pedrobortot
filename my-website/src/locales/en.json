@@ -16,13 +16,19 @@
       "eyebrow": "Pato Branco, PR · Brazil",
       "title": "Technology, Process & Institutional Innovation",
       "subtitle": [
-        "I move between institutional process management, QA and creative production (game design, 3D, front-end).",
-        "I document clearly, validate business rules, and connect technology to day-to-day operations.",
-        "Game Design graduate with hands-on experience in public administration, QA and automation."
+        "My focus is using technology and AI to improve processes and applications — not just automating, but genuinely making things better.",
+        "I like taking a project from problem to execution, pushing for innovation at every step.",
+        "That mindset comes from my experience across institutional management, systems validation, and creative production (game design, 3D, front-end)."
       ],
       "ctaPrimary": "View Highlights",
       "ctaSecondary": "Download CV"
     },
+    "stats": [
+      { "value": 2017, "suffix": "", "label": "Career start" },
+      { "value": 9, "suffix": "", "label": "Organizations" },
+      { "value": 5, "suffix": "", "label": "Focus areas" },
+      { "value": 6, "suffix": "", "label": "Certifications" }
+    ],
     "highlights": {
       "title": "Main focus",
       "items": [
@@ -31,8 +37,8 @@
           "description": "Coordinating procurement, vendors, contractual deadlines, and compliance across public and private settings."
         },
         {
-          "title": "QA & Systems Validation",
-          "description": "Manual UI and business-rule testing, SQL data validation, and quality checkpoints before releases."
+          "title": "Validation & Quality",
+          "description": "Manual UI and business-rule testing, SQL data validation, and quality checkpoints before releases — a practice I bring to every project."
         },
         {
           "title": "Design, 3D & Technology",
@@ -56,7 +62,7 @@
     },
     "items": [
       {
-        "title": "QA: Testing this very portfolio",
+        "title": "Testing this very portfolio",
         "objective": "Validate usability, content consistency, and correct behavior across key sections.",
         "scope": [
           "Functional tests for navigation anchors",
@@ -65,9 +71,9 @@
         ],
         "tools": ["Manual checklist", "Browser DevTools", "Bug spreadsheet"],
         "evidence": [
-          "/qa/test-cases.md",
-          "/qa/bug-report.md",
-          "/qa/checklist-regression.md"
+          { "label": "Test cases", "path": "/qa/test-cases.md" },
+          { "label": "Bug report", "path": "/qa/bug-report.md" },
+          { "label": "Regression checklist", "path": "/qa/checklist-regression.md" }
         ],
         "learnings": [
           "Organized test cases by section for better traceability.",
@@ -76,7 +82,7 @@
         ]
       },
       {
-        "title": "QA: API Testing (Postman collection)",
+        "title": "API Testing (Postman collection)",
         "objective": "Test REST endpoints to validate contracts and expected responses.",
         "scope": [
           "Status code and payload validation",
@@ -85,8 +91,8 @@
         ],
         "tools": ["Postman", "JSON", "Collections and environments"],
         "evidence": [
-          "/qa/postman-collection.json",
-          "/qa/api-test-cases.md"
+          { "label": "Postman collection", "path": "/qa/postman-collection.json" },
+          { "label": "API test cases", "path": "/qa/api-test-cases.md" }
         ],
         "learnings": [
           "Structured collections and environments for repeatable tests.",
@@ -95,7 +101,7 @@
         ]
       },
       {
-        "title": "QA: SQL Data Validation",
+        "title": "SQL Data Validation",
         "objective": "Validate a simple database to ensure consistency and basic rules — the same logic applied in production at CONIMS.",
         "scope": [
           "Count and duplicate checks",
@@ -104,8 +110,8 @@
         ],
         "tools": ["SQL", "SELECT, WHERE, JOIN"],
         "evidence": [
-          "/qa/sql-checks.sql",
-          "/qa/sql-validations.md"
+          { "label": "SQL validation script", "path": "/qa/sql-checks.sql" },
+          { "label": "SQL validations report", "path": "/qa/sql-validations.md" }
         ],
         "learnings": [
           "Validation queries applied to real audit scenarios.",
@@ -123,8 +129,8 @@
         ],
         "tools": ["Blender", "Game Design", "3D Printing"],
         "evidence": [
-          "Blender training and Blender Character Modeling For Beginners HD",
-          "3D mascot project featured in school presentations"
+          { "label": "Blender training and Blender Character Modeling For Beginners HD" },
+          { "label": "3D mascot project featured in school presentations" }
         ],
         "learnings": [
           "Solid modeling and storytelling foundation applied to digital products.",
@@ -142,7 +148,7 @@
         ],
         "tools": ["Adobe InDesign", "Illustrator", "Photoshop"],
         "evidence": [
-          "15% reduction in average production time"
+          { "label": "15% reduction in average production time" }
         ],
         "learnings": [
           "Editorial process optimization under tight deadlines.",
@@ -164,7 +170,7 @@
         ]
       },
       {
-        "title": "QA & Technical Validation",
+        "title": "Validation & Technical Quality",
         "items": [
           "Certified Software Quality Engineer",
           "Manual testing (UI and business rules)",
@@ -352,7 +358,7 @@
   "contact": {
     "title": "Contact",
     "cta": "Open to conversations about technology, process, and innovation",
-    "description": "If you'd like to talk about institutional projects, QA, automation, or creative production, I'd be glad to chat.",
+    "description": "If you'd like to talk about institutional projects, technology, automation, or creative production, I'd be glad to chat.",
     "buttons": {
       "email": "Email",
       "linkedin": "LinkedIn",

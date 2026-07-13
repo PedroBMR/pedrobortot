@@ -6,6 +6,9 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import DownloadResume from './components/DownloadResume';
+import GlobalBackground from './components/GlobalBackground';
+import ScrollProgress from './components/ScrollProgress';
+import CustomCursor from './components/CustomCursor';
 import './App.css';
 
 function App() {
@@ -13,6 +16,9 @@ function App() {
 
   return (
     <div className="App">
+      <GlobalBackground />
+      <ScrollProgress />
+      <CustomCursor />
       <header>
         <nav>
           <ul>

@@ -30,6 +30,12 @@ header {
   backdrop-filter: blur(8px);
 }
 
+main,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
 nav ul {
   list-style: none;
   display: flex;

@@ -50,6 +50,10 @@ h6 {
   transform: translateY(0);
 }
 
+.tilt-card {
+  will-change: transform;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

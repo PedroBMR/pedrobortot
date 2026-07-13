@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
 import './Main.css';
 import HeroBackground from './HeroBackground';
+import StatsStrip from './StatsStrip';
+import Magnetic from './Magnetic';
+import Tilt from './Tilt';
 import { useTranslation } from 'react-i18next';
 import flagEn from '../components/assets/flags/flag_en.png';
 import flagPt from '../components/assets/flags/flag_pt.png';
@@ -71,12 +74,19 @@ function Main() {
             ))}
           </motion.div>
           <motion.div className="hero-cta" custom={0.3} variants={fadeUp}>
-            <a className="primary-button" href="#projects">
-              {t('home.hero.ctaPrimary')}
-            </a>
-            <a className="secondary-button" href={resumeFile} download>
-              {t('home.hero.ctaSecondary')}
-            </a>
+            <Magnetic>
+              <a className="primary-button" href="#projects">
+                {t('home.hero.ctaPrimary')}
+              </a>
+            </Magnetic>
+            <Magnetic>
+              <a className="secondary-button" href={resumeFile} download>
+                {t('home.hero.ctaSecondary')}
+              </a>
+            </Magnetic>
+          </motion.div>
+          <motion.div custom={0.4} variants={fadeUp}>
+            <StatsStrip />
           </motion.div>
         </motion.div>
 
@@ -84,9 +94,9 @@ function Main() {
           <h2>{t('home.highlights.title')}</h2>
           <div className="highlights-grid">
             {highlights.map((item, index) => (
-              <motion.div
+              <Tilt
                 className="highlight-card"
-                key={index}
+                key={item.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.4 }}
@@ -94,7 +104,7 @@ function Main() {
               >
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
-              </motion.div>
+              </Tilt>
             ))}
           </div>
         </div>

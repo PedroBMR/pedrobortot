@@ -1,11 +1,7 @@
-import { motion } from 'framer-motion';
 import './Projects.css';
+import Tilt from './Tilt';
 import { useTranslation } from 'react-i18next';
 import { REPO_URL } from '../lib/config';
-
-function isLinkable(entry) {
-  return entry.startsWith('http') || entry.startsWith('/');
-}
 
 function resolveEvidenceLink(path) {
   if (path.startsWith('http')) {
@@ -28,9 +24,9 @@ function Projects() {
       </div>
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <motion.article
+          <Tilt
             className="project-card"
-            key={index}
+            key={project.title}
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -66,16 +62,16 @@ function Projects() {
               <ul className="project-links">
                 {project.evidence.map((entry, linkIndex) => (
                   <li key={linkIndex}>
-                    {isLinkable(entry) ? (
+                    {entry.path ? (
                       <a
-                        href={resolveEvidenceLink(entry)}
+                        href={resolveEvidenceLink(entry.path)}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        {entry}
+                        {entry.label}
                       </a>
                     ) : (
-                      <span className="evidence-note">{entry}</span>
+                      <span className="evidence-note">{entry.label}</span>
                     )}
                   </li>
                 ))}
@@ -90,7 +86,7 @@ function Projects() {
                 ))}
               </ul>
             </div>
-          </motion.article>
+          </Tilt>
         ))}
       </div>
     </section>
