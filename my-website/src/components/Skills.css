@@ -23,6 +23,39 @@
   left: 25%;
 }
 
+.tools-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto 50px;
+}
+
+.tool-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 18px;
+  background-color: #121822;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  min-width: 92px;
+}
+
+.tool-badge img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.tool-badge span {
+  font-size: 0.78rem;
+  color: #c9d0d8;
+  white-space: nowrap;
+}
+
 .skills-grid {
   display: grid;
   gap: 24px;

@@ -24,8 +24,15 @@
 .projects-grid {
   display: grid;
   gap: 32px;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+  }
 }
 
 .project-card {
@@ -95,6 +102,10 @@
 
 .project-links a:hover {
   color: #8fb7ff;
+}
+
+.evidence-note {
+  color: #d6dbe2;
 }
 
 @media (max-width: 768px) {

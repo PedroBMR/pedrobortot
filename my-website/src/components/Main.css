@@ -62,6 +62,21 @@
   gap: 16px;
 }
 
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(139, 92, 246, 0.4);
+  background: rgba(139, 92, 246, 0.1);
+  color: #c4b5fd;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
 .hero-title {
   font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 700;

@@ -15,35 +15,135 @@
   content: "";
   width: 60px;
   height: 4px;
-  background-color: #3498db;
+  background-color: var(--accent, #8b5cf6);
   display: block;
   margin: 20px auto 0;
   border-radius: 2px;
 }
 
-.experience-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
+.timeline {
+  max-width: 760px;
   margin: 0 auto;
+  text-align: left;
 }
 
-.experience-item {
-  padding: 24px;
+.timeline-entry {
+  display: flex;
+  gap: 20px;
+}
+
+.timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 22px;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent, #8b5cf6);
+  flex-shrink: 0;
+  box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.18);
+}
+
+.timeline-line {
+  flex: 1;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.12);
+  margin-top: 4px;
+}
+
+.timeline-card {
+  flex: 1;
   background-color: #0f141b;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  overflow: hidden;
 }
 
-.experience-item h3 {
-  font-size: 1.3rem;
+.timeline-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
   color: #ffffff;
-  margin-bottom: 10px;
 }
 
-.experience-item p {
-  font-size: 1rem;
+.timeline-header h3 {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.timeline-location {
+  font-size: 0.9rem;
+  color: #9aa4b2;
+}
+
+.timeline-toggle {
+  font-size: 1.4rem;
+  color: #8fb7ff;
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+
+.timeline-toggle.is-open {
+  transform: rotate(45deg);
+}
+
+.timeline-roles {
+  overflow: hidden;
+}
+
+.timeline-role {
+  padding: 0 24px 20px;
+}
+
+.timeline-role + .timeline-role {
+  padding-top: 4px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.timeline-role-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.timeline-role-head h4 {
+  font-size: 1.05rem;
+  color: #ffffff;
+}
+
+.timeline-period {
+  font-size: 0.85rem;
+  color: #8fb7ff;
+  white-space: nowrap;
+}
+
+.timeline-role p {
+  font-size: 0.98rem;
   line-height: 1.6;
   color: #d6dbe2;
+}
+
+@media (max-width: 640px) {
+  .timeline-marker {
+    display: none;
+  }
+
+  .timeline-entry {
+    gap: 0;
+  }
 }

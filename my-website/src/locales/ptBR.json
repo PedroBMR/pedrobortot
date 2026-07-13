@@ -1,8 +1,8 @@
 {
   "nav": {
     "home": "Início",
-    "projects": "Projetos",
-    "skills": "QA Skills",
+    "projects": "Destaques",
+    "skills": "Skills",
     "about": "Sobre",
     "experience": "Experiência",
     "contact": "Contato"
@@ -13,40 +13,41 @@
   },
   "home": {
     "hero": {
-      "title": "QA Júnior | Manual Tester (Web) • API (básico) • SQL (básico)",
+      "eyebrow": "Pato Branco, PR · Brasil",
+      "title": "Tecnologia, Processos e Inovação Institucional",
       "subtitle": [
-        "Profissional em transição para QA, com hands-on practice em testes manuais de aplicações web.",
-        "Documento bugs com passos claros, foco em resultado e validação de regras de negócio.",
-        "Estou em aprendizado de testes de API com Postman e SQL básico para validação de dados."
+        "Transito entre gestão de processos institucionais, QA e produção criativa (game design, 3D, front-end).",
+        "Documento com clareza, valido regras de negócio e conecto tecnologia à operação do dia a dia.",
+        "Formado em Design de Jogos, com experiência real em administração pública, QA e automação."
       ],
-      "ctaPrimary": "Ver Projetos",
+      "ctaPrimary": "Ver Destaques",
       "ctaSecondary": "Baixar CV"
     },
     "highlights": {
       "title": "Foco principal",
       "items": [
         {
-          "title": "Testes Manuais (Web)",
-          "description": "Crio casos de teste, executo testes exploratórios e valido regras de negócio."
+          "title": "Processos & Gestão Institucional",
+          "description": "Coordenação de compras, fornecedores, prazos contratuais e conformidade em ambientes públicos e privados."
         },
         {
-          "title": "Testes de API (básico)",
-          "description": "Valido endpoints no Postman, conferindo status codes e payloads."
+          "title": "QA & Validação de Sistemas",
+          "description": "Testes manuais de UI e regras de negócio, validação de dados com SQL e checkpoints de qualidade antes de entregas."
         },
         {
-          "title": "SQL (básico) / Validação de dados",
-          "description": "Executo consultas simples para checar consistência e integridade."
+          "title": "Design, 3D & Tecnologia",
+          "description": "Game design, modelagem em Blender, front-end com React e produção editorial aplicados à inovação."
         }
       ]
     },
     "cta": {
       "title": "Quer ver exemplos práticos?",
-      "description": "Confira projetos com evidências documentadas e aprendizados claros.",
-      "buttonText": "Ver Projetos"
+      "description": "Conheça estudos de caso com evidências reais e aprendizados de cada área em que atuei.",
+      "buttonText": "Ver Destaques"
     }
   },
   "projects": {
-    "title": "Projetos (Case Studies)",
+    "title": "Destaques",
     "labels": {
       "scope": "Escopo",
       "tools": "Ferramentas",
@@ -55,7 +56,7 @@
     },
     "items": [
       {
-        "title": "Case Study: Portfolio QA (testes no próprio site)",
+        "title": "QA: Testes deste próprio portfólio",
         "objective": "Validar usabilidade, consistência de conteúdo e funcionamento das seções principais.",
         "scope": [
           "Testes funcionais das âncoras de navegação",
@@ -75,14 +76,14 @@
         ]
       },
       {
-        "title": "Case Study: API Testing (Postman collection)",
+        "title": "QA: Testes de API (coleção Postman)",
         "objective": "Testar endpoints REST para validar contratos e respostas esperadas.",
         "scope": [
           "Testes de status codes e payload",
           "Validação de campos obrigatórios",
           "Cenários positivos e negativos"
         ],
-        "tools": ["Postman (básico)", "JSON", "Coleções e environments"],
+        "tools": ["Postman", "JSON", "Coleções e environments"],
         "evidence": [
           "/qa/postman-collection.json",
           "/qa/api-test-cases.md"
@@ -90,119 +91,268 @@
         "learnings": [
           "Estruturei coleções e ambientes para testes repetíveis.",
           "Documentei validações de payload com foco em campos obrigatórios.",
-          "Criei cenários negativos para cobertura mínima." 
+          "Criei cenários negativos para cobertura mínima."
         ]
       },
       {
-        "title": "Case Study: SQL Checks (validação de dados)",
-        "objective": "Validar dados de uma base simples para garantir consistência e regras básicas.",
+        "title": "QA: Validação de dados com SQL",
+        "objective": "Validar uma base de dados simples para garantir consistência e regras básicas — mesma lógica aplicada em produção no CONIMS.",
         "scope": [
           "Contagem e verificação de duplicidade",
           "Checagem de campos obrigatórios",
           "Conferência de relacionamentos básicos"
         ],
-        "tools": ["SQL (básico)", "SELECT, WHERE, JOIN"],
+        "tools": ["SQL", "SELECT, WHERE, JOIN"],
         "evidence": [
           "/qa/sql-checks.sql",
           "/qa/sql-validations.md"
         ],
         "learnings": [
-          "Ganhei prática com consultas simples para validação.",
-          "Registrei inconsistências de dados de forma objetiva.",
-          "Reforcei a importância de regras básicas de integridade."
+          "Consultas de validação aplicadas a cenários reais de auditoria.",
+          "Registro de inconsistências de forma objetiva e rastreável.",
+          "Reforço da importância de regras básicas de integridade."
+        ]
+      },
+      {
+        "title": "Game Design & Produção 3D",
+        "objective": "Formação e atuação prática em design de jogos, modelagem 3D e Game Art.",
+        "scope": [
+          "Bacharelado em Design de Jogos e Entretenimento Digital (Univali, 2016–2020)",
+          "Modelagem de personagens, props e cenários no Blender",
+          "Aulas de Game Art (Mk Academy) e jogos educativos com impressão 3D"
+        ],
+        "tools": ["Blender", "Game Design", "Impressão 3D"],
+        "evidence": [
+          "Formação Blender e Blender Character Modeling For Beginners HD",
+          "Projeto de mascotes 3D usados em apresentações escolares"
+        ],
+        "learnings": [
+          "Base sólida de modelagem e narrativa aplicada a produtos digitais.",
+          "Experiência ensinando Game Art para diferentes níveis de alunos.",
+          "Ponte natural entre criação visual e desenvolvimento técnico."
+        ]
+      },
+      {
+        "title": "Diagramação Editorial",
+        "objective": "Diagramação do Diário Oficial dos Municípios, com foco em padronização e qualidade visual.",
+        "scope": [
+          "Diagramação de publicações oficiais dentro do prazo",
+          "Colaboração com equipe editorial na revisão de documentos",
+          "Padronização visual entre edições"
+        ],
+        "tools": ["Adobe InDesign", "Illustrator", "Photoshop"],
+        "evidence": [
+          "Redução de 15% no tempo médio de produção"
+        ],
+        "learnings": [
+          "Otimização de processo editorial sob prazo apertado.",
+          "Atenção a detalhes visuais e consistência entre publicações."
         ]
       }
     ]
   },
   "skills": {
-    "title": "QA Skills",
+    "title": "Skills",
     "categories": [
       {
-        "title": "Testes Manuais (Web)",
+        "title": "Processos & Gestão Institucional",
         "items": [
-          "Criação de casos de teste — em prática",
-          "Testes exploratórios — em prática",
-          "Validação de regras de negócio — em prática",
-          "Report de bugs — em prática"
+          "Gestão de compras e fornecedores",
+          "Controle de prazos e conformidade contratual",
+          "Coordenação de equipes multidisciplinares",
+          "Documentação formal e institucional"
         ]
       },
       {
-        "title": "API Testing",
+        "title": "QA & Validação Técnica",
         "items": [
-          "Postman — básico",
-          "Status codes e payload — básico",
-          "Cenários positivos/negativos — básico"
+          "Certified Software Quality Engineer",
+          "Testes manuais (UI e regras de negócio)",
+          "SQL básico para validação de dados",
+          "Postman (básico)"
         ]
       },
       {
-        "title": "SQL",
+        "title": "Design & Produção 3D",
         "items": [
-          "SELECT, WHERE — básico",
-          "JOIN simples — básico",
-          "Validação de dados — básico"
+          "Game Design (Univali)",
+          "Blender — modelagem e personagens",
+          "Criação de props e cenários para jogos",
+          "Adobe InDesign, Illustrator, Photoshop"
         ]
       },
       {
-        "title": "Ferramentas",
+        "title": "Tecnologia & Automação",
         "items": [
-          "Git/GitHub — básico",
-          "Planilhas de testes — em prática",
-          "Documentação de bugs — em prática"
+          "React, HTML5, CSS",
+          "Git & GitHub",
+          "Google Workspace",
+          "Automação de processos"
         ]
+      },
+      {
+        "title": "Idiomas",
+        "items": ["Inglês — nativo/bilíngue"]
       }
     ],
     "process": {
       "title": "Como eu trabalho",
       "steps": [
-        "Entendo o requisito e os fluxos principais.",
-        "Quebro o escopo em casos de teste simples.",
-        "Executo testes funcionais e exploratórios.",
-        "Registro bugs com evidência e passos claros.",
-        "Reviso resultados e proponho melhorias."
+        "Entendo o contexto institucional, técnico e as pessoas envolvidas.",
+        "Organizo o problema em processos, requisitos ou casos de teste claros.",
+        "Executo com atenção a detalhes — em código, testes ou documentos.",
+        "Documento decisões e resultados de forma acessível para todos os times.",
+        "Revejo continuamente buscando eficiência e melhoria de processos."
       ]
     }
   },
   "about": {
     "title": "Sobre",
-    "summary": "Estou em transição de carreira para QA, focando em testes manuais de aplicações web e validação de regras de negócio. Documentação clara, comunicação objetiva e atenção a detalhes fazem parte da minha rotina de trabalho.",
+    "summary": "Profissional com experiência em rotinas administrativas, processos institucionais, documentação formal e apoio à organização de fluxos internos, atuando na interface entre gestão, tecnologia e setor público. Tenho perfil multidisciplinar, com formação em Game Design e experiência prática em automações, Google Workspace, análise de dados, impressão 3D, documentação técnica e melhoria de processos. Hoje direciono minha trajetória para projetos que conectam inovação, infraestrutura tecnológica, relações institucionais e soluções digitais aplicadas ao setor público e privado.",
     "labels": {
       "highlights": "Diferenciais"
     },
     "highlights": [
-      "Atenção a detalhes e consistência",
-      "Documentação clara de testes e bugs",
-      "Pensamento analítico na investigação de falhas"
+      "Trânsito natural entre gestão, tecnologia e criação",
+      "Documentação clara e rigor processual",
+      "Aprendizado rápido entre áreas técnicas e institucionais"
     ],
-    "studies": {
-      "title": "Estudos atuais",
+    "education": {
+      "title": "Formação acadêmica",
       "items": [
-        "Testes manuais para aplicações web",
-        "Postman para testes de API (básico)",
-        "SQL básico para validação de dados"
+        "Bacharelado em Design de Jogos e Entretenimento Digital — Univali (2016–2020)"
+      ]
+    },
+    "studies": {
+      "title": "Certificações",
+      "items": [
+        "Certified Software Quality Engineer",
+        "Quality Assurance: plano de testes e gestão de bugs",
+        "Git e GitHub: dominando controle de versão de código",
+        "Formação Blender",
+        "Blender Character Modeling For Beginners HD",
+        "Formação Props para games"
       ]
     }
   },
   "experience": {
-    "title": "Experiência (habilidades transferíveis)",
+    "title": "Experiência",
     "items": [
       {
-        "role": "Projetos e documentação",
-        "description": "Organizei processos, documentei etapas e garanti rastreabilidade das atividades."
+        "company": "PROC GROUP",
+        "location": "Pato Branco, PR",
+        "roles": [
+          {
+            "title": "Auxiliar Executivo",
+            "period": "maio de 2026 – Atual · 3 meses",
+            "description": "Apoio executivo e suporte a rotinas administrativas e operacionais da organização."
+          }
+        ]
       },
       {
-        "role": "Educação e treinamento",
-        "description": "Expliquei conceitos, orientei atividades e estruturei conteúdo de forma clara."
+        "company": "CONIMS",
+        "location": "Pato Branco, Paraná, Brasil",
+        "roles": [
+          {
+            "title": "Encarregado de Processo Administrativo",
+            "period": "fevereiro de 2025 – fevereiro de 2026 · 1 ano 1 mês",
+            "description": "Acompanhamento e condução de processos administrativos de compras e fornecedores, controle de prazos contratuais e notificação formal em casos de descumprimento, com tratativas de regularização antes de medidas formais."
+          },
+          {
+            "title": "Administrative Supervisor",
+            "period": "fevereiro de 2025 – fevereiro de 2026 · 1 ano 1 mês",
+            "description": "Planejamento, execução e validação de processos críticos. Testes manuais em sistemas internos (UI, regras de negócio e fluxos), validação de dados com SQL básico e planilhas, e criação de checkpoints de qualidade antes de liberações."
+          }
+        ]
       },
       {
-        "role": "Coordenação e gestão",
-        "description": "Acompanhei tarefas, prazos e melhorias contínuas em equipe."
+        "company": "Fisk",
+        "location": "Pato Branco, Paraná, Brasil",
+        "roles": [
+          {
+            "title": "Professor de Língua Inglesa",
+            "period": "agosto de 2024 – junho de 2025 · 11 meses",
+            "description": "Facilitação do aprendizado de inglês com técnicas dinâmicas e personalizadas para alunos em diferentes níveis."
+          }
+        ]
+      },
+      {
+        "company": "Secretaria Municipal de Ciência, Tecnologia e Inovação de Pato Branco",
+        "location": "Pato Branco, Paraná, Brasil",
+        "roles": [
+          {
+            "title": "Assessor do Setor de Infraestrutura",
+            "period": "julho de 2023 – dezembro de 2024 · 1 ano 6 meses",
+            "description": "Supervisão de projetos de infraestrutura tecnológica, garantindo eficiência operacional e novas soluções de melhoria para processos internos."
+          },
+          {
+            "title": "Chefe da Seção de Projetos",
+            "period": "junho de 2022 – julho de 2023 · 1 ano 2 meses",
+            "description": "Gestão de múltiplos projetos simultâneos com foco em inovação, coordenando equipes interdisciplinares e prazos de entrega."
+          }
+        ]
+      },
+      {
+        "company": "Mk Academy Pato Branco",
+        "location": "Pato Branco, Paraná, Brasil",
+        "roles": [
+          {
+            "title": "Professor",
+            "period": "abril de 2023 – novembro de 2023 · 8 meses",
+            "description": "Aulas de Game Art (personagens e cenários 2D/3D em Blender) e estratégia competitiva em Valorant e COD: Modern Warfare."
+          }
+        ]
+      },
+      {
+        "company": "Secretaria Municipal de Educação de Pato Branco",
+        "location": "Pato Branco, Paraná, Brasil",
+        "roles": [
+          {
+            "title": "Chefe da Seção de Cenários e Adereços",
+            "period": "abril de 2021 – julho de 2022 · 1 ano 4 meses",
+            "description": "Desenvolvimento de jogos educativos, supervisão de impressão 3D para materiais didáticos e mascotes, e produção de vídeos institucionais."
+          }
+        ]
+      },
+      {
+        "company": "HUNER TI Colaborativa",
+        "location": "Pato Branco, Paraná, Brasil",
+        "roles": [
+          {
+            "title": "Diagramador",
+            "period": "maio de 2020 – dezembro de 2020 · 8 meses",
+            "description": "Diagramação do Diário Oficial dos Municípios em InDesign, Illustrator e Photoshop, reduzindo o tempo médio de produção em 15%."
+          }
+        ]
+      },
+      {
+        "company": "Tentáculo",
+        "location": "Balneário Camboriú, Santa Catarina, Brasil",
+        "roles": [
+          {
+            "title": "Estagiário",
+            "period": "fevereiro de 2020 – abril de 2020 · 3 meses",
+            "description": "Desenvolvimento de interfaces web responsivas com React, HTML5 e CSS, com primeiros passos em back-end."
+          }
+        ]
+      },
+      {
+        "company": "Universidade do Vale do Itajaí | Univali",
+        "location": "Balneário Camboriú, Santa Catarina",
+        "roles": [
+          {
+            "title": "Gerente de Projetos",
+            "period": "agosto de 2017 – dezembro de 2017 · 5 meses",
+            "description": "Liderança de equipes de estudantes em projetos acadêmicos de design de jogos, com gestão de prazos e entregas."
+          }
+        ]
       }
     ]
   },
   "contact": {
     "title": "Contato",
-    "cta": "Disponível para QA Júnior",
-    "description": "Vamos conversar sobre oportunidades em QA e testes manuais.",
+    "cta": "Aberto a conversas sobre tecnologia, processos e inovação",
+    "description": "Se quiser trocar uma ideia sobre projetos institucionais, QA, automação ou produção criativa, será um prazer conversar.",
     "buttons": {
       "email": "Email",
       "linkedin": "LinkedIn",

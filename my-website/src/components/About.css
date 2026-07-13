@@ -37,6 +37,18 @@
   margin-bottom: 20px;
 }
 
+.about-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 560px) {
+  .about-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
 .about-block h3 {
   font-size: 1.2rem;
   margin-bottom: 8px;

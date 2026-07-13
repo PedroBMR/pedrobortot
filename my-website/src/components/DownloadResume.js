@@ -1,4 +1,3 @@
-import React from 'react';
 import './DownloadResume.css';
 import { useTranslation } from 'react-i18next'; // Importa o hook de tradução
 import resumeEn from '../components/assets/resume_en.pdf'; // Currículo em inglês
