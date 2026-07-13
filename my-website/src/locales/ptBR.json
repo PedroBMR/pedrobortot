@@ -23,6 +23,12 @@
       "ctaPrimary": "Ver Destaques",
       "ctaSecondary": "Baixar CV"
     },
+    "stats": [
+      { "value": 2017, "suffix": "", "label": "Início da trajetória" },
+      { "value": 9, "suffix": "", "label": "Organizações" },
+      { "value": 5, "suffix": "", "label": "Áreas de atuação" },
+      { "value": 6, "suffix": "", "label": "Certificações" }
+    ],
     "highlights": {
       "title": "Foco principal",
       "items": [

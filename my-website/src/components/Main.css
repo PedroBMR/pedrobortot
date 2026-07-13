@@ -145,8 +145,10 @@
 }
 
 .highlight-card {
-  background: rgba(14, 18, 24, 0.85);
+  background: rgba(14, 18, 24, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-radius: 16px;
   padding: 20px;
   text-align: left;

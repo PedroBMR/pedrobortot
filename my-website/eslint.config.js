@@ -2,6 +2,9 @@ import react from 'eslint-plugin-react';
 
 export default [
   {
+    ignores: ['build/**', 'coverage/**']
+  },
+  {
     files: ['**/*.{js,jsx}'],
     languageOptions: {
       ecmaVersion: 2021,

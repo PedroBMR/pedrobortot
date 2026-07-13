@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import './Skills.css';
+import Tilt from './Tilt';
 import { useTranslation } from 'react-i18next';
 import blenderIcon from './assets/tech-icons/blender.svg';
 import reactIcon from './assets/tech-icons/react.svg';
@@ -46,9 +47,9 @@ function Skills() {
 
       <div className="skills-grid">
         {categories.map((category, index) => (
-          <motion.div
+          <Tilt
             className="skill-card"
-            key={index}
+            key={category.title}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -60,7 +61,7 @@ function Skills() {
                 <li key={itemIndex}>{item}</li>
               ))}
             </ul>
-          </motion.div>
+          </Tilt>
         ))}
       </div>
 

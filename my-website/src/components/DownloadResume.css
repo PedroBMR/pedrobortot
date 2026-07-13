@@ -1,6 +1,6 @@
 .download-resume-section {
     padding: 60px 20px;
-    background-color: var(--bg);
+    background-color: rgba(11, 15, 20, 0.82);
     color: var(--fg);
     text-align: center;
   }

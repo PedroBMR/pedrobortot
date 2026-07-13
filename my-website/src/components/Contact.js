@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import './Contact.css';
+import Magnetic from './Magnetic';
 import { useTranslation } from 'react-i18next';
 import resumeEn from '../components/assets/resume_en.pdf';
 import resumePt from '../components/assets/resume_pt.pdf';
@@ -21,28 +22,36 @@ function Contact() {
         <p className="contact-cta">{t('contact.cta')}</p>
         <p className="contact-description">{t('contact.description')}</p>
         <div className="contact-buttons">
-          <a className="contact-button" href="mailto:pedroluizbmr@gmail.com">
-            {t('contact.buttons.email')}
-          </a>
-          <a
-            className="contact-button"
-            href="https://www.linkedin.com/in/pedroluizbmr/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {t('contact.buttons.linkedin')}
-          </a>
-          <a
-            className="contact-button"
-            href="https://github.com/PedroBMR"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {t('contact.buttons.github')}
-          </a>
-          <a className="contact-button" href={resumeFile} download>
-            {t('contact.buttons.cv')}
-          </a>
+          <Magnetic>
+            <a className="contact-button" href="mailto:pedroluizbmr@gmail.com">
+              {t('contact.buttons.email')}
+            </a>
+          </Magnetic>
+          <Magnetic>
+            <a
+              className="contact-button"
+              href="https://www.linkedin.com/in/pedroluizbmr/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t('contact.buttons.linkedin')}
+            </a>
+          </Magnetic>
+          <Magnetic>
+            <a
+              className="contact-button"
+              href="https://github.com/PedroBMR"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t('contact.buttons.github')}
+            </a>
+          </Magnetic>
+          <Magnetic>
+            <a className="contact-button" href={resumeFile} download>
+              {t('contact.buttons.cv')}
+            </a>
+          </Magnetic>
         </div>
       </motion.div>
     </section>

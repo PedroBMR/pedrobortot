@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
 import './Projects.css';
+import Tilt from './Tilt';
 import { useTranslation } from 'react-i18next';
 import { REPO_URL } from '../lib/config';
 
@@ -24,9 +24,9 @@ function Projects() {
       </div>
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <motion.article
+          <Tilt
             className="project-card"
-            key={index}
+            key={project.title}
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -86,7 +86,7 @@ function Projects() {
                 ))}
               </ul>
             </div>
-          </motion.article>
+          </Tilt>
         ))}
       </div>
     </section>
