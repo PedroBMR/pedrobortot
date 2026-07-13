@@ -6,6 +6,9 @@ export default [
     languageOptions: {
       ecmaVersion: 2021,
       sourceType: 'module',
+      parserOptions: {
+        ecmaFeatures: { jsx: true }
+      },
       globals: {
         browser: true,
         node: true
@@ -14,7 +17,8 @@ export default [
     plugins: { react },
     rules: {
       'no-unused-vars': 'warn',
-      'react/react-in-jsx-scope': 'off'
+      'react/react-in-jsx-scope': 'off',
+      'react/jsx-uses-vars': 'error'
     },
     settings: {
       react: {

@@ -4,6 +4,6 @@ import './i18n';
 
 test('renders navigation title', () => {
   render(<App />);
-  const linkElement = screen.getByRole('link', { name: /about me/i });
+  const linkElement = screen.getByRole('link', { name: /^about$/i });
   expect(linkElement).toBeInTheDocument();
 });

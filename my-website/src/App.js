@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Main from './components/Main';
 import About from './components/About';
@@ -7,7 +6,6 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import DownloadResume from './components/DownloadResume';
-import Playground from './components/Playground';
 import './App.css';
 
 function App() {
@@ -28,7 +26,6 @@ function App() {
         </nav>
       </header>
       <main id="conteudo">
-        {false && <Playground />}
         <Main />
         <Projects />
         <Skills />

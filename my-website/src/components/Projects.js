@@ -1,24 +1,25 @@
-import React from 'react';
+import { motion } from 'framer-motion';
 import './Projects.css';
 import { useTranslation } from 'react-i18next';
 import { REPO_URL } from '../lib/config';
 
+function isLinkable(entry) {
+  return entry.startsWith('http') || entry.startsWith('/');
+}
+
+function resolveEvidenceLink(path) {
+  if (path.startsWith('http')) {
+    return path;
+  }
+  if (REPO_URL) {
+    return `${REPO_URL}/blob/main${path}`;
+  }
+  return path;
+}
+
 function Projects() {
   const { t } = useTranslation();
   const projects = t('projects.items', { returnObjects: true });
-
-  const resolveEvidenceLink = (path) => {
-    if (!path) {
-      return '#';
-    }
-    if (path.startsWith('http')) {
-      return path;
-    }
-    if (REPO_URL) {
-      return `${REPO_URL}/blob/main${path}`;
-    }
-    return path;
-  };
 
   return (
     <section id="projects" className="projects-section">
@@ -27,7 +28,14 @@ function Projects() {
       </div>
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <article className="project-card" key={index}>
+          <motion.article
+            className="project-card"
+            key={index}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.5, delay: Math.min(index * 0.08, 0.3) }}
+          >
             <header>
               <h3>{project.title}</h3>
               <p className="project-objective">{project.objective}</p>
@@ -56,15 +64,19 @@ function Projects() {
             <div className="project-block">
               <h4>{t('projects.labels.evidence', { defaultValue: 'Evidências' })}</h4>
               <ul className="project-links">
-                {project.evidence.map((link, linkIndex) => (
+                {project.evidence.map((entry, linkIndex) => (
                   <li key={linkIndex}>
-                    <a
-                      href={resolveEvidenceLink(link)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {link}
-                    </a>
+                    {isLinkable(entry) ? (
+                      <a
+                        href={resolveEvidenceLink(entry)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {entry}
+                      </a>
+                    ) : (
+                      <span className="evidence-note">{entry}</span>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -78,7 +90,7 @@ function Projects() {
                 ))}
               </ul>
             </div>
-          </article>
+          </motion.article>
         ))}
       </div>
     </section>

@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import ScrollReveal from 'scrollreveal';
+import { motion } from 'framer-motion';
 import './About.css';
 import { useTranslation } from 'react-i18next';
 import pedroluiz from './assets/pedroluiz.jpeg';
@@ -7,35 +6,24 @@ import pedroluiz from './assets/pedroluiz.jpeg';
 function About() {
   const { t } = useTranslation();
   const highlights = t('about.highlights', { returnObjects: true });
-  const studies = t('about.studies.items', { returnObjects: true });
-
-  useEffect(() => {
-    ScrollReveal().reveal('.about-content', {
-      origin: 'bottom',
-      distance: '50px',
-      duration: 1000,
-      delay: 200,
-      reset: false,
-    });
-
-    ScrollReveal().reveal('.about-image', {
-      origin: 'right',
-      distance: '50px',
-      duration: 1000,
-      delay: 400,
-      reset: false,
-    });
-  }, []);
+  const educationItems = t('about.education.items', { returnObjects: true });
+  const certificationItems = t('about.studies.items', { returnObjects: true });
 
   return (
     <section id="about" className="about-section">
       <div className="about-container">
-        <div className="about-content">
+        <motion.div
+          className="about-content"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+        >
           <h2>{t('about.title')}</h2>
           <p>{t('about.summary')}</p>
 
           <div className="about-block">
-            <h3>{t('about.labels.highlights', { defaultValue: 'Diferenciais' })}</h3>
+            <h3>{t('about.labels.highlights', { defaultValue: 'Highlights' })}</h3>
             <ul>
               {highlights.map((item, index) => (
                 <li key={index}>{item}</li>
@@ -43,18 +31,35 @@ function About() {
             </ul>
           </div>
 
-          <div className="about-block">
-            <h3>{t('about.studies.title')}</h3>
-            <ul>
-              {studies.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
+          <div className="about-columns">
+            <div className="about-block">
+              <h3>{t('about.education.title')}</h3>
+              <ul>
+                {educationItems.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="about-block">
+              <h3>{t('about.studies.title')}</h3>
+              <ul>
+                {certificationItems.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div>
-        <div className="about-image">
+        </motion.div>
+        <motion.div
+          className="about-image"
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+        >
           <img src={pedroluiz} alt="Pedro Luiz" />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
