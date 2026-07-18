@@ -1,0 +1,62 @@
+<div
+  data-cursor
+  class="pointer-events-none fixed left-0 top-0 z-[100] hidden h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-ink mix-blend-difference md:block"
+>
+</div>
+
+<script>
+  import { gsap } from "../lib/smoothScroll";
+
+  const canHover = window.matchMedia(
+    "(hover: hover) and (pointer: fine)"
+  ).matches;
+
+  const cursor = document.querySelector<HTMLElement>("[data-cursor]");
+
+  if (canHover && cursor) {
+    cursor.classList.remove("hidden");
+    document.documentElement.classList.add("has-custom-cursor");
+
+    const xTo = gsap.quickTo(cursor, "x", { duration: 0.35, ease: "power3" });
+    const yTo = gsap.quickTo(cursor, "y", { duration: 0.35, ease: "power3" });
+
+    let revealed = false;
+
+    window.addEventListener("mousemove", (event) => {
+      xTo(event.clientX);
+      yTo(event.clientY);
+
+      if (!revealed) {
+        revealed = true;
+        gsap.set(cursor, { x: event.clientX, y: event.clientY });
+        gsap.to(cursor, { opacity: 1, duration: 0.3 });
+      }
+    });
+
+    document.addEventListener("mouseleave", () => {
+      gsap.to(cursor, { opacity: 0, duration: 0.2 });
+    });
+
+    const interactiveSelector = "a, button, [data-cursor-hover]";
+
+    document.addEventListener("mouseover", (event) => {
+      const target = (event.target as HTMLElement).closest(
+        interactiveSelector
+      );
+      if (target) {
+        gsap.to(cursor, { scale: 2.5, duration: 0.3, ease: "power3.out" });
+      }
+    });
+
+    document.addEventListener("mouseout", (event) => {
+      const target = (event.target as HTMLElement).closest(
+        interactiveSelector
+      );
+      if (target) {
+        gsap.to(cursor, { scale: 1, duration: 0.3, ease: "power3.out" });
+      }
+    });
+
+    gsap.set(cursor, { opacity: 0 });
+  }
+</script>

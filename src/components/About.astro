@@ -1,0 +1,58 @@
+---
+import { Image } from "astro:assets";
+import avatar from "../assets/avatar.jpg";
+import { useTranslations, type Locale } from "../i18n/utils";
+
+interface Props {
+  lang?: Locale;
+}
+
+const { lang = "pt" } = Astro.props;
+const t = useTranslations(lang);
+const about = t("about");
+---
+
+<section
+  id="sobre"
+  class="scroll-mt-24 border-t border-line px-6 py-24 md:px-12 md:py-36"
+>
+  <div class="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-16">
+    <div class="md:col-span-4" data-reveal>
+      <span class="text-xs uppercase tracking-[0.3em] text-muted">
+        {about.label}
+      </span>
+      <div
+        class="group relative mt-6 aspect-square w-full max-w-[280px] overflow-hidden border border-line"
+      >
+        <Image
+          src={avatar}
+          alt="Pedro Bortot"
+          width={560}
+          height={560}
+          class="h-full w-full object-cover grayscale contrast-110 transition-all duration-700 ease-out group-hover:grayscale-0"
+        />
+        <div
+          class="pointer-events-none absolute inset-0 bg-accent/10 mix-blend-multiply transition-opacity duration-700 group-hover:opacity-0"
+        >
+        </div>
+      </div>
+      <p class="mt-4 text-xs uppercase tracking-widest text-muted">
+        {about.caption}
+      </p>
+    </div>
+    <div class="md:col-span-8">
+      <p
+        class="text-balance font-display text-2xl leading-snug text-ink md:text-4xl"
+        data-reveal
+      >
+        {about.p1}
+      </p>
+      <p
+        class="mt-6 max-w-2xl text-base text-ink-soft md:text-lg"
+        data-reveal
+      >
+        {about.p2}
+      </p>
+    </div>
+  </div>
+</section>

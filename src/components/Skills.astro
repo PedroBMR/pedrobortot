@@ -1,0 +1,29 @@
+---
+import { skills } from "../data/skills";
+import { useTranslations, type Locale } from "../i18n/utils";
+
+interface Props {
+  lang?: Locale;
+}
+
+const { lang = "pt" } = Astro.props;
+const t = useTranslations(lang);
+const skillsUi = t("skills");
+---
+
+<section id="skills" class="scroll-mt-24 border-t border-line px-6 py-20 md:px-12 md:py-32">
+  <div class="mb-14 md:mb-20" data-reveal>
+    <h2 class="font-display text-4xl text-ink md:text-6xl">
+      {skillsUi.heading}
+    </h2>
+  </div>
+  <div class="flex flex-wrap gap-3 md:gap-4" data-reveal>
+    {
+      skills.map((skill) => (
+        <span class="rounded-full border border-line px-5 py-2.5 text-sm text-ink-soft transition-colors duration-300 hover:border-accent hover:text-ink md:text-base">
+          {skill[lang]}
+        </span>
+      ))
+    }
+  </div>
+</section>

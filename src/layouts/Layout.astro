@@ -1,0 +1,129 @@
+---
+import "@fontsource-variable/bricolage-grotesque";
+import "@fontsource-variable/inter";
+import "../styles/global.css";
+import Cursor from "../components/Cursor.astro";
+import ScrollProgress from "../components/ScrollProgress.astro";
+import { ui, type Locale } from "../i18n/ui";
+
+interface Props {
+  lang?: Locale;
+  title?: string;
+  description?: string;
+  translatedPath?: string;
+  ogImage?: string;
+}
+
+const {
+  lang = "pt",
+  title = ui[lang].meta.title,
+  description = ui[lang].meta.description,
+  translatedPath,
+  ogImage = lang === "pt" ? "/og-image.png" : "/og-image-en.png",
+} = Astro.props;
+
+const otherLang: Locale = lang === "pt" ? "en" : "pt";
+const otherPath = translatedPath ?? (lang === "pt" ? "/en/" : "/");
+const canonicalPath = Astro.url.pathname;
+const htmlLang = lang === "pt" ? "pt-BR" : "en";
+const otherHtmlLang = otherLang === "pt" ? "pt-BR" : "en";
+const canonicalUrl = new URL(canonicalPath, Astro.site);
+const ogImageUrl = new URL(ogImage, Astro.site);
+const ogLocale = htmlLang === "pt-BR" ? "pt_BR" : "en_US";
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Pedro Luiz Bortot Monteiro do Rosário",
+  alternateName: "Pedro Bortot",
+  url: "https://pedrobortot.com.br",
+  image: new URL("/og-image.png", Astro.site).toString(),
+  jobTitle:
+    lang === "pt" ? "Assessor Executivo" : "Executive Advisor",
+  worksFor: {
+    "@type": "Organization",
+    name: "ProcGroup",
+  },
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Pato Branco",
+    addressRegion: "PR",
+    addressCountry: "BR",
+  },
+  sameAs: [
+    "https://www.linkedin.com/in/pedroluizbmr/",
+    "https://github.com/PedroBMR",
+    "https://nozzlenote.com",
+  ],
+};
+---
+
+<!doctype html>
+<html lang={htmlLang}>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Pedro Luiz Bortot Monteiro do Rosário" />
+    <title>{title}</title>
+
+    <link rel="canonical" href={canonicalUrl} />
+    <link
+      rel="alternate"
+      hreflang={htmlLang}
+      href={new URL(canonicalPath, Astro.site)}
+    />
+    <link
+      rel="alternate"
+      hreflang={otherHtmlLang}
+      href={new URL(otherPath, Astro.site)}
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href={new URL(lang === "pt" ? canonicalPath : otherPath, Astro.site)}
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Pedro Bortot" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:locale" content={ogLocale} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={title} />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
+    <!-- Structured data -->
+    <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+  </head>
+  <body>
+    <Cursor />
+    <ScrollProgress />
+    <slot />
+    <script>
+      import { initSmoothScroll } from "../lib/smoothScroll";
+      import { initReveals } from "../lib/reveal";
+      import { initCounters } from "../lib/counters";
+      import { initMagnetic } from "../lib/magnetic";
+      import { initScrollProgress } from "../lib/scrollProgress";
+
+      initSmoothScroll();
+      initReveals();
+      initCounters();
+      initMagnetic();
+      initScrollProgress();
+    </script>
+  </body>
+</html>

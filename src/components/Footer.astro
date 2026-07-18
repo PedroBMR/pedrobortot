@@ -1,0 +1,18 @@
+---
+import { useTranslations, type Locale } from "../i18n/utils";
+
+interface Props {
+  lang?: Locale;
+}
+
+const { lang = "pt" } = Astro.props;
+const t = useTranslations(lang);
+const footer = t("footer");
+---
+
+<footer
+  class="flex flex-col items-center justify-between gap-4 border-t border-line px-6 py-8 text-xs uppercase tracking-widest text-muted md:flex-row md:px-12"
+>
+  <span>© {new Date().getFullYear()} Pedro Bortot</span>
+  <span>{footer.location}</span>
+</footer>

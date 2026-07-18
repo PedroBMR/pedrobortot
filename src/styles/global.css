@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bricolage Grotesque Variable", "Bricolage Grotesque", sans-serif;
+  --font-sans: "Inter Variable", "Inter", sans-serif;
+
+  --color-ink: #f6f5f1;
+  --color-ink-soft: #b9b8b4;
+  --color-void: #0a0a0c;
+  --color-void-soft: #131316;
+  --color-void-elev: #1a1a1d;
+  --color-line: #29292d;
+  --color-muted: #8d8d93;
+  --color-accent: #ff5a1f;
+  --color-accent-soft: #ffb08a;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  * {
+    scrollbar-color: var(--color-line) transparent;
+  }
+
+  html {
+    background-color: var(--color-void);
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--color-void);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: var(--color-void);
+  }
+
+  [data-reveal] {
+    will-change: transform, opacity;
+  }
+
+  html.has-custom-cursor,
+  html.has-custom-cursor * {
+    cursor: none;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .case-bg-0 {
+    background: linear-gradient(135deg, var(--color-void-elev), var(--color-accent) 150%);
+  }
+
+  .case-bg-1 {
+    background: linear-gradient(160deg, var(--color-accent-soft), var(--color-void) 130%);
+  }
+
+  .case-bg-2 {
+    background: linear-gradient(200deg, var(--color-void-soft), var(--color-accent) 170%);
+  }
+
+  .case-bg-3 {
+    background: radial-gradient(circle at 30% 20%, var(--color-accent), var(--color-void-elev) 75%);
+  }
+}

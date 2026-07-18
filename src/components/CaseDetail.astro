@@ -1,0 +1,132 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import type { Experience } from "../data/experiences";
+import { useTranslations, type Locale } from "../i18n/utils";
+
+interface Props {
+  lang: Locale;
+  exp: Experience;
+  prev: Experience | null;
+  next: Experience | null;
+  variant: number;
+}
+
+const { lang, exp, prev, next, variant } = Astro.props;
+const t = useTranslations(lang);
+const caseDetail = t("caseDetail");
+const text = exp[lang];
+
+const basePath = lang === "pt" ? "/trajetoria" : "/en/career";
+const casesAnchor = lang === "pt" ? "/#cases" : "/en/#cases";
+const otherLang: Locale = lang === "pt" ? "en" : "pt";
+const otherBasePath = otherLang === "pt" ? "/trajetoria" : "/en/career";
+const translatedPath = `${otherBasePath}/${exp.slug}/`;
+---
+
+<Layout
+  lang={lang}
+  title={`${text.org} — Pedro Bortot`}
+  description={text.description}
+  translatedPath={translatedPath}
+>
+  <Header lang={lang} translatedPath={translatedPath} />
+  <main>
+    <article class="px-6 pt-32 pb-20 md:px-12 md:pt-40 md:pb-32">
+      <a
+        href={casesAnchor}
+        class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-muted transition-colors duration-300 hover:text-accent"
+      >
+        <span aria-hidden="true">←</span>
+        {caseDetail.back}
+      </a>
+
+      <div class="mt-8 flex items-center gap-3 text-sm uppercase tracking-wider text-muted">
+        <span>{text.period}</span>
+        {exp.current && (
+          <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+        )}
+      </div>
+
+      <h1 class="mt-4 max-w-4xl text-balance font-display text-4xl leading-[0.95] text-ink md:text-7xl">
+        {text.org}
+      </h1>
+      <p class="mt-4 text-lg text-ink-soft md:text-2xl">{text.role}</p>
+
+      {exp.logo ? (
+        <div class="mt-14 flex aspect-[21/9] items-center justify-center border border-line bg-void-elev md:mt-20">
+          <img
+            src={exp.logo}
+            alt={`Logo ${text.org}`}
+            class="max-h-[40%] max-w-[50%] object-contain"
+          />
+        </div>
+      ) : (
+        <div
+          class={`case-bg-${variant} mt-14 flex aspect-[21/9] items-center justify-center border border-line md:mt-20`}
+        >
+          <span class="font-display text-8xl font-medium text-ink/25 md:text-9xl">
+            {text.org.charAt(0)}
+          </span>
+        </div>
+      )}
+
+      <div class="mt-14 grid grid-cols-1 gap-10 md:mt-20 md:grid-cols-12">
+        <div class="md:col-span-8">
+          <p class="text-lg leading-relaxed text-ink-soft md:text-xl">
+            {text.detail}
+          </p>
+        </div>
+        {text.tags && (
+          <div class="md:col-span-4">
+            <span class="text-xs uppercase tracking-[0.3em] text-muted">
+              {caseDetail.areas}
+            </span>
+            <div class="mt-4 flex flex-wrap gap-2">
+              {text.tags.map((tag) => (
+                <span class="rounded-full border border-line px-3 py-1 text-xs uppercase tracking-wider text-ink-soft">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+
+      <div class="mt-20 flex flex-col gap-6 border-t border-line pt-10 md:mt-28 md:flex-row md:items-center md:justify-between">
+        {prev ? (
+          <a
+            href={`${basePath}/${prev.slug}/`}
+            class="group flex flex-col gap-1"
+          >
+            <span class="text-xs uppercase tracking-widest text-muted">
+              ← {caseDetail.previous}
+            </span>
+            <span class="font-display text-lg text-ink transition-colors duration-300 group-hover:text-accent">
+              {prev[lang].org}
+            </span>
+          </a>
+        ) : (
+          <span />
+        )}
+        {next ? (
+          <a
+            href={`${basePath}/${next.slug}/`}
+            class="group flex flex-col gap-1 md:items-end md:text-right"
+          >
+            <span class="text-xs uppercase tracking-widest text-muted">
+              {caseDetail.next} →
+            </span>
+            <span class="font-display text-lg text-ink transition-colors duration-300 group-hover:text-accent">
+              {next[lang].org}
+            </span>
+          </a>
+        ) : (
+          <span />
+        )}
+      </div>
+    </article>
+  </main>
+  <Footer lang={lang} />
+</Layout>

@@ -1,0 +1,114 @@
+---
+import { useTranslations, type Locale } from "../i18n/utils";
+
+interface Props {
+  lang?: Locale;
+}
+
+const { lang = "pt" } = Astro.props;
+const t = useTranslations(lang);
+const hero = t("hero");
+---
+
+<section
+  id="hero"
+  class="relative flex min-h-screen flex-col justify-center overflow-hidden px-6 pt-28 pb-16 md:px-12"
+>
+  <p
+    class="mb-6 text-xs uppercase tracking-[0.3em] text-muted md:text-sm"
+    data-reveal-fade
+  >
+    {hero.location}
+  </p>
+
+  <h1
+    class="max-w-6xl font-display text-[15vw] font-medium leading-[0.92] tracking-tight text-ink md:text-[7.2vw]"
+    data-hero-title
+  >
+    {hero.headline}<span class="text-accent">.</span>
+  </h1>
+
+  <div
+    class="mt-10 flex flex-col gap-8 md:mt-14 md:flex-row md:items-end md:justify-between"
+    data-reveal-fade
+  >
+    <p class="max-w-md text-base text-ink-soft md:text-lg">
+      {hero.subtext}
+    </p>
+
+    <a
+      href="#cases"
+      data-magnetic
+      class="group flex items-center gap-3 text-sm uppercase tracking-widest text-ink/80 transition-colors duration-300 hover:text-accent"
+    >
+      {hero.cta}
+      <span
+        class="flex h-9 w-9 items-center justify-center rounded-full border border-line transition-all duration-300 group-hover:border-accent group-hover:rotate-45"
+      >
+        ↓
+      </span>
+    </a>
+  </div>
+</section>
+
+<script>
+  import { gsap, prefersReducedMotion } from "../lib/smoothScroll";
+  import { SplitText } from "gsap/SplitText";
+
+  gsap.registerPlugin(SplitText);
+
+  const title = document.querySelector<HTMLElement>("[data-hero-title]");
+  const fades = document.querySelectorAll<HTMLElement>(
+    "#hero [data-reveal-fade], header [data-reveal-fade]"
+  );
+
+  if (prefersReducedMotion()) {
+    gsap.set(fades, { opacity: 1, y: 0 });
+  } else if (title) {
+    gsap.set(fades, { opacity: 0, y: 16 });
+
+    document.fonts.ready.then(() => {
+      const split = SplitText.create(title, {
+        type: "lines",
+        mask: "lines",
+        linesClass: "hero-line",
+      });
+
+      gsap.set(split.lines, { yPercent: 110 });
+
+      const tl = gsap.timeline({ delay: 0.15 });
+
+      tl.to(split.lines, {
+        yPercent: 0,
+        duration: 1.1,
+        ease: "power4.out",
+        stagger: 0.09,
+      }).to(
+        fades,
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power3.out",
+          stagger: 0.08,
+        },
+        "-=0.5"
+      );
+    });
+  }
+
+  const heroSection = document.querySelector<HTMLElement>("#hero");
+
+  if (!prefersReducedMotion() && heroSection && title) {
+    gsap.to(title, {
+      yPercent: -12,
+      ease: "none",
+      scrollTrigger: {
+        trigger: heroSection,
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+  }
+</script>

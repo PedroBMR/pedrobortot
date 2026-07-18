@@ -1,0 +1,20 @@
+---
+import CaseDetail from "../../../components/CaseDetail.astro";
+import { experiences } from "../../../data/experiences";
+
+export function getStaticPaths() {
+  return experiences.map((exp, index) => ({
+    params: { slug: exp.slug },
+    props: {
+      exp,
+      prev: experiences[index - 1] ?? null,
+      next: experiences[index + 1] ?? null,
+      variant: index % 4,
+    },
+  }));
+}
+
+const { exp, prev, next, variant } = Astro.props;
+---
+
+<CaseDetail lang="en" exp={exp} prev={prev} next={next} variant={variant} />

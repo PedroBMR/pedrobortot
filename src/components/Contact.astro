@@ -1,0 +1,57 @@
+---
+import { useTranslations, type Locale } from "../i18n/utils";
+
+interface Props {
+  lang?: Locale;
+}
+
+const { lang = "pt" } = Astro.props;
+const t = useTranslations(lang);
+const contact = t("contact");
+---
+
+<section
+  id="contato"
+  class="scroll-mt-24 border-t border-line px-6 py-28 md:px-12 md:py-40"
+>
+  <div data-reveal>
+    <span class="text-xs uppercase tracking-[0.3em] text-muted">{contact.label}</span>
+    <h2
+      class="mt-4 max-w-3xl text-balance font-display text-4xl leading-[0.95] text-ink md:text-7xl"
+    >
+      {contact.heading}<span class="text-accent">.</span>
+    </h2>
+  </div>
+
+  <div
+    class="mt-14 flex flex-col gap-6 md:mt-20 md:flex-row md:items-center md:gap-12"
+    data-reveal
+  >
+    <a
+      href="mailto:pedroluizbmr@gmail.com"
+      data-magnetic
+      class="group flex items-center gap-3 text-lg text-ink transition-colors duration-300 hover:text-accent md:text-2xl"
+    >
+      pedroluizbmr@gmail.com
+      <span
+        class="transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1"
+      >
+        ↗
+      </span>
+    </a>
+    <a
+      href="https://www.linkedin.com/in/pedroluizbmr/"
+      target="_blank"
+      rel="noopener noreferrer"
+      data-magnetic
+      class="group flex items-center gap-3 text-lg text-ink transition-colors duration-300 hover:text-accent md:text-2xl"
+    >
+      {contact.linkedin}
+      <span
+        class="transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1"
+      >
+        ↗
+      </span>
+    </a>
+  </div>
+</section>
