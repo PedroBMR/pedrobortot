@@ -9,7 +9,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     name: "NozzleNote",
-    language: "Astro",
+    language: "Tauri · Rust + TS",
     url: "https://nozzlenote.com",
     variant: 2,
     description: {
@@ -18,13 +18,13 @@ export const projects: Project[] = [
     },
   },
   {
-    name: "BMR3D",
+    name: "BMR 3D",
     language: "Marca / Produto",
     url: "http://app.bmr3d.com.br/",
     variant: 1,
     description: {
-      pt: "Marca própria de projetos e produtos para a comunidade de impressão 3D — hub por trás do PrintQuote BMR e do NozzleNote.",
-      en: "My own brand of projects and products for the 3D printing community — the hub behind PrintQuote BMR and NozzleNote.",
+      pt: "Minha empresa de impressão 3D: peças sob demanda, modelagem e digitalização. Também é o guarda-chuva do PrintQuote e do NozzleNote.",
+      en: "My 3D printing company: on-demand parts, modeling and scanning. It is also the umbrella behind PrintQuote and NozzleNote.",
     },
   },
   {
@@ -33,8 +33,8 @@ export const projects: Project[] = [
     url: "https://pedrobmr.github.io/procgroup-site/",
     variant: 3,
     description: {
-      pt: "Site institucional que desenvolvi para a ProcGroup — projeto assumido por iniciativa própria para liberar o CEO.",
-      en: "Institutional website I built for ProcGroup — a project I took on my own initiative to free up the CEO's time.",
+      pt: "Site institucional da ProcGroup, em Astro. Desenvolvi com o time comercial e com apoio de IA.",
+      en: "ProcGroup institutional website, built in Astro. Developed together with the sales team and with AI support.",
     },
   },
   {

@@ -5,12 +5,13 @@ export const defaultLocale: Locale = "pt";
 export const ui = {
   pt: {
     meta: {
-      title: "Pedro Bortot — Assessor Executivo, Produto & Inovação",
+      title: "Pedro Bortot — Design de produto, da ideia ao no ar",
       description:
-        "Assessor Executivo na ProcGroup e fundador do NozzleNote e da BMR3D — perfil multidisciplinar entre gestão pública, produto e inovação.",
+        "Designer de produto em Pato Branco (PR). Identidade visual, sites e apps — da marca ao deploy. Fundador da BMR 3D e do NozzleNote.",
     },
     nav: {
       sobre: "Sobre",
+      servicos: "Serviços",
       cases: "Cases",
       projetos: "Projetos",
       skills: "Skills",
@@ -19,22 +20,29 @@ export const ui = {
     },
     hero: {
       location: "Pato Branco, Paraná — Brasil",
-      headline: "Gestão pública, produto e inovação num só perfil",
+      headline: "Design de produto, da ideia ao no ar",
       subtext:
-        "Assessoria executiva, gestão de contratos públicos e produtos próprios (NozzleNote, BMR3D) — transitando entre o setor público e o privado.",
-      cta: "Ver trajetória",
+        "Identidade visual, site e app — marca, interface, código e publicação feitos pela mesma pessoa. Formado em game design, com passagem por sala de aula e gestão pública. Hoje, Assessor Executivo do CEO na ProcGroup.",
+      cta: "O que eu faço",
     },
     about: {
       label: "Sobre",
       caption: "Pedro Bortot — Pato Branco, PR",
-      p1: "Formado em Design de Jogos e Entretenimento Digital pela Univali, construí uma trajetória pouco convencional — passando por sala de aula, secretarias municipais, controle de qualidade de software e produção gráfica.",
-      p2: "Hoje sou Assessor Executivo do CEO da ProcGroup — cuido da gestão de contratos públicos e do relacionamento com prefeituras, além de projetos institucionais como o novo site da empresa. Em paralelo, sou fundador da BMR3D e construo o NozzleNote, meu app de manutenção para impressoras 3D, hoje em Beta.",
+      p1: "Sou designer de produto: desenho a marca, monto a interface, escrevo o código e publico. A coisa inteira, pela mesma pessoa.",
+      p2: "Formado em Design de Jogos e Entretenimento Digital pela Univali. Antes de chegar aqui passei por sala de aula, secretarias municipais, controle de qualidade de software e produção gráfica — dei aula de inglês na Fisk, de Blender e e-sports na Mk Academy, e hoje ensino impressão 3D. Ensinar é o que me obriga a entender o assunto de verdade.",
+      p3: "Hoje sou Assessor Executivo do CEO da ProcGroup, onde cuido de contratos públicos e do relacionamento com prefeituras. Em paralelo toco a BMR 3D — impressão sob demanda, modelagem e digitalização — e construo o NozzleNote, meu app de manutenção para impressoras 3D, hoje em Beta.",
     },
     keyfacts: {
       years: "Anos de experiência multidisciplinar",
+      teaching: "Papéis de ensino, de inglês a impressão 3D",
+      parts: "Peças 3D projetadas e entregues",
       orgs: "Organizações e instituições",
-      sectors: "Setores: público e privado",
-      reduction: "Redução de tempo conquistada em processo de diagramação",
+    },
+    services: {
+      heading: "O que eu faço",
+      intro:
+        "Três frentes, sempre da primeira conversa até o resultado publicado ou na mão do cliente.",
+      cta: "Pedir orçamento",
     },
     cases: {
       heading: "Trajetória",
@@ -66,12 +74,13 @@ export const ui = {
   },
   en: {
     meta: {
-      title: "Pedro Bortot — Executive Advisor, Product & Innovation",
+      title: "Pedro Bortot — Product design, from idea to live",
       description:
-        "Executive Advisor at ProcGroup and founder of NozzleNote and BMR3D — a multidisciplinary profile bridging public sector management, product and innovation.",
+        "Product designer based in Pato Branco, Brazil. Brand identity, websites and apps — from the logo to the deploy. Founder of BMR 3D and NozzleNote.",
     },
     nav: {
       sobre: "About",
+      servicos: "Services",
       cases: "Career",
       projetos: "Projects",
       skills: "Skills",
@@ -80,22 +89,29 @@ export const ui = {
     },
     hero: {
       location: "Pato Branco, Paraná — Brazil",
-      headline: "Public management, product and innovation in one profile",
+      headline: "Product design, from idea to live",
       subtext:
-        "Executive advisory, public contract management and my own products (NozzleNote, BMR3D) — moving between the public and private sectors.",
-      cta: "View career",
+        "Brand identity, websites and apps — logo, interface, code and deploy done by the same person. Game design graduate, with a background in teaching and public sector management. Today, Executive Advisor to the CEO at ProcGroup.",
+      cta: "What I do",
     },
     about: {
       label: "About",
       caption: "Pedro Bortot — Pato Branco, Brazil",
-      p1: "A Game Design and Digital Entertainment graduate from Univali, I've built an unconventional path — from the classroom to municipal government, software quality control, and graphic production.",
-      p2: "Today I'm Executive Advisor to the CEO of ProcGroup — handling public contract management and relationships with municipal governments, plus institutional projects like the company's new website. In parallel, I'm the founder of BMR3D and I'm building NozzleNote, my 3D printer maintenance app, currently in Beta.",
+      p1: "I'm a product designer: I draw the brand, build the interface, write the code and ship it. The whole thing, by the same person.",
+      p2: "A Game Design and Digital Entertainment graduate from Univali. Before this I went through the classroom, municipal government, software quality control and graphic production — I taught English at Fisk, Blender and e-sports at Mk Academy, and today I teach 3D printing. Teaching is what forces me to actually understand a subject.",
+      p3: "Today I'm Executive Advisor to the CEO of ProcGroup, handling public contracts and relationships with municipal governments. In parallel I run BMR 3D — on-demand printing, modeling and 3D scanning — and I'm building NozzleNote, my 3D printer maintenance app, currently in Beta.",
     },
     keyfacts: {
       years: "Years of multidisciplinary experience",
+      teaching: "Teaching roles, from English to 3D printing",
+      parts: "3D parts designed and delivered",
       orgs: "Organizations and institutions",
-      sectors: "Sectors: public and private",
-      reduction: "Time reduction achieved on a layout process",
+    },
+    services: {
+      heading: "What I do",
+      intro:
+        "Three offerings, always from the first conversation to the result published or in the client's hands.",
+      cta: "Request a quote",
     },
     cases: {
       heading: "Career",

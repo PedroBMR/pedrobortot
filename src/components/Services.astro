@@ -1,0 +1,67 @@
+---
+import { services } from "../data/services";
+import { useTranslations, type Locale } from "../i18n/utils";
+
+interface Props {
+  lang?: Locale;
+}
+
+const { lang = "pt" } = Astro.props;
+const t = useTranslations(lang);
+const servicesUi = t("services");
+---
+
+<section
+  id="servicos"
+  class="scroll-mt-24 border-t border-line px-6 py-24 md:px-12 md:py-36"
+>
+  <div class="mb-14 md:mb-20" data-reveal>
+    <h2 class="font-display text-4xl text-ink md:text-6xl">
+      {servicesUi.heading}
+    </h2>
+    <p class="mt-6 max-w-xl text-base text-muted md:text-lg">
+      {servicesUi.intro}
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 gap-px border border-line bg-line md:grid-cols-3">
+    {
+      services.map((service) => (
+        <article
+          class="group flex flex-col bg-void p-8 transition-colors duration-500 md:p-10"
+          data-reveal
+        >
+          <span class="font-display text-sm tracking-widest text-muted transition-colors duration-500 group-hover:text-accent">
+            {service.index}
+          </span>
+          <h3 class="mt-6 font-display text-2xl text-ink md:text-3xl">
+            {service.title[lang]}
+          </h3>
+          <p class="mt-4 flex-1 text-base text-ink-soft">
+            {service.description[lang]}
+          </p>
+          <ul class="mt-8 flex flex-wrap gap-2">
+            {service.tags[lang].map((tag) => (
+              <li class="border border-line px-3 py-1 text-xs uppercase tracking-widest text-muted">
+                {tag}
+              </li>
+            ))}
+          </ul>
+        </article>
+      ))
+    }
+  </div>
+
+  <div class="mt-12" data-reveal>
+    <a
+      href="mailto:pedroluizbmr@gmail.com"
+      data-magnetic
+      class="group inline-flex items-center gap-3 text-sm uppercase tracking-widest text-ink/80 transition-colors duration-300 hover:text-accent"
+    >
+      {servicesUi.cta}
+      <span class="flex h-9 w-9 items-center justify-center rounded-full border border-line transition-all duration-300 group-hover:rotate-45 group-hover:border-accent">
+        ↗
+      </span>
+    </a>
+  </div>
+</section>
