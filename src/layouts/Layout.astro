@@ -2,7 +2,6 @@
 import "@fontsource-variable/bricolage-grotesque";
 import "@fontsource-variable/inter";
 import "../styles/global.css";
-import Cursor from "../components/Cursor.astro";
 import ScrollProgress from "../components/ScrollProgress.astro";
 import { ui, type Locale } from "../i18n/ui";
 
@@ -114,7 +113,6 @@ const personSchema = {
     <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
   </head>
   <body>
-    <Cursor />
     <ScrollProgress />
     <slot />
     <script>
