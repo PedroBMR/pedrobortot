@@ -1,43 +1,34 @@
-# Astro Starter Kit: Minimal
+# pedrobortot.com.br
 
-```sh
-npm create astro@latest -- --template minimal
+Vitrine de venda de sites. Uma página, HTML puro, sem build e sem dependência.
+
+## Estrutura
+
+| Arquivo | O que é |
+|---|---|
+| `index.html` | a página inteira — texto, CSS e JS embutidos |
+| `404.html` | quem cai num endereço que não existe (inclusive os do portfólio antigo) |
+| `assets/fonts/` | as 4 fontes, auto-hospedadas — a página não chama o Google Fonts |
+| `assets/prints/` | prints dos sites de cliente usados como exemplo |
+| `CNAME` | domínio do Pages |
+| `.nojekyll` | desliga o Jekyll do Pages |
+
+## Publicar
+
+Um push no `main` publica: o workflow em `.github/workflows/deploy.yml` copia os
+arquivos e manda para o Pages, sem build. Para publicar sem alterar nada:
+
+```bash
+gh workflow run deploy.yml --repo PedroBMR/pedrobortot
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Ver local
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+python -m http.server 4322
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Histórico
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+O portfólio/currículo em Astro que ficava aqui até setembro de 2026 está no branch
+`portfolio-astro`.

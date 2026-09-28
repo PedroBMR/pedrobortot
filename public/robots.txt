@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://pedrobortot.com.br/sitemap-index.xml

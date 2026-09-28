@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Criação de sites em Pato Branco — Pedro Bortot</title>
+<meta name="description" content="Criação de sites em Pato Branco: seu site no ar em 15 dias, a partir de R$ 2.000. Domínio e hospedagem no seu nome. Veja os sites que já entreguei.">
+<link rel="canonical" href="https://pedrobortot.com.br/">
+<meta name="theme-color" content="#0a0a0c">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Pedro Bortot">
+<meta property="og:title" content="Seu site no ar em 15 dias, a partir de R$ 2.000">
+<meta property="og:description" content="Feito em Pato Branco, por uma pessoa só. Domínio e hospedagem no seu nome.">
+<meta property="og:url" content="https://pedrobortot.com.br/">
+<meta property="og:image" content="https://pedrobortot.com.br/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Seu site no ar em 15 dias, a partir de R$ 2.000 — Pedro Bortot, Pato Branco">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preload" href="/assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/public-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Pedro Bortot — Sites para empresas",
+  "description": "Criação de sites para empresas de Pato Branco e do Sudoeste do Paraná, no ar em 15 dias.",
+  "url": "https://pedrobortot.com.br/",
+  "image": "https://pedrobortot.com.br/og.jpg",
+  "telephone": "+5546999355001",
+  "email": "contato@pedrobortot.com.br",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pato Branco",
+    "addressRegion": "PR",
+    "addressCountry": "BR"
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Pato Branco"},
+    {"@type": "AdministrativeArea", "name": "Sudoeste do Paraná"}
+  ],
+  "founder": {"@type": "Person", "name": "Pedro Luiz Bortot Monteiro do Rosário"}
+}
+</script>
+
+<style>
+/* ==================================================================
+   pedrobortot.com.br — vitrine de venda de sites
+   Tema único escuro. Roxo SÓ em destaque: preço, "R$ 2.000", botões.
+   ================================================================== */
+@font-face{font-family:"Bricolage Grotesque";src:url(/assets/fonts/bricolage-grotesque-latin.woff2) format("woff2");font-weight:500 800;font-display:swap}
+@font-face{font-family:"Public Sans";src:url(/assets/fonts/public-sans-latin.woff2) format("woff2");font-weight:400 700;font-display:swap}
+@font-face{font-family:"IBM Plex Mono";src:url(/assets/fonts/ibm-plex-mono-400-latin.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"IBM Plex Mono";src:url(/assets/fonts/ibm-plex-mono-500-latin.woff2) format("woff2");font-weight:500;font-display:swap}
+:root{
+  color-scheme:dark;
+  --bg:#0a0a0c; --bg-2:#101014; --sup:#16161a;
+  --borda:#1d1d22; --borda-2:#26262e; --borda-3:#3a3a44;
+  --txt:#f2f2f0; --txt-2:#b6b6bc; --txt-3:#a3a3ab; --txt-4:#96969e; --txt-5:#7e7e88; --txt-6:#5c5c66;
+  --roxo:#7b2cbf; --roxo-2:#9d4edd; --roxo-3:#c77dff;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --display:"Bricolage Grotesque","Public Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--txt);font:400 17px/1.65 "Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:-.025em}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+.w{max-width:1060px;margin:0 auto;padding-inline:max(20px,env(safe-area-inset-left,0px)) max(20px,env(safe-area-inset-right,0px))}
+:focus-visible{outline:2px solid var(--roxo-3);outline-offset:3px;border-radius:4px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.pular{position:absolute;left:max(16px,env(safe-area-inset-left,0px));top:-60px;z-index:50;background:var(--txt);color:var(--bg);padding:10px 16px;border-radius:8px;font-weight:700}
+.pular:focus{top:calc(12px + env(safe-area-inset-top,0px))}
+
+/* ---------- botões ---------- */
+.acoes{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:30px}
+.btn{display:inline-block;padding:16px 28px;border-radius:99px;font:700 16px/1 var(--display);
+  background:var(--roxo);color:#fff;transition:background .15s}
+.btn-2{background:transparent;color:var(--txt);box-shadow:inset 0 0 0 1px var(--borda-2)}
+@media (hover:hover){
+  .btn:hover{background:var(--roxo-2)}
+  .btn-2:hover{background:var(--sup);box-shadow:inset 0 0 0 1px var(--borda-3)}
+}
+.btn.ima{transition:transform 260ms var(--ease),background .15s;will-change:transform}
+
+/* ---------- seções ---------- */
+section{padding-block:clamp(40px,9vw,56px);border-top:1px solid var(--borda)}
+h2{font-size:clamp(24px,3.6vw,38px);font-weight:700;line-height:1.15}
+.sub{color:var(--txt-4);margin:10px 0 28px;font-size:16px;max-width:58ch}
+
+/* ============ HERO ============ */
+.hero{position:relative;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:-20% -10% auto;height:900px;z-index:-2;
+  background:radial-gradient(60% 55% at 50% 0%,rgba(157,78,221,.34),rgba(123,44,191,.10) 45%,transparent 72%);
+  transform:scale(.82);opacity:0;animation:halo 1400ms var(--ease) 80ms forwards}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:linear-gradient(180deg,transparent 62%,var(--bg) 100%)}
+@keyframes halo{to{transform:scale(1);opacity:1}}
+
+.hero-in{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-block:76px 64px}
+
+.eyebrow{display:inline-block;font:500 12px/1.6 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--txt-4)}
+h1{font-size:clamp(36px,7.4vw,74px);font-weight:800;line-height:.98;margin:20px 0 0}
+.lead{font-size:clamp(17px,2.1vw,20px);max-width:50ch;margin:22px 0 0;color:var(--txt-2)}
+.apoio{margin:16px 0 0;font:400 14.5px/1.6 var(--mono);color:var(--txt-4);text-wrap:pretty}
+.agenda{color:var(--txt-2)}
+
+/* "15 dias": traço que se desenha */
+h1 u{text-decoration:none;position:relative;white-space:nowrap}
+h1 u::after{content:"";position:absolute;left:0;right:0;bottom:.06em;height:.075em;border-radius:99px;
+  background:linear-gradient(90deg,var(--roxo),var(--roxo-3));transform:scaleX(1);transform-origin:left center}
+/* "R$ 2.000": roxo, com um brilho que passa a cada 4,5 s */
+h1 .preco-h{color:var(--roxo-2);display:inline-block}
+
+/* palco 3D com os três sites */
+.palco{position:relative;perspective:1500px;perspective-origin:60% 45%;min-height:470px;--mx:0;--my:0}
+.palco .janela{position:absolute;width:min(78%,330px);left:8%;transform-style:preserve-3d;
+  box-shadow:0 30px 70px -28px rgba(0,0,0,.9);
+  transform:translate3d(var(--dx),0,var(--dz)) rotateY(-15deg) rotateX(3deg);opacity:var(--o,1)}
+.palco .j1{top:0;z-index:3;--dx:0px;--dz:0px;--o:1}
+.palco .j2{top:112px;z-index:2;--dx:52px;--dz:-70px;--o:.94}
+.palco .j3{top:224px;z-index:1;--dx:104px;--dz:-140px;--o:.86}
+
+/* janela de navegador com o print real rolando dentro */
+.janela{border:1px solid var(--borda-2);border-radius:8px;overflow:hidden;background:var(--bg-2)}
+.janela-barra{display:flex;align-items:center;gap:5px;padding:7px 10px;background:var(--bg-2);color:var(--txt-5);
+  font:400 11px/1 var(--mono);border-bottom:1px solid var(--borda)}
+.janela-barra i{width:7px;height:7px;border-radius:50%;background:var(--borda-2);display:block}
+.janela-tela{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--sup)}
+/* --rolar = quanto a imagem sobe para mostrar o fim do print.
+   print 640x800 numa tela 16:10 -> sobra 50%; 640x570 -> 29,8%; 640x480 -> 16,7% */
+.janela-tela img{position:absolute;top:0;left:0;width:100%;height:auto;display:block;--rolar:-50%}
+.janela-tela img.r-curto{--rolar:-29.8%}
+.janela-tela img.r-proc{--rolar:-16.7%}
+
+/* ============ CASOS ============ */
+.casos-grade{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.caso-card{background:var(--bg-2);border:1px solid var(--borda-2);border-radius:14px;padding:16px;
+  display:flex;flex-direction:column;gap:14px;transition:border-color .2s ease,transform .35s var(--ease)}
+@media (hover:hover){.caso-card:hover{border-color:var(--borda-3);transform:translate3d(0,-4px,0)}}
+.caso-card h3{font-size:19px}
+.caso-card p{margin:6px 0 0;color:var(--txt-3);font-size:15.5px}
+.caso-card .ver{font:400 13px/1 var(--mono);color:var(--txt-2);border-bottom:1px solid var(--borda-3);
+  padding-bottom:2px;align-self:flex-start;margin-top:auto}
+@media (hover:hover){.caso-card:hover .ver{color:var(--txt);border-color:var(--txt-5)}}
+
+/* ============ FAIXA DE SEGMENTOS ============ */
+.faixa{overflow:hidden;border-block:1px solid var(--borda);padding-block:15px;background:#0c0c10}
+.faixa .trilho{display:flex;width:max-content}
+.faixa span{font:500 13px/1 var(--mono);color:var(--txt-5);letter-spacing:.12em;text-transform:uppercase;padding-inline:18px;white-space:nowrap}
+.faixa mark{background:none;color:var(--txt-2)}
+
+/* ============ PARA QUEM / COMO ============ */
+ul.dores{list-style:none;padding:0;margin:0}
+ul.dores li{padding:16px 0;border-bottom:1px solid var(--borda);font-size:16.5px;display:grid;grid-template-columns:26px 1fr;gap:10px}
+ul.dores li::before{content:"→";content:"→" / "";color:var(--txt-6)}
+ul.dores .resolve{display:block;margin-top:4px;color:var(--txt-2)}
+ol.passos{list-style:none;counter-reset:p;padding:0;margin:0;display:grid;gap:24px}
+ol.passos li{counter-increment:p}
+ol.passos h3{font-size:19px}
+ol.passos h3::before{content:counter(p,decimal-leading-zero) " ";font:500 13px/1 var(--mono);color:var(--txt-5);margin-right:8px}
+ol.passos p{margin:6px 0 0;color:var(--txt-3);font-size:15.5px;max-width:58ch}
+
+/* ============ PREÇO ============ */
+.preco{border:1px solid var(--borda-2);border-radius:14px;padding:30px;background:#140820}
+.preco .n{font:800 clamp(38px,8vw,66px)/1 var(--display);color:var(--roxo-2);font-variant-numeric:tabular-nums}
+.preco .n small{font:400 13px/1 var(--mono);color:var(--txt-4);display:block;margin-bottom:10px;letter-spacing:.1em;text-transform:uppercase}
+.preco .lista{margin:16px 0 0;color:var(--txt-3);font-size:15.5px;max-width:52ch}
+.preco ul{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:9px;font-size:15.5px;color:var(--txt-2)}
+.preco ul li{display:grid;grid-template-columns:12px 1fr}
+.preco ul li::before{content:"·";content:"·" / "";color:var(--txt-6)}
+.vagas{margin:22px 0 0;padding:14px 16px;background:var(--sup);border-radius:8px;font:700 15px/1.45 var(--display);color:#e8e8ea}
+
+/* ============ PERGUNTAS / FIM ============ */
+details{border-bottom:1px solid var(--borda)}
+summary{font:700 17px/1.4 var(--display);cursor:pointer;padding:16px 0}
+summary::marker{color:var(--txt-5)}
+details p{margin:-6px 0 16px;color:var(--txt-3);font-size:15.5px;max-width:60ch}
+.fim{padding-block:58px 66px}
+.fim h2{font-size:clamp(28px,5vw,48px)}
+.fim p{max-width:48ch;color:var(--txt-3);margin:14px 0 0}
+.rodape{border-top:1px solid var(--borda);padding-block:24px calc(44px + env(safe-area-inset-bottom,0px));
+  font:400 14px/1.8 var(--mono);color:var(--txt-4)}
+.rodape a{color:var(--txt-2);display:inline-block;padding-block:10px;text-decoration:underline;text-decoration-color:var(--borda-3);text-underline-offset:4px}
+@media (hover:hover){.rodape a:hover{color:var(--txt)}}
+
+/* ============ WHATSAPP FLUTUANTE (só celular) ============ */
+.zap-flutua{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;
+  display:none;align-items:center;gap:8px;padding:14px 20px;border-radius:99px;background:var(--roxo);color:#fff;
+  font:700 15px/1 var(--display);box-shadow:0 12px 30px -10px rgba(0,0,0,.8);
+  transform:translate3d(0,calc(100% + 32px + env(safe-area-inset-bottom,0px)),0);visibility:hidden;
+  transition:transform .35s var(--ease),visibility 0s linear .35s}
+.zap-flutua.on{transform:none;visibility:visible;transition-delay:0s}
+.zap-flutua svg{width:18px;height:18px;flex:none}
+
+@media (max-width:900px){
+  .hero-in{grid-template-columns:1fr;gap:26px;padding-block:56px 40px}
+  .palco{min-height:400px;perspective:1100px;margin-top:6px}
+  .palco .janela{width:min(86%,300px);left:0}
+  .palco .j2{top:86px;--dx:34px;--dz:-60px}
+  .palco .j3{top:172px;--dx:68px;--dz:-120px}
+  .casos-grade{grid-template-columns:1fr}
+  .zap-flutua{display:inline-flex}
+  html{scroll-padding-bottom:88px}
+}
+
+/* ============ MOVIMENTO (só para quem não pediu menos) ============
+   Regra: o título e a frase principal nunca começam invisíveis.
+   Eles entram só deslizando; o que aparece com fade são peças pequenas. */
+@media screen and (prefers-reduced-motion:no-preference){
+  .hero-txt>.eyebrow,.hero-txt>.apoio{animation:sobe 760ms var(--ease) both}
+  .hero-txt>.eyebrow{animation-delay:60ms}
+  .hero-txt>.apoio{animation-delay:440ms}
+  .hero-txt>h1{animation:desliza 640ms var(--ease) both}
+  .hero-txt>.lead{animation:desliza 700ms var(--ease) 120ms both}
+  .hero-txt>.acoes{animation:desliza 700ms var(--ease) 200ms both}
+
+  h1 u::after{transform:scaleX(0);animation:risca 820ms var(--ease) 900ms forwards}
+  h1 .preco-h{background:linear-gradient(100deg,var(--roxo-2) 0%,var(--roxo-2) 38%,#e6c6ff 50%,var(--roxo-2) 62%,var(--roxo-2) 100%);
+    background-size:280% 100%;background-position:120% 0;-webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;animation:varre 4500ms 1150ms infinite both}
+
+  .palco .janela{animation:entra 1100ms var(--ease) backwards}
+  .palco .j1{animation-delay:420ms}
+  .palco .j2{animation-delay:560ms}
+  .palco .j3{animation-delay:700ms}
+  .palco.viva .janela{transition:transform 420ms var(--ease)}
+  .palco.viva .j1{transform:translate3d(calc(var(--mx)*14px),calc(var(--my)*10px),0) rotateY(calc(-15deg + var(--mx)*5deg)) rotateX(calc(3deg - var(--my)*4deg))}
+  .palco.viva .j2{transform:translate3d(calc(52px + var(--mx)*22px),calc(var(--my)*14px),-70px) rotateY(calc(-15deg + var(--mx)*5deg)) rotateX(calc(3deg - var(--my)*4deg))}
+  .palco.viva .j3{transform:translate3d(calc(104px + var(--mx)*30px),calc(var(--my)*18px),-140px) rotateY(calc(-15deg + var(--mx)*5deg)) rotateX(calc(3deg - var(--my)*4deg))}
+
+  .janela-tela img{animation:rola-print 16s ease-in-out infinite}
+  .j2 .janela-tela img,.caso-card:nth-child(2) .janela-tela img{animation-duration:19s}
+  .j3 .janela-tela img,.caso-card:nth-child(3) .janela-tela img{animation-duration:22s}
+
+  .faixa .trilho{animation:corre 42s linear infinite}
+  .faixa:hover .trilho{animation-play-state:paused}
+}
+@keyframes sobe{from{opacity:0;transform:translate3d(0,14px,0)}to{opacity:1;transform:none}}
+@keyframes desliza{from{transform:translate3d(0,18px,0)}to{transform:none}}
+@keyframes risca{to{transform:scaleX(1)}}
+@keyframes varre{
+  0%{background-position:120% 0;animation-timing-function:cubic-bezier(.4,0,.2,1)}
+  31%,100%{background-position:-40% 0}
+}
+@keyframes entra{
+  from{opacity:0;transform:translate3d(60px,50px,-260px) rotateY(-40deg) rotateX(9deg)}
+  to{opacity:var(--o,1);transform:translate3d(var(--dx),0,var(--dz)) rotateY(-15deg) rotateX(3deg)}
+}
+@keyframes rola-print{
+  0%,12%{transform:translate3d(0,0,0)}
+  45%,58%{transform:translate3d(0,var(--rolar),0)}
+  90%,100%{transform:translate3d(0,0,0)}
+}
+@keyframes corre{to{transform:translate3d(-50%,0,0)}}
+/* o que saiu da tela para de animar (o script marca .fora) */
+.fora *{animation-play-state:paused!important}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero::before{animation:none;transform:none;opacity:1}
+  .caso-card,.zap-flutua{transition:none}
+  .caso-card:hover{transform:none}
+}
+</style>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="hero">
+ <div class="w hero-in">
+  <div class="hero-txt">
+    <span class="eyebrow">Criação de sites · Pato Branco, PR</span>
+    <h1>Seu site no ar em <u>15 dias</u>,<br>a partir de <span class="preco-h">R$ 2.000</span>.</h1>
+    <p class="lead">Feito aqui em Pato Branco, por uma pessoa só — a mesma que desenha, escreve o código e publica. Você manda as fotos e o que já tem escrito, e eu organizo, ajusto e cuido do resto.</p>
+    <div class="acoes">
+      <a class="btn zap" href="https://wa.me/5546999355001?text=Oi%2C%20Pedro!%20Vi%20seu%20site%20e%20quero%20saber%20como%20fica%20um%20site%20para%20a%20minha%20empresa." target="_blank" rel="noopener">Chamar no WhatsApp<span class="sr-only"> (abre em nova aba)</span></a>
+      <a class="btn btn-2" href="#casos">Ver sites que eu fiz</a>
+    </div>
+    <p class="apoio">Domínio e conta de hospedagem no seu nome</p>
+  </div>
+
+  <div class="palco" id="palco" aria-hidden="true">
+    <div class="janela j1">
+      <div class="janela-barra"><i></i><i></i><i></i> granjareal.com.br</div>
+      <div class="janela-tela"><img class="r-curto" src="assets/prints/granjareal.webp" width="640" height="570" alt="" decoding="async"></div>
+    </div>
+    <div class="janela j2">
+      <div class="janela-barra"><i></i><i></i><i></i> ceneagro.com.br</div>
+      <div class="janela-tela"><img src="assets/prints/ceneagro.webp" width="640" height="800" alt="" decoding="async" fetchpriority="low"></div>
+    </div>
+    <div class="janela j3">
+      <div class="janela-barra"><i></i><i></i><i></i> procgroup.com.br</div>
+      <div class="janela-tela"><img class="r-proc" src="assets/prints/procgroup.webp" width="640" height="480" alt="" decoding="async" fetchpriority="low"></div>
+    </div>
+  </div>
+ </div>
+</header>
+
+<main id="conteudo">
+<section class="w" aria-labelledby="h-quem">
+  <h2 id="h-quem">Para quem é</h2>
+  <p class="sub">Se a sua empresa está numa destas situações, o site resolve um problema concreto.</p>
+  <ul class="dores">
+    <li><div>Você vende por Instagram e o link da bio é uma página só de links. Quem chega não vê preço, produto nem como comprar.<span class="resolve">O site mostra tudo isso e leva direto para o seu WhatsApp.</span></div></li>
+    <li><div>Você aparece no Google misturado com outra empresa de mesmo nome, de outro estado.<span class="resolve">Com site próprio e o Google configurado, fica claro qual é a sua.</span></div></li>
+    <li><div>Você paga comissão ou mensalidade para plataforma de delivery, de reserva ou de anúncio em venda de cliente que já te conhecia.<span class="resolve">O site leva esse cliente direto para o seu WhatsApp, sem comissão no meio.</span></div></li>
+    <li><div>Você tem obra, produto ou serviço para mostrar, e a foto disso só existe no celular de alguém.<span class="resolve">No site, isso vira uma vitrine que você manda para qualquer cliente.</span></div></li>
+  </ul>
+</section>
+
+<section class="w" id="casos" aria-labelledby="h-casos">
+  <h2 id="h-casos">Feitos por mim, no ar agora</h2>
+  <p class="sub">Todos daqui. Pode clicar e conferir.</p>
+  <div class="casos-grade">
+    <a class="caso-card" href="https://granjareal.com.br" target="_blank" rel="noopener">
+      <div class="janela" aria-hidden="true">
+        <div class="janela-barra"><i></i><i></i><i></i> granjareal.com.br</div>
+        <div class="janela-tela"><img class="r-curto" src="assets/prints/granjareal.webp" width="640" height="570" alt="Página inicial do site da Granja Real" loading="lazy" decoding="async"></div>
+      </div>
+      <div><h3>Granja Real</h3><p>Granja de matrizes de corte de Pato Branco, desde 1974, exportando para seis países.</p></div>
+      <span class="ver">abrir o site<span aria-hidden="true"> →</span><span class="sr-only"> (abre em nova aba)</span></span>
+    </a>
+    <a class="caso-card" href="https://ceneagro.com.br" target="_blank" rel="noopener">
+      <div class="janela" aria-hidden="true">
+        <div class="janela-barra"><i></i><i></i><i></i> ceneagro.com.br</div>
+        <div class="janela-tela"><img src="assets/prints/ceneagro.webp" width="640" height="800" alt="Página inicial do site da Ceneagro" loading="lazy" decoding="async"></div>
+      </div>
+      <div><h3>Ceneagro</h3><p>Distribuidora de insumos agropecuários de Pato Branco. Linha de produtos e recomendação técnica por cultura.</p></div>
+      <span class="ver">abrir o site<span aria-hidden="true"> →</span><span class="sr-only"> (abre em nova aba)</span></span>
+    </a>
+    <a class="caso-card" href="https://procgroup.com.br" target="_blank" rel="noopener">
+      <div class="janela" aria-hidden="true">
+        <div class="janela-barra"><i></i><i></i><i></i> procgroup.com.br</div>
+        <div class="janela-tela"><img class="r-proc" src="assets/prints/procgroup.webp" width="640" height="480" alt="Página inicial do site da ProcGroup" loading="lazy" decoding="async"></div>
+      </div>
+      <div><h3>ProcGroup</h3><p>Site institucional de uma empresa de tecnologia — IA, visão computacional e infraestrutura de TI. Feito junto com o time comercial.</p></div>
+      <span class="ver">abrir o site<span aria-hidden="true"> →</span><span class="sr-only"> (abre em nova aba)</span></span>
+    </a>
+  </div>
+</section>
+
+<p class="sr-only">Segmentos atendidos: construtora, imobiliária, clínica, pousada, marcenaria, advocacia, agro, academia, odontologia e arquitetura.</p>
+<div class="faixa" aria-hidden="true">
+ <div class="trilho">
+  <span aria-hidden="true"><mark>Construtora</mark> · Imobiliária · <mark>Clínica</mark> · Pousada · <mark>Marcenaria</mark> · Advocacia · <mark>Agro</mark> · Academia · <mark>Odontologia</mark> · Arquitetura ·&nbsp;</span>
+  <span aria-hidden="true"><mark>Construtora</mark> · Imobiliária · <mark>Clínica</mark> · Pousada · <mark>Marcenaria</mark> · Advocacia · <mark>Agro</mark> · Academia · <mark>Odontologia</mark> · Arquitetura ·&nbsp;</span>
+ </div>
+</div>
+
+
+<section class="w" aria-labelledby="h-como">
+  <h2 id="h-como">Como funciona a criação do site</h2>
+  <ol class="passos">
+    <li><h3>A gente conversa</h3><p>Você me conta o que vende, para quem, e o que precisa acontecer quando a pessoa entra no site. Sem formulário de 40 perguntas.</p></li>
+    <li><h3>Eu monto e te mostro</h3><p>Você vê o site pronto antes de pagar qualquer coisa. Uma rodada de ajuste está inclusa.</p></li>
+    <li><h3>Publico no seu nome</h3><p>Domínio no seu CNPJ e hospedagem na sua conta — ou comigo, se você quiser que eu cuide do site. Se um dia quiser trocar de fornecedor, leva o site inteiro com você — eu não fico com nada preso.</p></li>
+  </ol>
+</section>
+
+<section class="w" aria-labelledby="h-preco">
+  <h2 id="h-preco" class="sr-only">Preço</h2>
+  <div class="preco">
+    <p class="n"><small>Página única, a partir de</small>R$ <span id="conta-preco">2.000</span></p>
+    <p class="lista">Tem lista que muda, como imóveis, cardápio ou quartos? Aí é site de várias páginas, com painel para você mesmo editar. Valor mediante consulta.</p>
+    <ul>
+      <li>Pesquisa da sua empresa antes de começar</li>
+      <li>Direção visual feita para a sua marca, não um modelo pronto</li>
+      <li>Site rápido, que abre bem no celular</li>
+      <li>SEO para o Google achar você pelo nome e pela cidade</li>
+      <li>Publicação no seu domínio, na sua conta</li>
+      <li>Uma rodada de ajuste</li>
+      <li>Você só paga depois de ver o site montado: 50% quando aprovar, 50% na entrega</li>
+      <li>Pagamento por Pix ou transferência</li>
+    </ul>
+    <p class="vagas">As 3 primeiras vagas saem por R$&nbsp;2.000, e o seu site entra aqui como exemplo. Depois, R$&nbsp;3.900.</p>
+  </div>
+</section>
+
+<section class="w" aria-labelledby="h-faq">
+  <h2 id="h-faq">Perguntas que todo mundo faz</h2>
+  <details open><summary>E se eu não gostar?</summary><p>Você vê o site montado antes de aprovar. A primeira parcela só entra quando você disser que está bom.</p></details>
+  <details><summary>Preciso ter fotos profissionais?</summary><p>Não. Dá para começar com o que você já tem no celular e no Instagram. Se precisar de foto melhor em algum ponto, eu falo antes.</p></details>
+  <details><summary>Depois de pronto, dependo de você para tudo?</summary><p>Não. Se o seu site tem lista que muda, como imóveis, cardápio ou quartos, ele vem com um painel simples para você trocar item, preço e foto sozinho, pelo celular ou pelo computador. O resto você me pede no WhatsApp, com preço combinado antes.</p></details>
+  <details><summary>O site é meu mesmo?</summary><p>É. O domínio fica sempre no seu CNPJ. Se o site estiver na sua conta, meu acesso dura só enquanto você quiser. Se estiver comigo, eu passo para a sua conta quando você pedir.</p></details>
+  <details><summary>Onde fica o site e quanto custa manter?</summary><p>Você escolhe. Se quiser que eu cuide de tudo, o site fica hospedado comigo por um valor fixo por ano, mediante consulta. Se preferir na sua conta, eu recomendo a Cloudflare, que tem plano gratuito, e aí o custo é só o domínio, também mediante consulta. Se escolher outra plataforma, tudo bem: eu publico o site lá. Acompanhar depois eu também posso, com custo à parte, mas a plataforma em si fica por sua conta.</p></details>
+  <details><summary>Quanto tempo leva de verdade?</summary><p>15 dias contados de quando você me manda as fotos e o que já tem escrito. Se o conteúdo demorar, o prazo anda junto — e eu te aviso. Quando a gente conversar, eu confirmo a data da sua entrega.</p></details>
+  <details><summary>Você usa IA?</summary><p>Uso, como ferramenta. Quem decide, revisa e responde pelo site sou eu.</p></details>
+</section>
+
+<div class="w fim" id="fim">
+  <h2>Vamos ver se faz sentido?</h2>
+  <p>Me manda uma mensagem contando o que a sua empresa faz. Eu respondo dizendo se consigo ajudar e quanto fica — sem enrolação e sem reunião marcada.</p>
+  <div class="acoes"><a class="btn zap" href="https://wa.me/5546999355001?text=Oi%2C%20Pedro!%20Vi%20seu%20site%20e%20quero%20saber%20como%20fica%20um%20site%20para%20a%20minha%20empresa." target="_blank" rel="noopener">Chamar no WhatsApp<span class="sr-only"> (abre em nova aba)</span></a></div>
+</div>
+</main>
+
+<footer class="w rodape">
+  Pedro Luiz Bortot Monteiro do Rosário · Pato Branco, PR<br>
+  <a href="https://wa.me/5546999355001" target="_blank" rel="noopener">(46) 99935-5001</a> ·
+  <a href="mailto:contato@pedrobortot.com.br">contato@pedrobortot.com.br</a><br>
+  © 2026
+</footer>
+
+<a class="zap-flutua" id="zap-flutua" href="https://wa.me/5546999355001?text=Oi%2C%20Pedro!%20Vi%20seu%20site%20e%20quero%20saber%20como%20fica%20um%20site%20para%20a%20minha%20empresa." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp (abre em nova aba)">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.6-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script>
+(function () {
+  var reduz = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var mouse = matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+  // 1. paralaxe das janelas do hero (só onde existe mouse)
+  var palco = document.getElementById("palco");
+  if (palco && !reduz && mouse) {
+    palco.classList.add("viva");
+    var hero = palco.closest(".hero"), rafP = null, ultimoEv = null;
+    hero.addEventListener("mousemove", function (e) {
+      ultimoEv = e;
+      if (rafP) return;
+      rafP = requestAnimationFrame(function () {
+        var r = hero.getBoundingClientRect();
+        palco.style.setProperty("--mx", (((ultimoEv.clientX - r.left) / r.width) - 0.5).toFixed(3));
+        palco.style.setProperty("--my", (((ultimoEv.clientY - r.top) / r.height) - 0.5).toFixed(3));
+        rafP = null;
+      });
+    });
+    hero.addEventListener("mouseleave", function () {
+      if (rafP) { cancelAnimationFrame(rafP); rafP = null; }
+      palco.style.setProperty("--mx", 0);
+      palco.style.setProperty("--my", 0);
+    });
+  }
+
+  // 2. preço contando até 2.000 quando aparece (o número final já está no HTML)
+  var alvo = document.getElementById("conta-preco");
+  if (alvo && !reduz && "IntersectionObserver" in window) {
+    var ioPreco = new IntersectionObserver(function (es) {
+      es.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        ioPreco.disconnect();
+        var t0 = performance.now(), dur = 1100;
+        (function passo(t) {
+          var p = Math.max(0, Math.min(1, (t - t0) / dur)), e = 1 - Math.pow(1 - p, 3);
+          alvo.textContent = String(Math.round(2000 * e)).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+          if (p < 1) requestAnimationFrame(passo);
+        })(performance.now());
+      });
+    }, { threshold: 0.45 });
+    ioPreco.observe(alvo);
+  }
+
+  // 3. botões magnéticos (só onde existe mouse)
+  if (!reduz && mouse) {
+    document.querySelectorAll(".btn").forEach(function (b) {
+      b.classList.add("ima");
+      b.addEventListener("pointermove", function (e) {
+        if (e.pointerType !== "mouse") return;
+        var r = b.getBoundingClientRect();
+        var x = (e.clientX - r.left - r.width / 2) * 0.22;
+        var y = (e.clientY - r.top - r.height / 2) * 0.34;
+        b.style.transform = "translate3d(" + x.toFixed(1) + "px," + y.toFixed(1) + "px,0)";
+      });
+      b.addEventListener("pointerleave", function () { b.style.transform = ""; });
+    });
+  }
+
+  // 4. WhatsApp flutuante: aparece depois do hero, some no fechamento
+  var zap = document.getElementById("zap-flutua");
+  var topo = document.querySelector(".hero");
+  var fim = document.getElementById("fim");
+  if (zap && topo && fim && "IntersectionObserver" in window) {
+    var heroVisivel = true, fimVisivel = false;
+    var atualiza = function () { zap.classList.toggle("on", !heroVisivel && !fimVisivel); };
+    // várias mudanças podem chegar juntas: vale sempre a última
+    var ultima = function (es) { return es[es.length - 1].isIntersecting; };
+    new IntersectionObserver(function (es) { heroVisivel = ultima(es); atualiza(); }).observe(topo);
+    new IntersectionObserver(function (es) { fimVisivel = ultima(es); atualiza(); }).observe(fim);
+  }
+
+  // 5. animação que saiu da tela fica pausada (economiza CPU no celular)
+  if (!reduz && "IntersectionObserver" in window) {
+    var ioAnim = new IntersectionObserver(function (es) {
+      es.forEach(function (en) { en.target.classList.toggle("fora", !en.isIntersecting); });
+    });
+    document.querySelectorAll(".hero, .caso-card, .faixa").forEach(function (el) { ioAnim.observe(el); });
+  }
+})();
+</script>
+</body>
+</html>
